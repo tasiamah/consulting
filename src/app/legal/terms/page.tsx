@@ -27,7 +27,7 @@ export default function TermsPage() {
       <section className="py-16 lg:py-24">
         <div className="container-page">
           <div className="max-w-3xl">
-            <p className="text-[0.8125rem] tracking-[0.04em] text-slate-ink/60 uppercase">
+            <p className="text-[0.8125rem] tracking-[0.04em] text-slate-ink/80 uppercase">
               Last updated {LAST_UPDATED}
             </p>
 

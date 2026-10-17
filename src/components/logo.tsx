@@ -41,7 +41,6 @@ export function Logo({
   return (
     <Link
       href="/"
-      aria-label="A & H Consulting Group home"
       className={`group inline-flex items-center gap-3 ${className}`}
     >
       <LogoMark
@@ -62,7 +61,7 @@ export function Logo({
         </span>
         <span
           className={`mt-[3px] text-[0.5625rem] leading-none font-semibold tracking-[0.2em] uppercase ${
-            isLight ? "text-white/60" : "text-slate-ink/70"
+            isLight ? "text-white/60" : "text-slate-ink/80"
           }`}
         >
           Consulting Group

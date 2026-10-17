@@ -54,19 +54,19 @@ export default function CareersPage() {
 
                   <dl className="flex flex-wrap gap-x-8 gap-y-2 text-[0.8125rem]">
                     <div>
-                      <dt className="text-slate-ink/60">Location</dt>
+                      <dt className="text-slate-ink/80">Location</dt>
                       <dd className="mt-0.5 font-medium text-ink">
                         {role.office}
                       </dd>
                     </div>
                     <div>
-                      <dt className="text-slate-ink/60">Type</dt>
+                      <dt className="text-slate-ink/80">Type</dt>
                       <dd className="mt-0.5 font-medium text-ink">
                         {role.type}
                       </dd>
                     </div>
                     <div>
-                      <dt className="text-slate-ink/60">Practice</dt>
+                      <dt className="text-slate-ink/80">Practice</dt>
                       <dd className="mt-0.5 font-medium text-ink">
                         {role.practice}
                       </dd>
@@ -169,7 +169,7 @@ export default function CareersPage() {
               },
             ].map((item) => (
               <li key={item.step} className="bg-white p-8">
-                <span className="font-serif text-[1.5rem] leading-none text-accent-200 tabular-nums">
+                <span className="font-serif text-[1.5rem] leading-none text-accent-600 tabular-nums">
                   {item.step}
                 </span>
                 <h3 className="mt-5 font-sans text-[1rem] font-semibold tracking-tight text-ink">

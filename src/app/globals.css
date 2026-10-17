@@ -103,7 +103,7 @@
   }
 
   .prose-legal li {
-    @apply list-disc marker:text-accent-300;
+    @apply list-disc marker:text-accent-600;
   }
 
   .prose-legal a {

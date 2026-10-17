@@ -25,7 +25,7 @@ export function PageHero({
       <div className="container-page relative py-16 lg:py-24">
         {breadcrumb && (
           <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex flex-wrap items-center gap-2 text-[0.75rem] text-white/45">
+            <ol className="flex flex-wrap items-center gap-2 text-[0.75rem] text-white/55">
               {breadcrumb.map((crumb, i) => (
                 <li key={crumb.href} className="flex items-center gap-2">
                   {i > 0 && <span className="text-white/20">/</span>}

@@ -40,7 +40,7 @@ export default function IndustriesPage() {
             >
               <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
                 <div>
-                  <span className="font-serif text-[0.875rem] text-accent-300 tabular-nums">
+                  <span className="font-serif text-[0.875rem] text-accent-600 tabular-nums">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <h2 className="mt-5 text-[1.625rem] leading-tight text-ink lg:text-[1.875rem]">
@@ -50,7 +50,7 @@ export default function IndustriesPage() {
                     {industry.summary}
                   </p>
 
-                  <h3 className="mt-9 font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
+                  <h3 className="mt-9 font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/80 uppercase">
                     Services most often engaged
                   </h3>
                   <ul className="mt-4 flex flex-wrap gap-2">
@@ -68,7 +68,7 @@ export default function IndustriesPage() {
                 </div>
 
                 <div className="lg:border-l lg:border-line lg:pl-16">
-                  <h3 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
+                  <h3 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/80 uppercase">
                     Problems we are typically brought in to solve
                   </h3>
                   <ul className="mt-7 grid gap-px bg-line">

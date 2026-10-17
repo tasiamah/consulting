@@ -186,7 +186,7 @@ function ApproachSection() {
             {phases.map((phase) => (
               <li key={phase.number} className="bg-paper">
                 <div className="flex gap-6 py-7 lg:gap-9">
-                  <span className="font-serif text-[1.5rem] leading-none text-accent-300 tabular-nums">
+                  <span className="font-serif text-[1.5rem] leading-none text-accent-600 tabular-nums">
                     {phase.number}
                   </span>
                   <div>
@@ -194,7 +194,7 @@ function ApproachSection() {
                       <h3 className="font-sans text-[1.0625rem] font-semibold tracking-tight text-ink">
                         {phase.name}
                       </h3>
-                      <span className="text-[0.75rem] tracking-[0.04em] text-slate-ink/70 uppercase">
+                      <span className="text-[0.75rem] tracking-[0.04em] text-slate-ink/80 uppercase">
                         {phase.duration}
                       </span>
                     </div>
@@ -329,7 +329,7 @@ function CaseStudiesSection() {
                 <div className="flex items-center gap-3 text-[0.6875rem] font-semibold tracking-[0.14em] uppercase">
                   <span className="text-accent-600">{study.sector}</span>
                   <span className="text-line">|</span>
-                  <span className="text-slate-ink/60">{study.region}</span>
+                  <span className="text-slate-ink/80">{study.region}</span>
                 </div>
 
                 <h3 className="mt-6 flex-1 text-[1.1875rem] leading-snug text-ink transition-colors group-hover:text-accent-600">

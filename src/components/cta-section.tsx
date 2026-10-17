@@ -67,7 +67,7 @@ export function CtaSection({
                 </li>
               ))}
             </ul>
-            <p className="mt-8 border-t border-white/10 pt-6 text-[0.8125rem] leading-relaxed text-white/45">
+            <p className="mt-8 border-t border-white/10 pt-6 text-[0.8125rem] leading-relaxed text-white/55">
               Enquiries are answered by a consultant, not a call centre. We
               typically respond within one business day.
             </p>

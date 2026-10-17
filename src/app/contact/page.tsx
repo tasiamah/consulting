@@ -60,7 +60,7 @@ export default function ContactPage() {
               </div>
               <dl className="divide-y divide-line">
                 <div className="px-7 py-5">
-                  <dt className="text-[0.75rem] text-slate-ink/70">
+                  <dt className="text-[0.75rem] text-slate-ink/80">
                     General enquiries
                   </dt>
                   <dd className="mt-1.5">
@@ -74,7 +74,7 @@ export default function ContactPage() {
                   </dd>
                 </div>
                 <div className="px-7 py-5">
-                  <dt className="text-[0.75rem] text-slate-ink/70">
+                  <dt className="text-[0.75rem] text-slate-ink/80">
                     Recruitment
                   </dt>
                   <dd className="mt-1.5">
@@ -88,7 +88,7 @@ export default function ContactPage() {
                   </dd>
                 </div>
                 <div className="px-7 py-5">
-                  <dt className="text-[0.75rem] text-slate-ink/70">
+                  <dt className="text-[0.75rem] text-slate-ink/80">
                     Data protection
                   </dt>
                   <dd className="mt-1.5">
@@ -103,7 +103,7 @@ export default function ContactPage() {
                 </div>
                 {company.phone && (
                   <div className="px-7 py-5">
-                    <dt className="text-[0.75rem] text-slate-ink/70">
+                    <dt className="text-[0.75rem] text-slate-ink/80">
                       Telephone
                     </dt>
                     <dd className="mt-1.5 text-[0.9375rem] font-medium text-ink">
@@ -143,7 +143,7 @@ export default function ContactPage() {
                     <ClockIcon className="mt-0.5 h-4 w-4 shrink-0 text-accent-500" />
                     <span>
                       {office.hours}
-                      <span className="block text-slate-ink/60">
+                      <span className="block text-slate-ink/80">
                         {office.timezone}
                       </span>
                     </span>
@@ -195,7 +195,7 @@ export default function ContactPage() {
               },
             ].map((item) => (
               <li key={item.step} className="bg-white p-8">
-                <span className="font-serif text-[1.5rem] leading-none text-accent-200 tabular-nums">
+                <span className="font-serif text-[1.5rem] leading-none text-accent-600 tabular-nums">
                   {item.step}
                 </span>
                 <h3 className="mt-5 font-sans text-[1rem] font-semibold tracking-tight text-ink">

@@ -86,7 +86,7 @@ export default async function CaseStudyPage({
             <ol className="mt-8 space-y-px bg-line">
               {study.approach.map((step, i) => (
                 <li key={step} className="flex gap-6 bg-white py-6">
-                  <span className="font-serif text-[1.125rem] leading-none text-accent-300 tabular-nums">
+                  <span className="font-serif text-[1.125rem] leading-none text-accent-600 tabular-nums">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <p className="text-[0.9375rem] leading-[1.8] text-slate-ink">
@@ -137,7 +137,7 @@ export default async function CaseStudyPage({
                   { term: "Duration", detail: study.duration },
                 ].map((item) => (
                   <div key={item.term}>
-                    <dt className="text-[0.75rem] text-slate-ink/70">
+                    <dt className="text-[0.75rem] text-slate-ink/80">
                       {item.term}
                     </dt>
                     <dd className="mt-1 text-[0.9375rem] text-ink">
@@ -187,7 +187,7 @@ export default async function CaseStudyPage({
       {related.length > 0 && (
         <section className="border-t border-line bg-paper py-20 lg:py-24">
           <div className="container-page">
-            <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
+            <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/80 uppercase">
               Other engagements
             </h2>
             <div className="mt-8 grid gap-px border border-line bg-line lg:grid-cols-3">

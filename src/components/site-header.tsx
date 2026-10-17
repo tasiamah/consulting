@@ -85,7 +85,7 @@ export function SiteHeader() {
                 </span>
               ))}
             </span>
-            <span className="text-white/40">{company.tagline}</span>
+            <span className="text-white/55">{company.tagline}</span>
           </div>
           <div className="flex items-center gap-7">
             <Link href="/faq" className="transition-colors hover:text-white">

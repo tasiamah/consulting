@@ -38,9 +38,9 @@ export default function CaseStudiesPage() {
                   <div className="flex flex-wrap items-center gap-3 text-[0.6875rem] font-semibold tracking-[0.14em] uppercase">
                     <span className="text-accent-600">{study.sector}</span>
                     <span className="text-line">|</span>
-                    <span className="text-slate-ink/60">{study.region}</span>
+                    <span className="text-slate-ink/80">{study.region}</span>
                     <span className="text-line">|</span>
-                    <span className="text-slate-ink/60">{study.duration}</span>
+                    <span className="text-slate-ink/80">{study.duration}</span>
                   </div>
 
                   <h2 className="mt-6 text-[1.625rem] leading-tight text-ink lg:text-[2rem]">
@@ -52,7 +52,7 @@ export default function CaseStudiesPage() {
                     </Link>
                   </h2>
 
-                  <p className="mt-3 text-[0.9375rem] text-slate-ink/70">
+                  <p className="mt-3 text-[0.9375rem] text-slate-ink/80">
                     {study.client}
                   </p>
 

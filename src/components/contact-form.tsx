@@ -240,7 +240,7 @@ export function ContactForm({
         )}
       </button>
 
-      <p className="mt-5 text-[0.75rem] leading-relaxed text-slate-ink/70">
+      <p className="mt-5 text-[0.75rem] leading-relaxed text-slate-ink/80">
         We respond to every enquiry. Your details are never shared with third
         parties or used for marketing.
       </p>

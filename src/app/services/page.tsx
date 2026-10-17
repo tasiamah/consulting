@@ -40,7 +40,7 @@ export default function ServicesPage() {
               },
             ].map((item) => (
               <div key={item.term}>
-                <dt className="text-[0.75rem] tracking-[0.04em] text-white/40 uppercase">
+                <dt className="text-[0.75rem] tracking-[0.04em] text-white/55 uppercase">
                   {item.term}
                 </dt>
                 <dd className="mt-1 text-[0.9375rem] text-white/85">
@@ -67,7 +67,7 @@ export default function ServicesPage() {
                   <div>
                     <div className="flex items-center gap-4">
                       <Icon className="h-8 w-8 text-accent-500" />
-                      <span className="font-serif text-[1rem] text-accent-300 tabular-nums">
+                      <span className="font-serif text-[1rem] text-accent-600 tabular-nums">
                         {service.number}
                       </span>
                     </div>
@@ -85,7 +85,7 @@ export default function ServicesPage() {
                   </div>
 
                   <div>
-                    <h3 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
+                    <h3 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/80 uppercase">
                       Capabilities
                     </h3>
                     <div className="mt-6 grid gap-x-10 gap-y-7 sm:grid-cols-2">
@@ -189,20 +189,20 @@ export default function ServicesPage() {
           <ol className="mt-14 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-5">
             {phases.map((phase) => (
               <li key={phase.number} className="bg-white p-7">
-                <span className="font-serif text-[1.375rem] leading-none text-accent-300 tabular-nums">
+                <span className="font-serif text-[1.375rem] leading-none text-accent-600 tabular-nums">
                   {phase.number}
                 </span>
                 <h3 className="mt-5 font-sans text-[1rem] font-semibold tracking-tight text-ink">
                   {phase.name}
                 </h3>
-                <p className="mt-1.5 text-[0.75rem] tracking-[0.04em] text-slate-ink/60 uppercase">
+                <p className="mt-1.5 text-[0.75rem] tracking-[0.04em] text-slate-ink/80 uppercase">
                   {phase.duration}
                 </p>
                 <ul className="mt-5 space-y-2">
                   {phase.activities.slice(0, 3).map((activity) => (
                     <li
                       key={activity}
-                      className="text-[0.8125rem] leading-relaxed text-slate-ink before:mr-2 before:text-accent-300 before:content-['·']"
+                      className="text-[0.8125rem] leading-relaxed text-slate-ink before:mr-2 before:text-accent-600 before:content-['·']"
                     >
                       {activity}
                     </li>

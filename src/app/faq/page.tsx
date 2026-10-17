@@ -42,7 +42,7 @@ export default function FaqPage() {
             aria-label="FAQ sections"
             className="lg:sticky lg:top-32 lg:self-start"
           >
-            <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
+            <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/80 uppercase">
               Sections
             </h2>
             <ul className="mt-6 space-y-3">

@@ -91,7 +91,7 @@ export default async function ServiceDetailPage({
             <Icon className="h-9 w-9 text-accent-300" />
             <dl className="mt-7 space-y-5">
               <div>
-                <dt className="text-[0.75rem] tracking-[0.04em] text-white/40 uppercase">
+                <dt className="text-[0.75rem] tracking-[0.04em] text-white/55 uppercase">
                   Engagement model
                 </dt>
                 <dd className="mt-1 text-[0.9375rem] text-white/85">
@@ -99,7 +99,7 @@ export default async function ServiceDetailPage({
                 </dd>
               </div>
               <div>
-                <dt className="text-[0.75rem] tracking-[0.04em] text-white/40 uppercase">
+                <dt className="text-[0.75rem] tracking-[0.04em] text-white/55 uppercase">
                   Typical duration
                 </dt>
                 <dd className="mt-1 text-[0.9375rem] text-white/85">
@@ -107,7 +107,7 @@ export default async function ServiceDetailPage({
                 </dd>
               </div>
               <div>
-                <dt className="text-[0.75rem] tracking-[0.04em] text-white/40 uppercase">
+                <dt className="text-[0.75rem] tracking-[0.04em] text-white/55 uppercase">
                   Team composition
                 </dt>
                 <dd className="mt-1 text-[0.9375rem] text-white/85">
@@ -137,7 +137,7 @@ export default async function ServiceDetailPage({
               ))}
             </div>
 
-            <h3 className="mt-16 font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
+            <h3 className="mt-16 font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/80 uppercase">
               Capabilities
             </h3>
             <div className="mt-7 grid gap-px border border-line bg-line sm:grid-cols-2">
@@ -189,7 +189,7 @@ export default async function ServiceDetailPage({
       {relatedIndustries.length > 0 && (
         <section className="border-y border-line bg-paper py-20 lg:py-24">
           <div className="container-page">
-            <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
+            <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/80 uppercase">
               Where this applies
             </h2>
             <div className="mt-8 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
@@ -248,7 +248,7 @@ export default async function ServiceDetailPage({
       {/* Other services */}
       <section className="border-t border-line py-16">
         <div className="container-page">
-          <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
+          <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/80 uppercase">
             Other practice areas
           </h2>
           <ul className="mt-7 flex flex-wrap gap-3">

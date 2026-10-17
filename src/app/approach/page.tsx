@@ -97,7 +97,7 @@ export default function ApproachPage() {
               <li key={phase.number} className="bg-white">
                 <div className="grid gap-8 py-10 lg:grid-cols-[auto_1fr_1.1fr] lg:gap-14 lg:py-14">
                   <div className="lg:w-28">
-                    <span className="font-serif text-[2.75rem] leading-none text-accent-200 tabular-nums">
+                    <span className="font-serif text-[2.75rem] leading-none text-accent-600 tabular-nums">
                       {phase.number}
                     </span>
                   </div>
@@ -115,7 +115,7 @@ export default function ApproachPage() {
                   </div>
 
                   <div className="lg:border-l lg:border-line lg:pl-14">
-                    <h4 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
+                    <h4 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/80 uppercase">
                       What happens
                     </h4>
                     <ul className="mt-5 space-y-3">

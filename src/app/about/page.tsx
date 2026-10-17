@@ -103,7 +103,7 @@ export default function AboutPage() {
               <dl className="divide-y divide-line">
                 {corporateFacts.map((fact) => (
                   <div key={fact.label} className="px-7 py-4">
-                    <dt className="text-[0.75rem] text-slate-ink/70">
+                    <dt className="text-[0.75rem] text-slate-ink/80">
                       {fact.label}
                     </dt>
                     <dd className="mt-1 text-[0.875rem] font-medium break-words text-ink">
@@ -141,7 +141,7 @@ export default function AboutPage() {
           <div className="mt-16 grid gap-px border border-line bg-line lg:grid-cols-2">
             {principles.map((principle, i) => (
               <div key={principle.title} className="bg-white p-8 lg:p-11">
-                <span className="font-serif text-[0.875rem] text-accent-300 tabular-nums">
+                <span className="font-serif text-[0.875rem] text-accent-600 tabular-nums">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-5 text-[1.1875rem] leading-snug text-ink">
@@ -170,7 +170,7 @@ export default function AboutPage() {
               <div key={office.id} className="bg-white p-8 lg:p-11">
                 <div className="flex items-center gap-3">
                   <PinIcon className="h-5 w-5 text-accent-500" />
-                  <span className="text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
+                  <span className="text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/80 uppercase">
                     {office.region}
                   </span>
                 </div>
@@ -193,7 +193,7 @@ export default function AboutPage() {
                   <ClockIcon className="mt-0.5 h-4 w-4 shrink-0 text-accent-500" />
                   <span>
                     {office.hours}
-                    <span className="block text-slate-ink/60">
+                    <span className="block text-slate-ink/80">
                       {office.timezone}
                     </span>
                   </span>

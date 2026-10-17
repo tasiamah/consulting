@@ -49,7 +49,7 @@ export default function NotFound() {
                 </li>
               ))}
             </ul>
-            <p className="mt-10 text-[0.875rem] text-white/45">
+            <p className="mt-10 text-[0.875rem] text-white/55">
               Still stuck? Email{" "}
               <a
                 href={`mailto:${company.email}`}

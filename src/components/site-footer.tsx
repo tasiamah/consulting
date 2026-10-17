@@ -104,7 +104,7 @@ export function SiteFooter() {
                   </span>
                 ))}
               </address>
-              <div className="mt-4 flex items-start gap-2.5 text-[0.8125rem] text-white/45">
+              <div className="mt-4 flex items-start gap-2.5 text-[0.8125rem] text-white/55">
                 <ClockIcon className="mt-0.5 h-3.5 w-3.5 shrink-0" />
                 <span>
                   {office.hours}
@@ -120,17 +120,17 @@ export function SiteFooter() {
             </h3>
             <dl className="mt-4 space-y-2.5 text-[0.875rem]">
               <div className="flex gap-2">
-                <dt className="text-white/40">Legal name</dt>
+                <dt className="text-white/55">Legal name</dt>
                 <dd className="text-white/75">{company.legalName}</dd>
               </div>
               {registrationFacts.map((fact) => (
                 <div key={fact.label} className="flex gap-2">
-                  <dt className="text-white/40">{fact.label}</dt>
+                  <dt className="text-white/55">{fact.label}</dt>
                   <dd className="text-white/75">{fact.value}</dd>
                 </div>
               ))}
             </dl>
-            <p className="mt-5 max-w-md text-[0.8125rem] leading-relaxed text-white/40">
+            <p className="mt-5 max-w-md text-[0.8125rem] leading-relaxed text-white/55">
               Certificate of incorporation, trade licence, and proof of
               insurance are available to clients and counterparties on request
               as part of supplier onboarding.
@@ -139,7 +139,7 @@ export function SiteFooter() {
         </div>
 
         {/* Bottom */}
-        <div className="flex flex-col gap-5 py-8 text-[0.8125rem] text-white/40 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-5 py-8 text-[0.8125rem] text-white/55 md:flex-row md:items-center md:justify-between">
           <p>
             © {currentYear} {company.legalName}. All rights reserved.
           </p>

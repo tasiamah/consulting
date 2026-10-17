@@ -41,7 +41,7 @@ export function TechStack() {
         </div>
 
         <Reveal>
-          <p className="mt-12 max-w-2xl font-mono text-[0.75rem] leading-relaxed text-white/35">
+          <p className="mt-12 max-w-2xl font-mono text-[0.75rem] leading-relaxed text-white/55">
             {
               "// Frameworks listed under security describe the control standards we assess and build against, not certifications held by the firm."
             }
