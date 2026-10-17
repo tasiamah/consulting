@@ -64,7 +64,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "payments-provider-security-uplift",
     client: "Cross border payments provider",
     sector: "Financial Services",
-    region: "United Kingdom & UAE",
+    region: "Netherlands & UAE",
     title: "Closing the control gaps blocking enterprise client onboarding",
     challenge:
       "The business was losing enterprise deals at the security review stage. It could not evidence access controls, logging coverage, or an incident response process, and each questionnaire was answered from scratch by the engineering lead.",
@@ -127,7 +127,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "manufacturer-erp-integration",
     client: "Industrial components manufacturer",
     sector: "Manufacturing",
-    region: "United Kingdom",
+    region: "Netherlands",
     title: "Connecting plant floor production data to enterprise planning",
     challenge:
       "Production output was reported into the ERP system manually at the end of each shift. Planning worked from figures that were a day old, stock accuracy drifted, and quality traceability depended on paper records held at each site.",

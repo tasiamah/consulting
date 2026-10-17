@@ -10,7 +10,7 @@ import { principles } from "@/content/approach";
 export const metadata: Metadata = {
   title: "About the firm",
   description:
-    "A & H Consulting Group LLC is an enterprise software consultancy registered in Dubai with a European office in London. Meet the leadership team and review our corporate information.",
+    "A & H Consulting Group LLC is an enterprise software consultancy registered in Dubai with a European office in Amsterdam. Meet the leadership team and review our corporate information.",
   alternates: { canonical: "/about" },
 };
 
@@ -33,7 +33,7 @@ export default function AboutPage() {
       value: registration.vatNumber,
     },
     { label: "Head office", value: "Dubai, United Arab Emirates" },
-    { label: "European office", value: "London, United Kingdom" },
+    { label: "European office", value: "Amsterdam, Netherlands" },
     { label: "Primary contact", value: company.email },
   ].filter(Boolean) as { label: string; value: string }[];
 
@@ -77,7 +77,7 @@ export default function AboutPage() {
                 Today we operate from two offices. Dubai is our registered head
                 office and primary delivery centre, licensed through the
                 International Free Zone Authority and serving clients across the
-                UAE and the wider Gulf. London handles European client
+                UAE and the wider Gulf. Amsterdam handles European client
                 engagement and advisory work. Both teams work to the same
                 engineering and review standards, and every solution design
                 passes the same internal architecture review before a line of

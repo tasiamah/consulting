@@ -32,7 +32,7 @@ export const company = {
   linkedin: undefined as string | undefined,
 
   summary:
-    "A & H Consulting Group LLC is an enterprise software consultancy operating from Dubai and London. We design, build, and run the systems that regulated and high growth businesses depend on.",
+    "A & H Consulting Group LLC is an enterprise software consultancy operating from Dubai and Amsterdam. We design, build, and run the systems that regulated and high growth businesses depend on.",
 } as const;
 
 export type Office = {
@@ -43,6 +43,11 @@ export type Office = {
   /** Compact form for the header strip, e.g. "Dubai, UAE". */
   shortLabel: string;
   lines: string[];
+  /** ISO 3166 alpha 2, used in the PostalAddress structured data. */
+  countryCode: string;
+  /** Street line only, for structured data. */
+  streetAddress: string;
+  postalCode?: string;
   timezone: string;
   hours: string;
   role: string;
@@ -61,23 +66,23 @@ export const offices: Office[] = [
       "P.O. Box 515000",
       "Dubai, United Arab Emirates",
     ],
+    countryCode: "AE",
+    streetAddress: "Level 2, Unit 2, IFZA Freezone",
     timezone: "GST (UTC+4)",
     hours: "Monday to Friday, 09:00 to 18:00",
     role: "Registered head office and regional delivery centre",
   },
   {
-    id: "uk",
+    id: "nl",
     region: "Europe",
-    city: "London",
-    country: "United Kingdom",
-    shortLabel: "London, UK",
-    lines: [
-      "71 to 75 Shelton Street",
-      "Covent Garden",
-      "WC2H 9JQ",
-      "London, United Kingdom",
-    ],
-    timezone: "GMT/BST (UTC+0/+1)",
+    city: "Amsterdam",
+    country: "Netherlands",
+    shortLabel: "Amsterdam, NL",
+    lines: ["Hessenbergweg 8", "1101 BT Amsterdam", "Netherlands"],
+    countryCode: "NL",
+    streetAddress: "Hessenbergweg 8",
+    postalCode: "1101 BT",
+    timezone: "CET/CEST (UTC+1/+2)",
     hours: "Monday to Friday, 09:00 to 18:00",
     role: "European client engagement and advisory office",
   },

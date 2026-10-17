@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: `%s | ${company.shortName}`,
   },
   description:
-    "A & H Consulting Group LLC is an enterprise software consultancy in Dubai and London, delivering custom software, system integration, cloud, and cybersecurity for regulated and high growth businesses.",
+    "A & H Consulting Group LLC is an enterprise software consultancy in Dubai and Amsterdam, delivering custom software, system integration, cloud, and cybersecurity for regulated and high growth businesses.",
   keywords: [
     "software consulting UAE",
     "IT consulting Dubai",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     "system integration consultancy",
     "cloud migration consultants",
     "cybersecurity consulting UAE",
-    "enterprise software London",
+    "enterprise software Amsterdam",
   ],
   authors: [{ name: company.legalName }],
   creator: company.legalName,
@@ -53,14 +53,14 @@ export const metadata: Metadata = {
     url: company.url,
     title: `${company.shortName} | Enterprise Software Consulting`,
     description:
-      "Enterprise software consulting from Dubai and London. Custom development, integration, cloud, and security for regulated businesses.",
+      "Enterprise software consulting from Dubai and Amsterdam. Custom development, integration, cloud, and security for regulated businesses.",
     locale: "en_GB",
   },
   twitter: {
     card: "summary_large_image",
     title: `${company.shortName} | Enterprise Software Consulting`,
     description:
-      "Enterprise software consulting from Dubai and London. Custom development, integration, cloud, and security for regulated businesses.",
+      "Enterprise software consulting from Dubai and Amsterdam. Custom development, integration, cloud, and security for regulated businesses.",
   },
   robots: {
     index: true,
@@ -79,14 +79,14 @@ const organizationSchema = {
   url: company.url,
   email: company.email,
   description: company.summary,
-  areaServed: ["AE", "GB", "EU", "GCC"],
+  areaServed: ["AE", "NL", "EU", "GCC"],
   knowsAbout: services.map((s) => s.title),
   address: offices.map((office) => ({
     "@type": "PostalAddress",
-    streetAddress: office.lines.slice(0, 2).join(", "),
+    streetAddress: office.streetAddress,
     addressLocality: office.city,
-    addressCountry: office.id === "uae" ? "AE" : "GB",
-    postalCode: office.id === "uk" ? "WC2H 9JQ" : undefined,
+    addressCountry: office.countryCode,
+    postalCode: office.postalCode,
   })),
   contactPoint: {
     "@type": "ContactPoint",

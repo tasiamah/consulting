@@ -39,6 +39,10 @@ These are the items a bank or counterparty is most likely to check.
 - [ ] `registration.vatNumber`: add if VAT/TRN registered
 - [ ] **Founding year**: no founding date is stated anywhere on the site. If you
       want one, add it only once it matches the incorporation certificate.
+- [ ] **Amsterdam address**: `Hessenbergweg 8, 1101 BT Amsterdam`. A bank will
+      ask for proof of occupancy for every address on the site. Keep the lease,
+      service agreement, or registration letter to hand, and describe the office
+      only as an engagement and advisory office unless staff are based there.
 - [ ] **Legal suffix**: IFZA issues licences to `FZCO` and `FZ-LLC` entities.
       `company.legalName` currently reads "A & H Consulting Group LLC". If the
       licence says FZCO or FZ-LLC, correct it: the name on the site must match
@@ -86,7 +90,7 @@ way. Confirm each is actually true of how you operate, and amend what is not:
 
 - [ ] Written MSA with acceptance criteria and change control on every engagement
 - [ ] Mutual NDA signed before discovery
-- [ ] GDPR and UAE Federal Decree-Law No. 45 of 2021 practices in place
+- [ ] GDPR and UAE Federal Decree Law No. 45 of 2021 practices in place
 - [ ] Managed secrets store, least-privilege access, segregated client environments
 - [ ] Documentation, IaC, and runbooks delivered on every engagement
 
@@ -113,11 +117,13 @@ are the easiest claims in the world for a reviewer to check.
 ### Legal pages: `src/app/legal/`
 
 The privacy policy, terms of service, and cookie policy are drafted to a
-professional standard and reference UK/EU GDPR and UAE Federal Decree-Law No. 45
-of 2021 correctly. **They are not legal advice.**
+professional standard and reference the EU GDPR, the Dutch Uitvoeringswet AVG,
+and UAE Federal Decree Law No. 45 of 2021. **They are not legal advice.**
 
-- [ ] Have a UAE-qualified lawyer review before relying on them
-- [ ] Confirm the governing-law clause in the terms matches your contracts
+- [ ] Have a UAE qualified lawyer review before relying on them
+- [ ] Confirm the governing law clause in the terms matches your contracts
+- [ ] Confirm whether the Amsterdam office creates a Dutch tax or KvK
+      registration obligation, and register the entity if it does
 - [ ] Update `LAST_UPDATED` in each file when revised
 - [ ] Confirm the stated data retention periods match your actual practice
 

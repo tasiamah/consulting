@@ -10,7 +10,7 @@ import { services } from "@/content/services";
 export const metadata: Metadata = {
   title: "Industries",
   description:
-    "Enterprise software consulting for financial services, healthcare, logistics, retail, manufacturing, and professional services across the UAE, the Gulf, and the United Kingdom.",
+    "Enterprise software consulting for financial services, healthcare, logistics, retail, manufacturing, and professional services across the UAE, the Gulf, and Europe.",
   alternates: { canonical: "/industries" },
 };
 

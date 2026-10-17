@@ -55,7 +55,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "What are your payment terms?",
         answer:
-          "Invoices are issued monthly in arrears on 30 day terms against delivered milestones. We invoice in AED, GBP, USD, or EUR. Purchase order and supplier onboarding requirements are accommodated.",
+          "Invoices are issued monthly in arrears on 30 day terms against delivered milestones. We invoice in AED, EUR, or USD. Purchase order and supplier onboarding requirements are accommodated.",
       },
     ],
   },
@@ -70,7 +70,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Are your solutions built to data protection requirements?",
         answer:
-          "Yes. We design to UK and EU GDPR and to UAE Federal Decree Law No. 45 of 2021: documented lawful bases, data minimisation, encryption in transit and at rest, defined retention periods, and the technical means to service data subject requests. Where you operate under sector specific rules, those are captured as constraints during discovery.",
+          "Yes. We design to the EU GDPR and to UAE Federal Decree Law No. 45 of 2021: documented lawful bases, data minimisation, encryption in transit and at rest, defined retention periods, and the technical means to service data subject requests. Where you operate under sector specific rules, those are captured as constraints during discovery.",
       },
       {
         question:

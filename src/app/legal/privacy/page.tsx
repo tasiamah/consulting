@@ -5,7 +5,7 @@ import { company, offices } from "@/content/company";
 export const metadata: Metadata = {
   title: "Privacy policy",
   description:
-    "How A & H Consulting Group LLC collects, uses, stores, and protects personal data, and the rights available to data subjects under UK/EU GDPR and UAE data protection law.",
+    "How A & H Consulting Group LLC collects, uses, stores, and protects personal data, and the rights available to data subjects under the EU GDPR and UAE data protection law.",
   alternates: { canonical: "/legal/privacy" },
 };
 
@@ -41,11 +41,11 @@ export default function PrivacyPage() {
                 our recruitment activity.
               </p>
               <p>
-                We process personal data in accordance with the UK General Data
-                Protection Regulation, the EU General Data Protection Regulation
-                (Regulation 2016/679), and UAE Federal Decree Law No. 45 of 2021
-                on the Protection of Personal Data, as applicable to the
-                relationship between us.
+                We process personal data in accordance with the EU General Data
+                Protection Regulation (Regulation 2016/679), the Dutch GDPR
+                Implementation Act (Uitvoeringswet AVG), and UAE Federal Decree
+                Law No. 45 of 2021 on the Protection of Personal Data, as
+                applicable to the relationship between us.
               </p>
 
               <h2>1. Who is responsible for your data</h2>
@@ -204,13 +204,12 @@ export default function PrivacyPage() {
 
               <h2>6. International transfers</h2>
               <p>
-                We operate from the United Arab Emirates and the United Kingdom,
-                so personal data may be processed in either jurisdiction. Where
-                personal data is transferred out of the UK or the European
-                Economic Area, we rely on an adequacy decision where one
-                applies, or otherwise on the UK International Data Transfer
-                Addendum or the European Commission Standard Contractual
-                Clauses, together with a transfer risk assessment.
+                We operate from the United Arab Emirates and the Netherlands, so
+                personal data may be processed in either jurisdiction. Where
+                personal data is transferred out of the European Economic Area,
+                we rely on an adequacy decision where one applies, or otherwise
+                on the European Commission Standard Contractual Clauses,
+                together with a transfer risk assessment.
               </p>
               <p>
                 On client engagements, data residency requirements are captured
@@ -265,9 +264,9 @@ export default function PrivacyPage() {
               </p>
               <p>
                 If you are not satisfied with our response, you have the right
-                to lodge a complaint with a supervisory authority. In the United
-                Kingdom, that is the Information Commissioner&rsquo;s Office. In
-                the United Arab Emirates, it is the UAE Data Office.
+                to lodge a complaint with a supervisory authority. In the
+                Netherlands, that is the Autoriteit Persoonsgegevens. In the
+                United Arab Emirates, it is the UAE Data Office.
               </p>
 
               <h2>9. Cookies</h2>

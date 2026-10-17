@@ -8,7 +8,7 @@ import { company } from "@/content/company";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Open roles at A & H Consulting Group in Dubai and London: software engineering, cloud platform, security consulting, and systems integration.",
+    "Open roles at A & H Consulting Group in Dubai and Amsterdam: software engineering, cloud platform, security consulting, and systems integration.",
   alternates: { canonical: "/careers" },
 };
 

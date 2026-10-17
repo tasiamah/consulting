@@ -60,7 +60,7 @@ export default async function ServiceDetailPage({
       name: company.legalName,
       url: company.url,
     },
-    areaServed: ["AE", "GB"],
+    areaServed: ["AE", "NL"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: `${service.title} capabilities`,

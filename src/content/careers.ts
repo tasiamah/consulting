@@ -27,7 +27,7 @@ export const openRoles: Role[] = [
   },
   {
     title: "Security Consultant",
-    office: "London, UK",
+    office: "Amsterdam, NL",
     type: "Full time",
     practice: "Cybersecurity",
     summary:
@@ -52,7 +52,7 @@ export const benefits = [
   {
     title: "Two offices, one standard",
     description:
-      "Dubai and London teams work to the same engineering and review standards, with genuine mobility between engagements and regions.",
+      "Dubai and Amsterdam teams work to the same engineering and review standards, with genuine mobility between engagements and regions.",
   },
   {
     title: "Funded certification",

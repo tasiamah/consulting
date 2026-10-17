@@ -8,7 +8,7 @@ import { services } from "@/content/services";
 export const metadata: Metadata = {
   title: "Contact & consultation",
   description:
-    "Speak to a consultant at A & H Consulting Group. Offices in Dubai, United Arab Emirates and London, United Kingdom. Initial consultations are held at no cost.",
+    "Speak to a consultant at A & H Consulting Group. Offices in Dubai, United Arab Emirates and Amsterdam, Netherlands. Initial consultations are held at no cost.",
   alternates: { canonical: "/contact" },
 };
 

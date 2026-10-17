@@ -20,7 +20,7 @@ import { phases } from "@/content/approach";
 export const metadata: Metadata = {
   title: `${company.shortName} | Enterprise Software Consulting in the UAE and Europe`,
   description:
-    "Enterprise software consultancy operating from Dubai and London. Custom software development, system integration, cloud solutions, cybersecurity, and managed support for regulated and high growth businesses.",
+    "Enterprise software consultancy operating from Dubai and Amsterdam. Custom software development, system integration, cloud solutions, cybersecurity, and managed support for regulated and high growth businesses.",
   alternates: { canonical: "/" },
 };
 
@@ -51,7 +51,7 @@ function Hero() {
       <div className="container-page relative py-20 lg:py-28">
         <div className="grid items-start gap-16 lg:grid-cols-[1.35fr_1fr] lg:gap-20">
           <div className="animate-rise">
-            <Eyebrow tone="light">Dubai &nbsp;·&nbsp; London</Eyebrow>
+            <Eyebrow tone="light">Dubai &nbsp;·&nbsp; Amsterdam</Eyebrow>
 
             <h1 className="mt-7 text-[2.5rem] leading-[1.05] text-white sm:text-[3.25rem] lg:text-[4rem]">
               Software systems that stand up to scrutiny.
@@ -59,7 +59,7 @@ function Hero() {
 
             <p className="mt-8 max-w-2xl text-[1.0625rem] leading-[1.8] text-white/65 lg:text-[1.1875rem]">
               {company.legalName} is an enterprise software consultancy
-              operating from the United Arab Emirates and the United Kingdom. We
+              operating from the United Arab Emirates and the Netherlands. We
               design, build, and run the platforms that regulated and high
               growth businesses depend on, and we document them well enough to
               satisfy an auditor.
