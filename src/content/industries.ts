@@ -41,11 +41,11 @@ export const industries: Industry[] = [
     slug: "logistics",
     name: "Logistics & Supply Chain",
     summary:
-      "Freight, warehousing, and distribution businesses that need real-time visibility across partners, carriers, and customs processes.",
+      "Freight, warehousing, and distribution businesses that need real time visibility across partners, carriers, and customs processes.",
     challenges: [
       "Consolidating shipment data across carrier and partner systems",
       "Replacing manual documentation and customs workflows",
-      "Peak-season capacity without permanent over-provisioning",
+      "Peak season capacity without permanent overprovisioning",
       "Reliable exception handling when upstream systems fail",
     ],
     relevantServices: [
@@ -56,9 +56,9 @@ export const industries: Industry[] = [
   },
   {
     slug: "retail-ecommerce",
-    name: "Retail & E-commerce",
+    name: "Retail & Ecommerce",
     summary:
-      "Multi-channel retailers reconciling inventory, orders, and customer data across storefronts, marketplaces, and physical locations.",
+      "Multichannel retailers reconciling inventory, orders, and customer data across storefronts, marketplaces, and physical locations.",
     challenges: [
       "A single accurate view of inventory across channels",
       "Order orchestration between storefront, warehouse, and finance",
@@ -75,11 +75,11 @@ export const industries: Industry[] = [
     slug: "manufacturing",
     name: "Manufacturing & Industrial",
     summary:
-      "Producers connecting plant-floor systems to enterprise planning, with traceability requirements that run from raw material to despatch.",
+      "Producers connecting plant floor systems to enterprise planning, with traceability requirements that run from raw material to despatch.",
     challenges: [
       "Bridging operational technology and enterprise IT safely",
       "Production and quality traceability for compliance",
-      "Planning accuracy across multi-site operations",
+      "Planning accuracy across multisite operations",
       "Securing environments that cannot be taken offline",
     ],
     relevantServices: ["system-integration", "it-consulting", "cybersecurity"],
@@ -88,7 +88,7 @@ export const industries: Industry[] = [
     slug: "professional-services",
     name: "Professional Services",
     summary:
-      "Legal, accounting, and advisory firms where billable utilisation, client confidentiality, and matter-level reporting drive the technology agenda.",
+      "Legal, accounting, and advisory firms where billable utilisation, client confidentiality, and matter level reporting drive the technology agenda.",
     challenges: [
       "Confidentiality and information barriers between matters",
       "Time, billing, and engagement profitability reporting",

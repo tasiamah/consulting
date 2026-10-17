@@ -20,7 +20,7 @@ import { phases } from "@/content/approach";
 export const metadata: Metadata = {
   title: `${company.shortName} | Enterprise Software Consulting in the UAE and Europe`,
   description:
-    "Enterprise software consultancy operating from Dubai and London. Custom software development, system integration, cloud solutions, cybersecurity, and managed support for regulated and high-growth businesses.",
+    "Enterprise software consultancy operating from Dubai and London. Custom software development, system integration, cloud solutions, cybersecurity, and managed support for regulated and high growth businesses.",
   alternates: { canonical: "/" },
 };
 
@@ -60,9 +60,9 @@ function Hero() {
             <p className="mt-8 max-w-2xl text-[1.0625rem] leading-[1.8] text-white/65 lg:text-[1.1875rem]">
               {company.legalName} is an enterprise software consultancy
               operating from the United Arab Emirates and the United Kingdom. We
-              design, build, and run the platforms that regulated and
-              high-growth businesses depend on, and we document them well enough
-              to satisfy an auditor.
+              design, build, and run the platforms that regulated and high
+              growth businesses depend on, and we document them well enough to
+              satisfy an auditor.
             </p>
 
             <div className="mt-11 flex flex-wrap items-center gap-4">
@@ -82,7 +82,7 @@ function Hero() {
               {[
                 "Independent, with no vendor commissions",
                 "Client owns all intellectual property",
-                "Fixed-scope phases with written acceptance",
+                "Fixed scope phases with written acceptance",
                 "GDPR and UAE data protection by design",
               ].map((item) => (
                 <li

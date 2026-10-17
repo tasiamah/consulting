@@ -10,8 +10,8 @@ import { Check } from "./icons";
  */
 
 const CHECKS = [
-  { label: "data residency", value: "me-central-1" },
-  { label: "encryption at rest", value: "AES-256" },
+  { label: "data residency", value: "UAE (Dubai)" },
+  { label: "encryption at rest", value: "AES 256" },
   { label: "access recertification", value: "quarterly" },
   { label: "restore test", value: "passed" },
   { label: "dependency scan", value: "0 critical" },
@@ -63,7 +63,7 @@ export function AssuranceTerminal() {
             />
           </span>
           <span className="font-mono text-[0.6875rem] tracking-[0.14em] text-white/55 uppercase">
-            Pre-release assurance
+            Release assurance
           </span>
         </div>
         <span className="font-mono text-[0.6875rem] text-white/30">

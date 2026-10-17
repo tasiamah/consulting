@@ -43,7 +43,7 @@ export default function PrivacyPage() {
               <p>
                 We process personal data in accordance with the UK General Data
                 Protection Regulation, the EU General Data Protection Regulation
-                (Regulation 2016/679), and UAE Federal Decree-Law No. 45 of 2021
+                (Regulation 2016/679), and UAE Federal Decree Law No. 45 of 2021
                 on the Protection of Personal Data, as applicable to the
                 relationship between us.
               </p>
@@ -87,7 +87,7 @@ export default function PrivacyPage() {
                 </li>
                 <li>
                   <strong>Recruitment information:</strong> your CV, covering
-                  note, employment history, qualifications, right-to-work
+                  note, employment history, qualifications, right to work
                   information, and references.
                 </li>
                 <li>
@@ -102,8 +102,8 @@ export default function PrivacyPage() {
                 <li>
                   <strong>Technical data:</strong> IP address, browser type,
                   device type, referring page, and pages viewed. This is
-                  collected through server logs and, where enabled,
-                  privacy-preserving analytics.
+                  collected through server logs and, where enabled, privacy
+                  preserving analytics.
                 </li>
                 <li>
                   <strong>Security data:</strong> request metadata retained
@@ -143,7 +143,7 @@ export default function PrivacyPage() {
                 </li>
                 <li>
                   <strong>Meeting legal and regulatory obligations.</strong>{" "}
-                  Including accounting, tax, and anti-money-laundering
+                  Including accounting, tax, and anti money laundering
                   requirements.
                 </li>
               </ul>
@@ -223,8 +223,8 @@ export default function PrivacyPage() {
               <ul>
                 <li>Encryption of data in transit (TLS) and at rest.</li>
                 <li>
-                  Least-privilege access control with multi-factor
-                  authentication enforced.
+                  Least privilege access control with multifactor authentication
+                  enforced.
                 </li>
                 <li>
                   Credentials held only in a managed secrets store, never in
@@ -273,7 +273,7 @@ export default function PrivacyPage() {
               <h2>9. Cookies</h2>
               <p>
                 This website uses only the cookies strictly necessary for it to
-                function. We do not use advertising or cross-site tracking
+                function. We do not use advertising or cross site tracking
                 cookies. Full detail is set out in our{" "}
                 <a href="/legal/cookies">cookie policy</a>.
               </p>

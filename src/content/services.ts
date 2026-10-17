@@ -18,10 +18,10 @@ export const services: Service[] = [
     title: "Custom Software Development",
     shortTitle: "Software Development",
     summary:
-      "Bespoke platforms, internal tools, and customer-facing products engineered to your operational reality rather than to a template.",
+      "Bespoke platforms, internal tools, and customer facing products engineered to your operational reality rather than to a template.",
     overview: [
-      "Off-the-shelf software forces your business to adapt to someone else's process. We take the opposite approach: we start from how your organisation actually operates, then build the system that fits it.",
-      "Our delivery teams pair senior engineers with a dedicated solution architect, so the people writing the code are the same people who understood the problem. Work ships in two-week increments with a demonstrable outcome at the end of each one.",
+      "Off the shelf software forces your business to adapt to someone else's process. We take the opposite approach: we start from how your organisation actually operates, then build the system that fits it.",
+      "Our delivery teams pair senior engineers with a dedicated solution architect, so the people writing the code are the same people who understood the problem. Work ships in two week increments with a demonstrable outcome at the end of each one.",
     ],
     capabilities: [
       {
@@ -32,7 +32,7 @@ export const services: Service[] = [
       {
         title: "Legacy modernisation",
         description:
-          "Incremental replacement of ageing systems using the strangler-fig pattern, so the business keeps running throughout the transition.",
+          "Incremental replacement of ageing systems using the strangler fig pattern, so the business keeps running throughout the transition.",
       },
       {
         title: "Data and reporting layers",
@@ -47,14 +47,14 @@ export const services: Service[] = [
     ],
     deliverables: [
       "Technical discovery report and solution architecture",
-      "Working software released in two-week increments",
+      "Working software released in two week increments",
       "Automated test suite and CI/CD pipeline",
-      "Infrastructure-as-code and environment runbooks",
+      "Infrastructure as code and environment runbooks",
       "Developer and administrator documentation",
       "Source code and IP transferred in full on completion",
     ],
     engagement: {
-      model: "Fixed-scope phases or dedicated team",
+      model: "Fixed scope phases or dedicated team",
       duration: "8 weeks to 12 months",
       team: "Architect, 2 to 4 engineers, QA, delivery lead",
     },
@@ -68,14 +68,14 @@ export const services: Service[] = [
     summary:
       "Independent assessment of your technology estate, with a costed roadmap your board can act on and your auditors can follow.",
     overview: [
-      "Technology decisions are capital decisions. We give leadership teams an evidence-based view of what they own, what it costs, where the risk sits, and what to do next, without a vendor incentive attached to the answer.",
-      "Engagements typically begin with a four-week assessment covering architecture, vendor contracts, team capability, and spend. The output is a prioritised roadmap with effort, cost, and risk attached to every recommendation.",
+      "Technology decisions are capital decisions. We give leadership teams an evidence based view of what they own, what it costs, where the risk sits, and what to do next, without a vendor incentive attached to the answer.",
+      "Engagements typically begin with a four week assessment covering architecture, vendor contracts, team capability, and spend. The output is a prioritised roadmap with effort, cost, and risk attached to every recommendation.",
     ],
     capabilities: [
       {
         title: "Technology due diligence",
         description:
-          "Pre-investment and pre-acquisition reviews of codebases, architecture, licensing exposure, and engineering practice.",
+          "Preinvestment and preacquisition reviews of codebases, architecture, licensing exposure, and engineering practice.",
       },
       {
         title: "Architecture review",
@@ -85,7 +85,7 @@ export const services: Service[] = [
       {
         title: "Vendor and spend rationalisation",
         description:
-          "Contract and licence review that identifies duplication, over-provisioning, and renegotiation opportunities.",
+          "Contract and licence review that identifies duplication, overprovisioning, and renegotiation opportunities.",
       },
       {
         title: "Operating model design",
@@ -94,14 +94,14 @@ export const services: Service[] = [
       },
     ],
     deliverables: [
-      "Current-state assessment with documented evidence",
+      "Current state assessment with documented evidence",
       "Target architecture and operating model",
       "Prioritised roadmap with cost and effort estimates",
       "Risk register with mitigation owners",
-      "Board-ready summary presentation",
+      "Summary presentation for the board",
     ],
     engagement: {
-      model: "Fixed-fee assessment or retained advisory",
+      model: "Fixed fee assessment or retained advisory",
       duration: "4 to 12 weeks",
       team: "Principal consultant, architect, analyst",
     },
@@ -115,22 +115,22 @@ export const services: Service[] = [
     summary:
       "Connecting ERP, CRM, finance, and bespoke systems so data moves once, reliably, and with a verifiable audit trail.",
     overview: [
-      "Most operational pain in a mid-sized business is not caused by any single system. It is caused by the gaps between them. Reconciliation by spreadsheet, data re-keyed between departments, and month-end closes that take weeks.",
-      "We design and build the integration layer that closes those gaps, with idempotent processing, dead-letter handling, and reconciliation reporting so finance and audit teams can prove the numbers tie out.",
+      "Most operational pain in a midsized business is not caused by any single system. It is caused by the gaps between them. Reconciliation by spreadsheet, data rekeyed between departments, and month end closes that take weeks.",
+      "We design and build the integration layer that closes those gaps, with idempotent processing, dead letter handling, and reconciliation reporting so finance and audit teams can prove the numbers tie out.",
     ],
     capabilities: [
       {
         title: "Enterprise application integration",
         description:
-          "SAP, Microsoft Dynamics, Oracle, NetSuite, Salesforce, and HubSpot connected to bespoke and third-party systems.",
+          "SAP, Microsoft Dynamics, Oracle, NetSuite, Salesforce, and HubSpot connected to bespoke and third party systems.",
       },
       {
         title: "API design and governance",
         description:
-          "Versioned, documented, contract-tested APIs with authentication, rate limiting, and consumer onboarding.",
+          "Versioned, documented, contract tested APIs with authentication, rate limiting, and consumer onboarding.",
       },
       {
-        title: "Event-driven architecture",
+        title: "Event driven architecture",
         description:
           "Message brokers and event streams that decouple systems and absorb load without data loss.",
       },
@@ -141,14 +141,14 @@ export const services: Service[] = [
       },
     ],
     deliverables: [
-      "Integration architecture and data-flow mapping",
+      "Integration architecture and data flow mapping",
       "Built and tested interfaces with contract tests",
       "Monitoring, alerting, and reconciliation dashboards",
       "Cutover plan, rehearsal results, and rollback procedure",
       "Operational runbook for the support team",
     ],
     engagement: {
-      model: "Fixed-scope integration programme",
+      model: "Fixed scope integration programme",
       duration: "6 weeks to 9 months",
       team: "Integration architect, 2 to 3 engineers, data analyst",
     },
@@ -179,17 +179,17 @@ export const services: Service[] = [
       {
         title: "Cost governance",
         description:
-          "Tagging standards, budget alerts, rightsizing, and committed-use planning with monthly reporting to finance.",
+          "Tagging standards, budget alerts, rightsizing, and committed use planning with monthly reporting to finance.",
       },
       {
         title: "Resilience engineering",
         description:
-          "Multi-zone design, backup and restore testing, and documented recovery time and recovery point objectives.",
+          "Multizone design, backup and restore testing, and documented recovery time and recovery point objectives.",
       },
     ],
     deliverables: [
       "Workload assessment and migration sequencing plan",
-      "Terraform-defined landing zone and environments",
+      "Terraform defined landing zone and environments",
       "Cost model with tagging and budget controls",
       "Disaster recovery plan with tested restore evidence",
       "Platform operations handbook",
@@ -226,7 +226,7 @@ export const services: Service[] = [
       {
         title: "Identity and access management",
         description:
-          "Single sign-on, multi-factor enforcement, privileged access control, and quarterly access recertification.",
+          "Single sign on, multifactor enforcement, privileged access control, and quarterly access recertification.",
       },
       {
         title: "Incident readiness",
@@ -235,7 +235,7 @@ export const services: Service[] = [
       },
     ],
     deliverables: [
-      "Control gap assessment with risk-scored findings",
+      "Control gap assessment with risk scored findings",
       "Prioritised remediation plan with owners and dates",
       "Hardened configuration baselines and policy documents",
       "Logging, detection, and alerting coverage",
@@ -263,7 +263,7 @@ export const services: Service[] = [
       {
         title: "Application support",
         description:
-          "Triage, diagnosis, and resolution against agreed priority levels, with root-cause analysis on major incidents.",
+          "Triage, diagnosis, and resolution against agreed priority levels, with root cause analysis on major incidents.",
       },
       {
         title: "Proactive maintenance",
@@ -271,9 +271,9 @@ export const services: Service[] = [
           "Dependency upgrades, security patching, certificate renewal, and capacity review on a published schedule.",
       },
       {
-        title: "Monitoring and on-call",
+        title: "Monitoring and on call",
         description:
-          "Uptime, error-rate, and performance monitoring with escalation paths and optional extended-hours cover.",
+          "Uptime, error rate, and performance monitoring with escalation paths and optional extended hours cover.",
       },
       {
         title: "Continuous improvement",

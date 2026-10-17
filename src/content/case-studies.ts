@@ -28,15 +28,15 @@ export const caseStudies: CaseStudy[] = [
     sector: "Logistics",
     region: "United Arab Emirates",
     title:
-      "Replacing spreadsheet-based shipment tracking with a live operations platform",
+      "Replacing spreadsheet based shipment tracking with a live operations platform",
     challenge:
-      "Operations staff tracked shipments across three carrier portals and a shared spreadsheet. Status enquiries took up to a day to answer, customs documentation was re-keyed by hand, and management had no reliable view of exceptions until after they became client complaints.",
+      "Operations staff tracked shipments across three carrier portals and a shared spreadsheet. Status enquiries took up to a day to answer, customs documentation was rekeyed by hand, and management had no reliable view of exceptions until after they became client complaints.",
     approach: [
-      "Four-week discovery mapping the shipment lifecycle across operations, documentation, and finance teams",
+      "Four week discovery mapping the shipment lifecycle across operations, documentation, and finance teams",
       "Built an integration layer consuming carrier APIs and EDI feeds into a single normalised shipment record",
-      "Delivered an operations console with exception queues, SLA timers, and role-based access",
-      "Automated customs document generation from structured shipment data, removing manual re-keying",
-      "Transitioned the platform to a support agreement with monitoring and an on-call rota",
+      "Delivered an operations console with exception queues, SLA timers, and role based access",
+      "Automated customs document generation from structured shipment data, removing manual rekeying",
+      "Transitioned the platform to a support agreement with monitoring and an on call rota",
     ],
     results: [
       {
@@ -62,7 +62,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "payments-provider-security-uplift",
-    client: "Cross-border payments provider",
+    client: "Cross border payments provider",
     sector: "Financial Services",
     region: "United Kingdom & UAE",
     title: "Closing the control gaps blocking enterprise client onboarding",
@@ -70,19 +70,19 @@ export const caseStudies: CaseStudy[] = [
       "The business was losing enterprise deals at the security review stage. It could not evidence access controls, logging coverage, or an incident response process, and each questionnaire was answered from scratch by the engineering lead.",
     approach: [
       "Assessed the control environment against ISO/IEC 27001 Annex A and NIST CSF, scoring findings by likelihood and impact",
-      "Prioritised remediation into a 90-day plan with named owners and board-level reporting",
-      "Implemented single sign-on, enforced multi-factor authentication, and quarterly access recertification",
+      "Prioritised remediation into a 90 day plan with named owners and reporting to the board",
+      "Implemented single sign on, enforced multifactor authentication, and quarterly access recertification",
       "Established centralised logging with detection rules and defined escalation paths",
       "Produced an incident response playbook and ran a tabletop exercise with the leadership team",
     ],
     results: [
       {
         metric: "90 days",
-        label: "From assessment to all high-severity findings remediated",
+        label: "From assessment to all high severity findings remediated",
       },
       {
         metric: "100%",
-        label: "Privileged accounts brought under multi-factor authentication",
+        label: "Privileged accounts brought under multifactor authentication",
       },
       {
         metric: "4 days",
@@ -101,10 +101,10 @@ export const caseStudies: CaseStudy[] = [
     title:
       "Migrating clinical and administrative systems with no planned downtime",
     challenge:
-      "Ageing on-premise infrastructure across four clinics was reaching end of support. Recovery had never been tested, costs were unattributable to any department, and the group could not answer where patient data physically resided.",
+      "Ageing on premise infrastructure across four clinics was reaching end of support. Recovery had never been tested, costs were unattributable to any department, and the group could not answer where patient data physically resided.",
     approach: [
       "Assessed every workload for migration suitability and mapped system dependencies",
-      "Built a Terraform-defined landing zone with in-region data residency and enforced encryption",
+      "Built a Terraform defined landing zone with in-region data residency and enforced encryption",
       "Migrated in phases outside clinical hours, each with a tested rollback point",
       "Established backup and restore testing with documented recovery objectives",
       "Introduced cost tagging and monthly reporting to the group finance team",
@@ -128,12 +128,12 @@ export const caseStudies: CaseStudy[] = [
     client: "Industrial components manufacturer",
     sector: "Manufacturing",
     region: "United Kingdom",
-    title: "Connecting plant-floor production data to enterprise planning",
+    title: "Connecting plant floor production data to enterprise planning",
     challenge:
       "Production output was reported into the ERP system manually at the end of each shift. Planning worked from figures that were a day old, stock accuracy drifted, and quality traceability depended on paper records held at each site.",
     approach: [
       "Modelled the data flow between plant systems, the ERP, and the quality function",
-      "Built an event-driven integration layer with idempotent processing and dead-letter handling",
+      "Built an event driven integration layer with idempotent processing and dead letter handling",
       "Delivered reconciliation reporting so finance could verify production figures tie out",
       "Digitised quality traceability records with batch-level lineage",
       "Handed over with runbooks, monitoring dashboards, and training for the internal IT team",

@@ -29,14 +29,14 @@ const cookieTable = [
   {
     name: "Analytics",
     purpose:
-      "Aggregated, non-identifying measurement of which pages are viewed, used to improve the site. Enabled only where a privacy-preserving analytics provider is in use.",
+      "Aggregated, nonidentifying measurement of which pages are viewed, used to improve the site. Enabled only where a privacy preserving analytics provider is in use.",
     duration: "No persistent identifier set",
     consent: "Not required where fully anonymised",
   },
   {
     name: "Advertising and tracking",
     purpose:
-      "Not used. We run no advertising pixels and no cross-site tracking.",
+      "Not used. We run no advertising pixels and no cross site tracking.",
     duration: "Not applicable",
     consent: "Not applicable",
   },
@@ -48,7 +48,7 @@ export default function CookiesPage() {
       <PageHero
         eyebrow="Legal"
         title="Cookie policy"
-        intro="This site uses the minimum set of cookies needed to operate securely. We do not run advertising or cross-site tracking."
+        intro="This site uses the minimum set of cookies needed to operate securely. We do not run advertising or cross site tracking."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Cookie policy", href: "/legal/cookies" },
@@ -76,9 +76,9 @@ export default function CookiesPage() {
               <p>
                 {company.legalName} keeps cookie use to the minimum necessary.
                 We do not use advertising cookies, we do not operate tracking
-                pixels for third-party advertising networks, and we do not sell
+                pixels for third party advertising networks, and we do not sell
                 or share browsing data. Any analytics we operate is configured
-                to collect aggregated, non-identifying measurements only.
+                to collect aggregated, nonidentifying measurements only.
               </p>
             </div>
 
@@ -129,20 +129,20 @@ export default function CookiesPage() {
             </div>
 
             <div className="prose-legal mt-12">
-              <h2>3. Third-party services</h2>
+              <h2>3. Third party services</h2>
               <p>
                 This site is hosted on infrastructure operated by our hosting
                 provider, which may set cookies strictly necessary for security,
-                load balancing, and abuse prevention. Web fonts are self-hosted
-                and served from our own domain, so no request is made to a
-                third-party font provider when you load a page.
+                load balancing, and abuse prevention. Web fonts are self hosted
+                and served from our own domain, so no request is made to a third
+                party font provider when you load a page.
               </p>
 
               <h2>4. Managing cookies</h2>
               <p>
                 You can control and delete cookies through your browser
                 settings. Most browsers allow you to refuse all cookies, accept
-                only first-party cookies, or delete cookies when you close the
+                only first party cookies, or delete cookies when you close the
                 browser. Instructions are available in the help documentation
                 for Chrome, Safari, Firefox, and Edge.
               </p>
@@ -153,7 +153,7 @@ export default function CookiesPage() {
 
               <h2>5. Do Not Track</h2>
               <p>
-                Because we do not operate cross-site tracking, there is nothing
+                Because we do not operate cross site tracking, there is nothing
                 for a Do Not Track signal to disable. We honour it by default
                 simply by not collecting that data.
               </p>

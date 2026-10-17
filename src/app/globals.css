@@ -79,7 +79,7 @@
 
   .eyebrow::before {
     content: "";
-    @apply block h-px w-6 bg-current opacity-50;
+    @apply block h-1 w-1 rounded-full bg-current opacity-60;
   }
 
   .prose-legal {

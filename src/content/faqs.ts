@@ -15,7 +15,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "How does an engagement start?",
         answer:
-          "With a scoping conversation, at no cost and under mutual NDA if you prefer. If there is a fit, we propose a short paid discovery phase that produces a written findings report with options, costs, and trade-offs. You own that report regardless of whether you proceed to a build with us.",
+          "With a scoping conversation, at no cost and under mutual NDA if you prefer. If there is a fit, we propose a short paid discovery phase that produces a written findings report with options, costs, and tradeoffs. You own that report regardless of whether you proceed to a build with us.",
       },
       {
         question: "What size of organisation do you work with?",
@@ -25,10 +25,10 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Which industries do you serve?",
         answer:
-          "Financial services, healthcare and life sciences, logistics and supply chain, retail and e-commerce, manufacturing, and professional services. The common thread is a regulatory or audit requirement that makes traceability a design constraint rather than a feature request.",
+          "Financial services, healthcare and life sciences, logistics and supply chain, retail and ecommerce, manufacturing, and professional services. The common thread is a regulatory or audit requirement that makes traceability a design constraint rather than a feature request.",
       },
       {
-        question: "Can you work alongside our existing in-house team?",
+        question: "Can you work alongside our existing in house team?",
         answer:
           "Yes, and this is how a substantial share of our work runs. We embed with your engineers, follow your conventions, and contribute to your repositories. Where the objective is to build internal capability, we structure the engagement so knowledge transfer is an explicit deliverable.",
       },
@@ -40,7 +40,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "How do you price engagements?",
         answer:
-          "Discovery and assessment phases are fixed fee. Build work is priced either as fixed-scope phases or as a dedicated team at a monthly rate, depending on how well defined the requirements are. Support runs as an annual agreement tiered by cover level. We do not charge for scoping conversations or proposals.",
+          "Discovery and assessment phases are fixed fee. Build work is priced either as fixed scope phases or as a dedicated team at a monthly rate, depending on how well defined the requirements are. Support runs as an annual agreement tiered by cover level. We do not charge for scoping conversations or proposals.",
       },
       {
         question: "Who owns the software you build?",
@@ -48,14 +48,14 @@ export const faqGroups: FaqGroup[] = [
           "You do, in full. Intellectual property in bespoke work transfers to the client on payment, and this is written into the master services agreement. We hand over source code, infrastructure definitions, and documentation at every milestone, not only at the end.",
       },
       {
-        question: "What happens if the scope changes mid-engagement?",
+        question: "What happens if the scope changes mid engagement?",
         answer:
-          "Scope changes go through a written change-control process: we estimate the impact on cost and schedule, you approve or decline it, and the baseline is updated. Nothing is billed outside an approved baseline.",
+          "Scope changes go through a written change control process: we estimate the impact on cost and schedule, you approve or decline it, and the baseline is updated. Nothing is billed outside an approved baseline.",
       },
       {
         question: "What are your payment terms?",
         answer:
-          "Invoices are issued monthly in arrears on 30-day terms against delivered milestones. We invoice in AED, GBP, USD, or EUR. Purchase order and supplier onboarding requirements are accommodated.",
+          "Invoices are issued monthly in arrears on 30 day terms against delivered milestones. We invoice in AED, GBP, USD, or EUR. Purchase order and supplier onboarding requirements are accommodated.",
       },
     ],
   },
@@ -65,12 +65,12 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "How do you handle our data during an engagement?",
         answer:
-          "Under a mutual NDA signed before discovery begins. We work in segregated client environments, apply least-privilege access, hold credentials only in a managed secrets store, and never copy production data onto local machines. Access is revoked and evidenced at engagement close.",
+          "Under a mutual NDA signed before discovery begins. We work in segregated client environments, apply least privilege access, hold credentials only in a managed secrets store, and never copy production data onto local machines. Access is revoked and evidenced at engagement close.",
       },
       {
         question: "Are your solutions built to data protection requirements?",
         answer:
-          "Yes. We design to UK and EU GDPR and to UAE Federal Decree-Law No. 45 of 2021: documented lawful bases, data minimisation, encryption in transit and at rest, defined retention periods, and the technical means to service data subject requests. Where you operate under sector-specific rules, those are captured as constraints during discovery.",
+          "Yes. We design to UK and EU GDPR and to UAE Federal Decree Law No. 45 of 2021: documented lawful bases, data minimisation, encryption in transit and at rest, defined retention periods, and the technical means to service data subject requests. Where you operate under sector-specific rules, those are captured as constraints during discovery.",
       },
       {
         question:
@@ -101,7 +101,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Do you provide support outside business hours?",
         answer:
-          "Extended-hours and on-call cover are available as part of a support agreement. The specific cover window and response targets are agreed in the service schedule rather than offered as a blanket promise.",
+          "Extended-hours and on call cover are available as part of a support agreement. The specific cover window and response targets are agreed in the service schedule rather than offered as a blanket promise.",
       },
       {
         question: "What if we are not satisfied with the work?",

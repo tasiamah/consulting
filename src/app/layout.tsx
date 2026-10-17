@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: `%s | ${company.shortName}`,
   },
   description:
-    "A & H Consulting Group LLC is an enterprise software consultancy in Dubai and London, delivering custom software, system integration, cloud, and cybersecurity for regulated and high-growth businesses.",
+    "A & H Consulting Group LLC is an enterprise software consultancy in Dubai and London, delivering custom software, system integration, cloud, and cybersecurity for regulated and high growth businesses.",
   keywords: [
     "software consulting UAE",
     "IT consulting Dubai",

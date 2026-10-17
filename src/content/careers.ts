@@ -62,6 +62,6 @@ export const benefits = [
   {
     title: "Protected improvement time",
     description:
-      "A standing allocation of non-billable time each month for tooling, internal standards, and research that improves how the firm delivers.",
+      "A standing allocation of nonbillable time each month for tooling, internal standards, and research that improves how the firm delivers.",
   },
 ];

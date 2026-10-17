@@ -18,7 +18,7 @@ const artefacts = [
     name: "Discovery findings report",
     phase: "Discovery",
     purpose:
-      "Documented current state, options with costs and trade-offs, and a recommendation. Yours to keep whether or not you proceed with us.",
+      "Documented current state, options with costs and tradeoffs, and a recommendation. Yours to keep whether or not you proceed with us.",
   },
   {
     name: "Solution architecture document",
@@ -48,7 +48,7 @@ const artefacts = [
     name: "Handover pack",
     phase: "Transition",
     purpose:
-      "Source code, infrastructure-as-code, runbooks, administrator and developer documentation, and a signed IP transfer.",
+      "Source code, infrastructure as code, runbooks, administrator and developer documentation, and a signed IP transfer.",
   },
 ];
 
@@ -215,8 +215,8 @@ export default function ApproachPage() {
 
       <CtaSection
         eyebrow="Start with discovery"
-        title="Begin with four weeks of facts, not a twelve-month commitment."
-        intro="Most engagements start with a short, fixed-fee discovery phase. You end it with a written report you own outright, including the option of doing nothing if that is genuinely the right answer."
+        title="Begin with four weeks of facts, not a twelve month commitment."
+        intro="Most engagements start with a short, fixed fee discovery phase. You end it with a written report you own outright, including the option of doing nothing if that is genuinely the right answer."
       />
     </>
   );

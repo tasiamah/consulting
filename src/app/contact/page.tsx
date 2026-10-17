@@ -179,7 +179,7 @@ export default function ContactPage() {
                 step: "02",
                 name: "Introductory call",
                 detail:
-                  "Thirty to forty-five minutes on the problem, the constraints, and the outcome you need. No charge, and under mutual NDA if you prefer.",
+                  "Thirty to forty five minutes on the problem, the constraints, and the outcome you need. No charge, and under mutual NDA if you prefer.",
               },
               {
                 step: "03",
@@ -191,7 +191,7 @@ export default function ContactPage() {
                 step: "04",
                 name: "Discovery",
                 detail:
-                  "If you proceed, we begin with a short fixed-fee discovery phase producing a findings report you own outright.",
+                  "If you proceed, we begin with a short fixed fee discovery phase producing a findings report you own outright.",
               },
             ].map((item) => (
               <li key={item.step} className="bg-white p-8">

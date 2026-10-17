@@ -109,18 +109,18 @@ export default function TermsPage() {
                 <li>
                   <strong>Fees and payment.</strong> Pricing basis, invoicing
                   schedule, and payment terms. Unless agreed otherwise, invoices
-                  are issued monthly in arrears on 30-day terms.
+                  are issued monthly in arrears on 30 day terms.
                 </li>
                 <li>
                   <strong>Intellectual property.</strong> Ownership of bespoke
                   deliverables transfers to the client on payment. We retain
-                  ownership of our pre-existing methodologies, tools, and
-                  know-how, and grant the client a licence to use them to the
+                  ownership of our preexisting methodologies, tools, and
+                  expertise, and grant the client a licence to use them to the
                   extent embedded in a deliverable.
                 </li>
                 <li>
                   <strong>Confidentiality.</strong> Mutual confidentiality
-                  obligations, ordinarily under a separate non-disclosure
+                  obligations, ordinarily under a separate nondisclosure
                   agreement signed before discovery begins.
                 </li>
                 <li>
@@ -152,9 +152,9 @@ export default function TermsPage() {
                 commercial exploitation requires our prior written consent.
               </p>
 
-              <h2>6. Third-party links</h2>
+              <h2>6. Third party links</h2>
               <p>
-                Where this site links to third-party resources, those links are
+                Where this site links to third party resources, those links are
                 provided for convenience. We have no control over the content of
                 those sites and accept no responsibility for it.
               </p>

@@ -120,7 +120,7 @@ export default function ServicesPage() {
           <div className="mt-16 grid gap-px border border-line bg-line lg:grid-cols-3">
             {[
               {
-                name: "Fixed-scope phase",
+                name: "Fixed scope phase",
                 best: "Requirements are understood and the outcome is well defined",
                 includes: [
                   "Agreed price and schedule",
@@ -134,9 +134,9 @@ export default function ServicesPage() {
                 best: "Scope will evolve, or you need sustained capacity alongside your own team",
                 includes: [
                   "Named consultants at a monthly rate",
-                  "Two-week increments with demonstrations",
+                  "Two week increments with demonstrations",
                   "Reprioritisation without renegotiation",
-                  "Suited to multi-quarter programmes",
+                  "Suited to multiquarter programmes",
                 ],
               },
               {

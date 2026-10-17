@@ -18,7 +18,7 @@ export default function CareersPage() {
       <PageHero
         eyebrow="Careers"
         title="Work where the consultant owns the outcome."
-        intro="We hire a small number of experienced people and give them real accountability for client results. There is no bench, no body-shopping, and no layer of account managers between you and the problem."
+        intro="We hire a small number of experienced people and give them real accountability for client results. There is no bench, no body shopping, and no layer of account managers between you and the problem."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Careers", href: "/careers" },
@@ -153,7 +153,7 @@ export default function CareersPage() {
                 step: "02",
                 name: "Introductory call",
                 detail:
-                  "Forty-five minutes on your experience and what you want next. A two-way conversation, not a screening.",
+                  "Forty five minutes on your experience and what you want next. A two way conversation, not a screening.",
               },
               {
                 step: "03",

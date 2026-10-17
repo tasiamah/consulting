@@ -9,7 +9,7 @@ export const phases = [
       "Stakeholder interviews across business and technical functions",
       "Architecture, codebase, and vendor contract review",
       "Constraint mapping: regulatory, budgetary, and operational",
-      "Written findings report with options, costs, and trade-offs",
+      "Written findings report with options, costs, and tradeoffs",
     ],
   },
   {
@@ -22,17 +22,17 @@ export const phases = [
       "Solution and data architecture with documented decisions",
       "Security and data protection design review",
       "Delivery plan with milestones and acceptance criteria",
-      "Internal architecture review sign-off",
+      "Internal architecture review signoff",
     ],
   },
   {
     number: "03",
     name: "Build",
-    duration: "Two-week increments",
+    duration: "Two week increments",
     summary:
-      "Work ships in two-week increments, each ending in a demonstration of working software against agreed acceptance criteria. Nothing is reported as complete until the client has seen it run.",
+      "Work ships in two week increments, each ending in a demonstration of working software against agreed acceptance criteria. Nothing is reported as complete until the client has seen it run.",
     activities: [
-      "Peer-reviewed development with automated test coverage",
+      "Peer reviewed development with automated test coverage",
       "Continuous integration with security and dependency scanning",
       "Fortnightly demonstration and written progress report",
       "Formal change control on any scope variation",
@@ -46,7 +46,7 @@ export const phases = [
       "Handover is a deliverable, not a courtesy. Clients leave an engagement able to operate, extend, and audit the system without us, whether or not they retain us for support.",
     activities: [
       "Rehearsed cutover with a documented rollback procedure",
-      "Documentation, runbooks, and infrastructure-as-code handover",
+      "Documentation, runbooks, and infrastructure as code handover",
       "Training for client engineering and operations staff",
       "Full transfer of source code and intellectual property",
     ],
@@ -83,8 +83,8 @@ export const principles = [
       "The consultant who scoped your engagement stays on it. We do not win work with principals and staff it with juniors, and our team numbers are deliberately kept small enough to make that true.",
   },
   {
-    title: "No lock-in",
+    title: "Nothing locked in",
     description:
-      "We build on mainstream, well-supported technology and hand over everything needed to run it. Retaining us should be a commercial choice, never a technical necessity.",
+      "We build on mainstream, well supported technology and hand over everything needed to run it. Retaining us should be a commercial choice, never a technical necessity.",
   },
 ];

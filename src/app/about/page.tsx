@@ -57,9 +57,9 @@ export default function AboutPage() {
             <div className="mt-8 space-y-6 text-[1.0625rem] leading-[1.85] text-slate-ink">
               <p>
                 {company.shortName} was founded on a straightforward
-                observation: mid-sized organisations in the Gulf and Europe were
+                observation: midsized organisations in the Gulf and Europe were
                 being poorly served at both ends of the market. The large
-                consultancies sold them partner-level credibility and staffed
+                consultancies sold them partner level credibility and staffed
                 the work with juniors. The small development shops wrote decent
                 code but could not produce an architecture document, a risk
                 register, or a security questionnaire response when procurement

@@ -32,7 +32,7 @@ export const company = {
   linkedin: undefined as string | undefined,
 
   summary:
-    "A & H Consulting Group LLC is an enterprise software consultancy operating from Dubai and London. We design, build, and run the systems that regulated and high-growth businesses depend on.",
+    "A & H Consulting Group LLC is an enterprise software consultancy operating from Dubai and London. We design, build, and run the systems that regulated and high growth businesses depend on.",
 } as const;
 
 export type Office = {
@@ -72,7 +72,7 @@ export const offices: Office[] = [
     country: "United Kingdom",
     shortLabel: "London, UK",
     lines: [
-      "71-75 Shelton Street",
+      "71 to 75 Shelton Street",
       "Covent Garden",
       "WC2H 9JQ",
       "London, United Kingdom",
@@ -85,27 +85,27 @@ export const offices: Office[] = [
 
 /**
  * Operating commitments. These describe how we work, deliberately phrased as
- * practices rather than third-party certifications.
+ * practices rather than third party certifications.
  */
 export const assurances = [
   {
     title: "Contractual and legal clarity",
     description:
-      "Every engagement runs on a written master services agreement with a defined scope, acceptance criteria, and change-control process. Mutual NDAs are signed before discovery begins.",
+      "Every engagement runs on a written master services agreement with a defined scope, acceptance criteria, and change control process. Mutual NDAs are signed before discovery begins.",
   },
   {
     title: "Data protection by design",
     description:
-      "We build to GDPR and UAE Federal Decree-Law No. 45 of 2021 requirements: data minimisation, documented lawful bases, encryption in transit and at rest, and defined retention periods.",
+      "We build to GDPR and UAE Federal Decree Law No. 45 of 2021 requirements: data minimisation, documented lawful bases, encryption in transit and at rest, and defined retention periods.",
   },
   {
     title: "Secure engineering practice",
     description:
-      "Peer-reviewed code, least-privilege access, dependency and secret scanning in CI, and segregated client environments. Credentials are never shared outside a managed secrets store.",
+      "Peer reviewed code, least privilege access, dependency and secret scanning in CI, and segregated client environments. Credentials are never shared outside a managed secrets store.",
   },
   {
     title: "Continuity and handover",
     description:
-      "Documentation, infrastructure-as-code, and runbooks are delivered alongside every system so clients retain full ownership and can operate independently.",
+      "Documentation, infrastructure as code, and runbooks are delivered alongside every system so clients retain full ownership and can operate independently.",
   },
 ];
