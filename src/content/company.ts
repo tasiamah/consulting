@@ -20,7 +20,9 @@ export const company = {
   privacyEmail: "privacy@aandhconsultinggroup.com",
 
   /** Shown beside each office. Set to `undefined` to hide. */
-  phone: undefined as string | undefined,
+  phone: "04 216 0748" as string | undefined,
+  /** Same number in dialable form, so `tel:` links work from outside the UAE. */
+  phoneDial: "+97142160748" as string | undefined,
 
   /** Verified registration identifiers. Unset values are hidden sitewide. */
   registration: {

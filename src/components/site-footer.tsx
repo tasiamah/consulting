@@ -46,7 +46,7 @@ export function SiteFooter() {
               {company.phone && (
                 <div>
                   <a
-                    href={`tel:${company.phone.replace(/\s/g, "")}`}
+                    href={`tel:${company.phoneDial ?? company.phone}`}
                     className="transition-colors hover:text-white"
                   >
                     {company.phone}

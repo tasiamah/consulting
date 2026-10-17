@@ -93,10 +93,12 @@ const organizationSchema = {
     addressCountry: office.countryCode,
     postalCode: office.postalCode,
   })),
+  telephone: company.phoneDial,
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "sales",
     email: company.email,
+    telephone: company.phoneDial,
     availableLanguage: ["English", "Arabic"],
   },
 };

@@ -108,7 +108,7 @@ export default function ContactPage() {
                     </dt>
                     <dd className="mt-1.5 text-[0.9375rem] font-medium text-ink">
                       <a
-                        href={`tel:${company.phone.replace(/\s/g, "")}`}
+                        href={`tel:${company.phoneDial ?? company.phone}`}
                         className="transition-colors hover:text-accent-600"
                       >
                         {company.phone}

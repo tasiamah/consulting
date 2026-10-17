@@ -48,8 +48,9 @@ These are the items a bank or counterparty is most likely to check.
       `company.legalName` currently reads "A & H Consulting Group LLC". If the
       licence says FZCO or FZ-LLC, correct it: the name on the site must match
       the licence character for character, because the bank will compare them.
-- [ ] `phone`: currently unset, so no phone number is shown anywhere. A listed
-      landline materially improves bank onboarding; add one if you have it.
+- [x] `phone`: set to `04 216 0748`, carried over from the previous site.
+      Confirm the line is still active and answered during stated office hours,
+      because a reviewer may call it.
 - [ ] `linkedin`: add the company page URL
 
 > Leave registration fields unset rather than approximate. A wrong licence
