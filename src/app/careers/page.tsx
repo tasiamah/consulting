@@ -4,7 +4,6 @@ import { SectionHeading } from "@/components/ui";
 import { ArrowUpRight, MailIcon } from "@/components/icons";
 import { benefits, openRoles } from "@/content/careers";
 import { company } from "@/content/company";
-import { team, teamStats } from "@/content/team";
 
 export const metadata: Metadata = {
   title: "Careers",
@@ -24,20 +23,6 @@ export default function CareersPage() {
           { label: "Home", href: "/" },
           { label: "Careers", href: "/careers" },
         ]}
-        aside={
-          <dl className="grid grid-cols-2 gap-px bg-white/15">
-            {teamStats.map((stat) => (
-              <div key={stat.label} className="bg-navy-950 p-6">
-                <dt className="font-serif text-[2rem] leading-none text-white">
-                  {stat.value}
-                </dt>
-                <dd className="mt-2.5 text-[0.8125rem] text-white/55">
-                  {stat.label}
-                </dd>
-              </div>
-            ))}
-          </dl>
-        }
       />
 
       {/* Open roles */}
@@ -131,7 +116,7 @@ export default function CareersPage() {
           <SectionHeading
             eyebrow="Working here"
             title="What the job is actually like."
-            intro={`A firm of ${team.length} people across two offices. You will know every colleague by name, and every client will know yours.`}
+            intro="A small firm across two offices. You will know every colleague by name, and every client will know yours."
           />
           <div className="mt-16 grid gap-px border border-line bg-line lg:grid-cols-2">
             {benefits.map((benefit) => (

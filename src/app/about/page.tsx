@@ -2,11 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { CtaSection } from "@/components/cta-section";
-import { SectionHeading, Stat } from "@/components/ui";
-import { Avatar } from "@/components/avatar";
+import { SectionHeading } from "@/components/ui";
 import { ClockIcon, PinIcon } from "@/components/icons";
-import { assurances, company, offices, stats } from "@/content/company";
-import { leadership, practitioners, team } from "@/content/team";
+import { assurances, company, offices } from "@/content/company";
 import { principles } from "@/content/approach";
 
 export const metadata: Metadata = {
@@ -36,10 +34,6 @@ export default function AboutPage() {
     },
     { label: "Head office", value: "Dubai, United Arab Emirates" },
     { label: "European office", value: "London, United Kingdom" },
-    {
-      label: "Permanent staff",
-      value: `${team.length} consultants and engineers`,
-    },
     { label: "Primary contact", value: company.email },
   ].filter(Boolean) as { label: string; value: string }[];
 
@@ -135,17 +129,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="border-y border-line bg-navy-950">
-        <div className="bg-grid">
-          <div className="container-page grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <Stat key={stat.label} {...stat} tone="light" />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Principles */}
       <section className="py-24 lg:py-32">
         <div className="container-page">
@@ -170,117 +153,6 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section
-        id="team"
-        className="scroll-mt-24 border-y border-line bg-paper py-24 lg:py-32"
-      >
-        <div className="container-page">
-          <SectionHeading
-            eyebrow="Our people"
-            title="The team accountable for your engagement."
-            intro={`${team.length} permanent consultants and engineers across Dubai and London. Every engagement has a named partner sponsor and a named delivery lead, and both stay with it from discovery through to handover.`}
-          />
-
-          {/* Leadership */}
-          <h3 className="mt-16 font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
-            Leadership
-          </h3>
-          <div className="mt-7 grid gap-px border border-line bg-line lg:grid-cols-2">
-            {leadership.map((member) => (
-              <article key={member.name} className="bg-white p-8 lg:p-10">
-                <div className="flex items-start gap-5">
-                  <Avatar
-                    name={member.name}
-                    photo={member.photo}
-                    overrides={member.avatar}
-                    className="h-20 w-20 shrink-0 rounded-sm"
-                  />
-                  <div>
-                    <h4 className="font-sans text-[1.0625rem] font-semibold tracking-tight text-ink">
-                      {member.name}
-                    </h4>
-                    <p className="mt-1 text-[0.875rem] text-accent-600">
-                      {member.role}
-                    </p>
-                    <p className="mt-0.5 text-[0.8125rem] text-slate-ink/60">
-                      {member.office} office
-                    </p>
-                  </div>
-                </div>
-                <p className="mt-6 text-[0.9375rem] leading-[1.8] text-slate-ink">
-                  {member.bio}
-                </p>
-                <ul className="mt-6 flex flex-wrap gap-2">
-                  {member.focus.map((f) => (
-                    <li
-                      key={f}
-                      className="border border-line px-3 py-1.5 text-[0.75rem] text-slate-ink"
-                    >
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
-
-          {/* Practitioners */}
-          <h3 className="mt-16 font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
-            Consultants &amp; engineers
-          </h3>
-          <div className="mt-7 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
-            {practitioners.map((member) => (
-              <article key={member.name} className="bg-white p-7">
-                <div className="flex items-start gap-4">
-                  <Avatar
-                    name={member.name}
-                    photo={member.photo}
-                    overrides={member.avatar}
-                    className="h-14 w-14 shrink-0 rounded-sm"
-                  />
-                  <div>
-                    <h4 className="font-sans text-[0.9375rem] font-semibold tracking-tight text-ink">
-                      {member.name}
-                    </h4>
-                    <p className="mt-1 text-[0.8125rem] text-accent-600">
-                      {member.role}
-                    </p>
-                    <p className="mt-0.5 text-[0.75rem] text-slate-ink/60">
-                      {member.office}
-                    </p>
-                  </div>
-                </div>
-                <p className="mt-5 text-[0.875rem] leading-[1.75] text-slate-ink">
-                  {member.bio}
-                </p>
-                <ul className="mt-5 flex flex-wrap gap-1.5">
-                  {member.focus.map((f) => (
-                    <li
-                      key={f}
-                      className="border border-line px-2.5 py-1 text-[0.6875rem] text-slate-ink/80"
-                    >
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
-
-          <p className="mt-10 text-[0.875rem] text-slate-ink">
-            We are currently hiring across software, cloud, and security.{" "}
-            <Link
-              href="/careers"
-              className="font-medium text-accent-600 underline underline-offset-4 hover:text-accent-700"
-            >
-              See open roles
-            </Link>
-            .
-          </p>
         </div>
       </section>
 

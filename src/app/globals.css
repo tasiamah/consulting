@@ -160,26 +160,6 @@
   animation: menu-in 0.16s var(--ease-out-soft) both;
 }
 
-/* --- Illustrated avatars ------------------------------------------------ */
-
-@keyframes blink {
-  0%,
-  94%,
-  100% {
-    transform: scaleY(1);
-  }
-  97% {
-    transform: scaleY(0.06);
-  }
-}
-
-/* Applied to the eye group inside an avatar; delay is set per-avatar. */
-@utility avatar-blink {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: blink 6.2s steps(1, end) infinite;
-}
-
 /* --- Scroll reveal ------------------------------------------------------ */
 
 @utility reveal {

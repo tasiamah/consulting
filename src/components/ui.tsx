@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { ComponentProps, ReactNode } from "react";
 import { ArrowRight } from "./icons";
-import { CountUp } from "./count-up";
 
 /* -------------------------------------------------------------------------- */
 /* Button                                                                     */
@@ -149,48 +148,5 @@ export function TextLink({
       </span>
       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
     </Link>
-  );
-}
-
-/* -------------------------------------------------------------------------- */
-/* Stat                                                                       */
-/* -------------------------------------------------------------------------- */
-
-export function Stat({
-  value,
-  label,
-  detail,
-  tone = "dark",
-}: {
-  value: string;
-  label: string;
-  detail?: string;
-  tone?: "dark" | "light";
-}) {
-  return (
-    <div>
-      <CountUp
-        value={value}
-        className={`block font-serif text-[2.5rem] leading-none tracking-[-0.03em] ${
-          tone === "light" ? "text-white" : "text-navy-900"
-        }`}
-      />
-      <div
-        className={`mt-3 text-[0.8125rem] font-semibold tracking-[0.04em] ${
-          tone === "light" ? "text-white/90" : "text-ink"
-        }`}
-      >
-        {label}
-      </div>
-      {detail && (
-        <div
-          className={`mt-1.5 text-[0.8125rem] leading-relaxed ${
-            tone === "light" ? "text-white/50" : "text-slate-ink/80"
-          }`}
-        >
-          {detail}
-        </div>
-      )}
-    </div>
   );
 }

@@ -1,13 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import {
-  Button,
-  Eyebrow,
-  SectionHeading,
-  Stat,
-  TextLink,
-} from "@/components/ui";
-import { Avatar } from "@/components/avatar";
+import { Button, Eyebrow, SectionHeading, TextLink } from "@/components/ui";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -18,12 +11,11 @@ import { CtaSection } from "@/components/cta-section";
 import { AssuranceTerminal } from "@/components/assurance-terminal";
 import { TechStack } from "@/components/tech-stack";
 import { Reveal } from "@/components/reveal";
-import { assurances, company, stats } from "@/content/company";
+import { assurances, company } from "@/content/company";
 import { services } from "@/content/services";
 import { industries } from "@/content/industries";
 import { caseStudies } from "@/content/case-studies";
 import { phases } from "@/content/approach";
-import { leadership, team } from "@/content/team";
 
 export const metadata: Metadata = {
   title: `${company.shortName} | Enterprise Software Consulting in the UAE and Europe`,
@@ -36,14 +28,12 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <StatsBand />
       <ServicesSection />
       <ApproachSection />
       <TechStack />
       <AssuranceSection />
       <IndustriesSection />
       <CaseStudiesSection />
-      <TeamSection />
       <CtaSection />
     </>
   );
@@ -115,20 +105,6 @@ function Hero() {
             </div>
           </aside>
         </div>
-      </div>
-    </section>
-  );
-}
-
-/* -------------------------------------------------------------------------- */
-
-function StatsBand() {
-  return (
-    <section className="border-b border-line bg-paper">
-      <div className="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:py-16">
-        {stats.map((stat) => (
-          <Stat key={stat.label} {...stat} />
-        ))}
       </div>
     </section>
   );
@@ -382,58 +358,6 @@ function CaseStudiesSection() {
               </Link>
             </Reveal>
           ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* -------------------------------------------------------------------------- */
-
-function TeamSection() {
-  return (
-    <section className="border-y border-line bg-paper py-24 lg:py-32">
-      <div className="container-page">
-        <div className="grid gap-16 lg:grid-cols-[1fr_1.5fr] lg:gap-24">
-          <div>
-            <SectionHeading
-              eyebrow="The firm"
-              title="You will know exactly who is doing the work."
-              intro={`${team.length} permanent consultants and engineers across Dubai and London. The partner who scopes your engagement stays accountable for it through delivery. We keep the firm deliberately small enough for that to remain true.`}
-            />
-            <div className="mt-10">
-              <TextLink href="/about#team">Meet the team</TextLink>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
-              Leadership
-            </h3>
-            <ul className="mt-7 grid gap-x-12 gap-y-9 sm:grid-cols-2">
-              {leadership.map((member) => (
-                <li key={member.name} className="flex items-center gap-5">
-                  <Avatar
-                    name={member.name}
-                    photo={member.photo}
-                    overrides={member.avatar}
-                    className="h-16 w-16 shrink-0 rounded-sm"
-                  />
-                  <div>
-                    <div className="text-[0.9375rem] font-semibold tracking-tight text-ink">
-                      {member.name}
-                    </div>
-                    <div className="mt-1 text-[0.8125rem] text-slate-ink">
-                      {member.role}
-                    </div>
-                    <div className="mt-0.5 text-[0.75rem] text-slate-ink/60">
-                      {member.office}
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
     </section>

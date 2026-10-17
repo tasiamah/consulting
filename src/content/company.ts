@@ -83,25 +83,6 @@ export const offices: Office[] = [
   },
 ];
 
-export const stats = [
-  {
-    value: "40+",
-    label: "Engagements delivered",
-    detail: "Across six industries to date",
-  },
-  { value: "2", label: "Delivery regions", detail: "Dubai and London" },
-  {
-    value: "11",
-    label: "Consultants and engineers",
-    detail: "Permanent multidisciplinary team",
-  },
-  {
-    value: "96%",
-    label: "Client retention",
-    detail: "Clients who extend beyond the first engagement",
-  },
-];
-
 /**
  * Operating commitments. These describe how we work, deliberately phrased as
  * practices rather than third-party certifications.
