@@ -101,20 +101,6 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      <section className="border-t border-line bg-paper py-16">
-        <div className="container-page">
-          <p className="mx-auto max-w-3xl text-center text-[0.9375rem] leading-[1.8] text-slate-ink">
-            <span className="font-semibold text-ink">
-              A note on confidentiality.
-            </span>{" "}
-            Client names are withheld unless we hold written permission to use
-            them. Figures are drawn from measurements taken during the
-            engagement and agreed with the client before publication. Where we
-            cannot evidence a number, we do not publish one.
-          </p>
-        </div>
-      </section>
-
       <CtaSection />
     </>
   );

@@ -23,14 +23,13 @@ export default function AboutPage() {
     { label: "Registered legal name", value: company.legalName },
     { label: "Entity type", value: "Limited liability company" },
     { label: "Year established", value: String(company.foundedYear) },
-    { label: "Registered authority", value: registration.uaeAuthority },
     registration.uaeLicenseNumber && {
       label: "UAE trade licence number",
       value: registration.uaeLicenseNumber,
     },
-    registration.ukCompanyNumber && {
-      label: "UK company number",
-      value: registration.ukCompanyNumber,
+    registration.nlRegistrationNumber && {
+      label: "KvK registration number",
+      value: registration.nlRegistrationNumber,
     },
     registration.vatNumber && {
       label: "VAT registration number",

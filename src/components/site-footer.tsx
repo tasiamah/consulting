@@ -10,13 +10,13 @@ const currentYear = new Date().getFullYear();
 export function SiteFooter() {
   const { registration } = company;
   const registrationFacts = [
-    registration.ukCompanyNumber && {
-      label: "UK company no.",
-      value: registration.ukCompanyNumber,
-    },
     registration.uaeLicenseNumber && {
       label: "UAE trade licence no.",
       value: registration.uaeLicenseNumber,
+    },
+    registration.nlRegistrationNumber && {
+      label: "KvK no.",
+      value: registration.nlRegistrationNumber,
     },
     registration.vatNumber && {
       label: "VAT no.",
@@ -129,10 +129,6 @@ export function SiteFooter() {
                   <dd className="text-white/75">{fact.value}</dd>
                 </div>
               ))}
-              <div className="flex gap-2">
-                <dt className="text-white/40">Registered authority</dt>
-                <dd className="text-white/75">{registration.uaeAuthority}</dd>
-              </div>
             </dl>
             <p className="mt-5 max-w-md text-[0.8125rem] leading-relaxed text-white/40">
               Certificate of incorporation, trade licence, and proof of

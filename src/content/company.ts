@@ -26,8 +26,7 @@ export const company = {
   /** Verified registration identifiers. Unset values are hidden sitewide. */
   registration: {
     uaeLicenseNumber: undefined as string | undefined,
-    uaeAuthority: "International Free Zone Authority (IFZA), Dubai",
-    ukCompanyNumber: undefined as string | undefined,
+    nlRegistrationNumber: undefined as string | undefined,
     vatNumber: undefined as string | undefined,
   },
 
