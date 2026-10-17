@@ -29,7 +29,7 @@ const jetBrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(company.url),
   title: {
-    default: `${company.shortName} — Enterprise Software Consulting in the UAE & UK`,
+    default: `${company.shortName} | Enterprise Software Consulting in the UAE and Europe`,
     template: `%s | ${company.shortName}`,
   },
   description:
@@ -51,14 +51,14 @@ export const metadata: Metadata = {
     type: "website",
     siteName: company.legalName,
     url: company.url,
-    title: `${company.shortName} — Enterprise Software Consulting`,
+    title: `${company.shortName} | Enterprise Software Consulting`,
     description:
       "Enterprise software consulting from Dubai and London. Custom development, integration, cloud, and security for regulated businesses.",
     locale: "en_GB",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${company.shortName} — Enterprise Software Consulting`,
+    title: `${company.shortName} | Enterprise Software Consulting`,
     description:
       "Enterprise software consulting from Dubai and London. Custom development, integration, cloud, and security for regulated businesses.",
   },
@@ -79,7 +79,6 @@ const organizationSchema = {
   url: company.url,
   email: company.email,
   description: company.summary,
-  foundingDate: String(company.foundedYear),
   areaServed: ["AE", "GB", "EU", "GCC"],
   knowsAbout: services.map((s) => s.title),
   address: offices.map((office) => ({

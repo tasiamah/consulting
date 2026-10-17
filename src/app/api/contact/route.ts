@@ -10,7 +10,7 @@ type Payload = {
   interest?: unknown;
   message?: unknown;
   consent?: unknown;
-  /** Honeypot — real users never fill this in. */
+  /** Honeypot. Real users never fill this in. */
   website?: unknown;
 };
 
@@ -116,7 +116,7 @@ export async function POST(request: Request) {
   // visitor plainly rather than pretending the message was sent.
   if (!apiKey) {
     console.warn(
-      "[contact] RESEND_API_KEY is not set — enquiry was not delivered.",
+      "[contact] RESEND_API_KEY is not set, so the enquiry was not delivered.",
       {
         name,
         email,
@@ -156,7 +156,7 @@ export async function POST(request: Request) {
         from,
         to: [to],
         reply_to: email,
-        subject: `Website enquiry — ${name}${organisation ? ` (${organisation})` : ""}`,
+        subject: `Website enquiry from ${name}${organisation ? ` (${organisation})` : ""}`,
         text: lines.join("\n"),
       }),
     });

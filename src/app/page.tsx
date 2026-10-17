@@ -18,7 +18,7 @@ import { CtaSection } from "@/components/cta-section";
 import { AssuranceTerminal } from "@/components/assurance-terminal";
 import { TechStack } from "@/components/tech-stack";
 import { Reveal } from "@/components/reveal";
-import { assurances, company, offices, stats } from "@/content/company";
+import { assurances, company, stats } from "@/content/company";
 import { services } from "@/content/services";
 import { industries } from "@/content/industries";
 import { caseStudies } from "@/content/case-studies";
@@ -26,7 +26,7 @@ import { phases } from "@/content/approach";
 import { leadership, team } from "@/content/team";
 
 export const metadata: Metadata = {
-  title: `${company.shortName} — Enterprise Software Consulting in the UAE & UK`,
+  title: `${company.shortName} | Enterprise Software Consulting in the UAE and Europe`,
   description:
     "Enterprise software consultancy operating from Dubai and London. Custom software development, system integration, cloud solutions, cybersecurity, and managed support for regulated and high-growth businesses.",
   alternates: { canonical: "/" },
@@ -71,8 +71,8 @@ function Hero() {
               {company.legalName} is an enterprise software consultancy
               operating from the United Arab Emirates and the United Kingdom. We
               design, build, and run the platforms that regulated and
-              high-growth businesses depend on — and we document them well
-              enough to satisfy an auditor.
+              high-growth businesses depend on, and we document them well enough
+              to satisfy an auditor.
             </p>
 
             <div className="mt-11 flex flex-wrap items-center gap-4">
@@ -90,7 +90,7 @@ function Hero() {
 
             <ul className="mt-14 grid gap-x-10 gap-y-4 border-t border-white/10 pt-9 sm:grid-cols-2">
               {[
-                "Independent — no vendor commissions",
+                "Independent, with no vendor commissions",
                 "Client owns all intellectual property",
                 "Fixed-scope phases with written acceptance",
                 "GDPR and UAE data protection by design",
@@ -106,53 +106,13 @@ function Hero() {
             </ul>
           </div>
 
-          {/* Corporate fact card — the first thing a reviewer looks for. */}
-          <aside className="animate-rise space-y-4 lg:mt-3">
-            <div className="border border-white/12 bg-white/[0.04] backdrop-blur-sm">
-              <div className="border-b border-white/10 px-7 py-6">
-                <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-accent-200 uppercase">
-                  Corporate profile
-                </h2>
-              </div>
-
-              <dl className="divide-y divide-white/8">
-                <div className="px-7 py-5">
-                  <dt className="text-[0.75rem] text-white/40">
-                    Registered entity
-                  </dt>
-                  <dd className="mt-1.5 text-[0.9375rem] font-medium text-white">
-                    {company.legalName}
-                  </dd>
-                </div>
-                <div className="px-7 py-5">
-                  <dt className="text-[0.75rem] text-white/40">Established</dt>
-                  <dd className="mt-1.5 text-[0.9375rem] font-medium text-white">
-                    {company.foundedYear}
-                  </dd>
-                </div>
-                <div className="px-7 py-5">
-                  <dt className="text-[0.75rem] text-white/40">Offices</dt>
-                  <dd className="mt-1.5 space-y-1 text-[0.9375rem] font-medium text-white">
-                    {offices.map((office) => (
-                      <span key={office.id} className="block">
-                        {office.city}, {office.country}
-                        <span className="ml-2 font-mono text-[0.6875rem] font-normal tracking-[0.08em] text-white/40 uppercase">
-                          {office.id === "uae" ? "Head office" : "Advisory"}
-                        </span>
-                      </span>
-                    ))}
-                  </dd>
-                </div>
-              </dl>
-
-              <div className="border-t border-white/10 px-7 py-5">
-                <TextLink href="/about" tone="light">
-                  About the firm
-                </TextLink>
-              </div>
-            </div>
-
+          <aside className="animate-rise lg:mt-3">
             <AssuranceTerminal />
+            <div className="mt-6 border-t border-white/10 pt-6">
+              <TextLink href="/about" tone="light">
+                About the firm
+              </TextLink>
+            </div>
           </aside>
         </div>
       </div>
@@ -239,7 +199,7 @@ function ApproachSection() {
             <SectionHeading
               eyebrow="How we work"
               title="A method you can audit, not a promise you have to trust."
-              intro="Every engagement follows the same five phases. Scope, decisions, and acceptance criteria are written down, which is what makes progress verifiable — by you, by your board, and by anyone reviewing the engagement afterwards."
+              intro="Every engagement follows the same five phases. Scope, decisions, and acceptance criteria are written down, which is what makes progress verifiable by you, by your board, and by anyone reviewing the engagement afterwards."
             />
             <div className="mt-10">
               <TextLink href="/approach">Our full methodology</TextLink>
@@ -439,7 +399,7 @@ function TeamSection() {
             <SectionHeading
               eyebrow="The firm"
               title="You will know exactly who is doing the work."
-              intro={`${team.length} permanent consultants and engineers across Dubai and London. The partner who scopes your engagement stays accountable for it through delivery — we keep the firm deliberately small enough for that to remain true.`}
+              intro={`${team.length} permanent consultants and engineers across Dubai and London. The partner who scopes your engagement stays accountable for it through delivery. We keep the firm deliberately small enough for that to remain true.`}
             />
             <div className="mt-10">
               <TextLink href="/about#team">Meet the team</TextLink>

@@ -14,7 +14,7 @@ export function TechStack() {
             eyebrow="Technology"
             tone="light"
             title="Mainstream, well-supported, and no lock-in."
-            intro="We build on technology with a large hiring pool and a long support horizon. Nothing here is exotic, because the firm that maintains your system in five years may not be us — and that should be your choice, not a technical constraint."
+            intro="We build on technology with a large hiring pool and a long support horizon. Nothing here is exotic, because the firm that maintains your system in five years may not be us, and that should be your choice, not a technical constraint."
           />
         </Reveal>
 

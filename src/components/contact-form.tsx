@@ -82,7 +82,7 @@ export function ContactForm({
           <Check className="h-6 w-6 text-accent-600" />
         </div>
         <h3 className="mt-7 text-[1.5rem] leading-tight text-ink">
-          Thank you — message received.
+          Thank you. Message received.
         </h3>
         <p className="mx-auto mt-5 max-w-md text-[0.9375rem] leading-[1.8] text-slate-ink">
           A consultant will respond directly, usually within one business day.

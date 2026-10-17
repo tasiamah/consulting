@@ -103,9 +103,7 @@ export function AssuranceTerminal() {
       <div className="flex items-center gap-2 border-t border-white/10 px-5 py-3 font-mono text-[0.75rem]">
         <span className="text-accent-300">$</span>
         <span className="text-white/45">
-          {running
-            ? "running checks"
-            : "all checks passed — ready for handover"}
+          {running ? "running checks" : "all checks passed. ready for handover"}
         </span>
         <span className="animate-caret ml-0.5 inline-block h-3.5 w-[0.4rem] bg-accent-300/80" />
       </div>

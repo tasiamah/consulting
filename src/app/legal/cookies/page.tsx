@@ -15,7 +15,7 @@ const cookieTable = [
   {
     name: "Strictly necessary",
     purpose:
-      "Allows the site to function — page delivery, security, and protection of the contact form against automated abuse.",
+      "Allows the site to function: page delivery, security, and protection of the contact form against automated abuse.",
     duration: "Session, or up to 24 hours",
     consent: "Not required",
   },
@@ -37,8 +37,8 @@ const cookieTable = [
     name: "Advertising and tracking",
     purpose:
       "Not used. We run no advertising pixels and no cross-site tracking.",
-    duration: "—",
-    consent: "—",
+    duration: "Not applicable",
+    consent: "Not applicable",
   },
 ];
 
@@ -148,7 +148,7 @@ export default function CookiesPage() {
               </p>
               <p>
                 Blocking strictly necessary cookies may prevent parts of this
-                site — including the contact form — from functioning correctly.
+                site, including the contact form, from functioning correctly.
               </p>
 
               <h2>5. Do Not Track</h2>

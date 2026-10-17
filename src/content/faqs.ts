@@ -10,7 +10,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "What services does A & H Consulting Group offer?",
         answer:
-          "Six practice areas: custom software development, IT consulting and technology advisory, system integration, cloud solutions, cybersecurity, and software maintenance and support. Most engagements combine two or three of these — a cloud migration, for example, almost always carries security and integration workstreams alongside it.",
+          "Six practice areas: custom software development, IT consulting and technology advisory, system integration, cloud solutions, cybersecurity, and software maintenance and support. Most engagements combine two or three of these. A cloud migration, for example, almost always carries security and integration workstreams alongside it.",
       },
       {
         question: "How does an engagement start?",
@@ -20,7 +20,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "What size of organisation do you work with?",
         answer:
-          "Typically organisations between 50 and 2,000 staff — large enough to have genuine systems complexity, small enough that senior people are directly accountable for the outcome. We also take selected due diligence and advisory work for investors.",
+          "Typically organisations between 50 and 2,000 staff: large enough to have genuine systems complexity, small enough that senior people are directly accountable for the outcome. We also take selected due diligence and advisory work for investors.",
       },
       {
         question: "Which industries do you serve?",

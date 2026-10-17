@@ -9,7 +9,7 @@ import { services } from "@/content/services";
 export const metadata: Metadata = {
   title: "Case studies",
   description:
-    "Selected client engagements across logistics, financial services, healthcare, and manufacturing — the problem, the approach taken, and the measured outcome.",
+    "Selected client engagements across logistics, financial services, healthcare, and manufacturing: the problem, the approach taken, and the measured outcome.",
   alternates: { canonical: "/case-studies" },
 };
 

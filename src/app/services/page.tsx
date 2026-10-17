@@ -202,7 +202,7 @@ export default function ServicesPage() {
                   {phase.activities.slice(0, 3).map((activity) => (
                     <li
                       key={activity}
-                      className="text-[0.8125rem] leading-relaxed text-slate-ink before:mr-2 before:text-accent-300 before:content-['—']"
+                      className="text-[0.8125rem] leading-relaxed text-slate-ink before:mr-2 before:text-accent-300 before:content-['·']"
                     >
                       {activity}
                     </li>
@@ -219,7 +219,7 @@ export default function ServicesPage() {
         <div className="container-page flex flex-wrap items-center justify-between gap-6">
           <p className="max-w-xl text-[1.0625rem] leading-relaxed text-ink">
             Not sure which practice area your problem sits in? That is a normal
-            starting point — most are not cleanly one thing.
+            starting point, and most are not cleanly one thing.
           </p>
           <Link
             href="/contact"

@@ -1,6 +1,6 @@
 /**
  * ─────────────────────────────────────────────────────────────────────────────
- * PLACEHOLDER DATA — REPLACE BEFORE THE SITE IS USED FOR ONBOARDING OR KYC
+ * PLACEHOLDER DATA. REPLACE BEFORE THE SITE IS USED FOR ONBOARDING OR KYC
  * ─────────────────────────────────────────────────────────────────────────────
  * The people below are illustrative structure, not real staff. Replace every
  * entry with actual personnel before publishing. A bank or enterprise client
@@ -62,7 +62,7 @@ export const team: TeamMember[] = [
     role: "Director of Delivery",
     office: "Dubai",
     group: "leadership",
-    bio: "Imran owns delivery across the portfolio — scope, schedule, and quality. He introduced the firm's two-week release cadence and the acceptance-criteria framework that governs how work is signed off with clients.",
+    bio: "Imran owns delivery across the portfolio: scope, schedule, and quality. He introduced the firm's two-week release cadence and the acceptance-criteria framework that governs how work is signed off with clients.",
     focus: ["Programme delivery", "Delivery governance", "Client reporting"],
     avatar: { hairStyle: "buzz", facial: "stubble", glasses: true },
   },
@@ -96,7 +96,7 @@ export const team: TeamMember[] = [
     role: "Principal Consultant",
     office: "Dubai",
     group: "delivery",
-    bio: "Layla runs the firm's advisory assessments — technology due diligence, architecture review, and operating-model design. She translates technical findings into the costed roadmaps that boards use to approve investment.",
+    bio: "Layla runs the firm's advisory assessments: technology due diligence, architecture review, and operating-model design. She translates technical findings into the costed roadmaps that boards use to approve investment.",
     focus: ["Technology due diligence", "Operating model", "Roadmap planning"],
     avatar: { hairStyle: "cover" },
   },

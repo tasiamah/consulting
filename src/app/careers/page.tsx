@@ -9,7 +9,7 @@ import { team, teamStats } from "@/content/team";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Open roles at A & H Consulting Group in Dubai and London — software engineering, cloud platform, security consulting, and systems integration.",
+    "Open roles at A & H Consulting Group in Dubai and London: software engineering, cloud platform, security consulting, and systems integration.",
   alternates: { canonical: "/careers" },
 };
 
@@ -46,7 +46,7 @@ export default function CareersPage() {
           <SectionHeading
             eyebrow="Open positions"
             title={`${openRoles.length} roles currently open.`}
-            intro="We review every application ourselves — there is no applicant tracking system filtering CVs before a human sees them. Expect a reply either way within a week."
+            intro="We review every application ourselves. There is no applicant tracking system filtering CVs before a human sees them. Expect a reply either way within a week."
           />
 
           <ul className="mt-14 space-y-px bg-line">

@@ -1,5 +1,5 @@
 /**
- * Technologies we build and operate on. Keep this honest — an enterprise
+ * Technologies we build and operate on. Keep this honest. An enterprise
  * client will ask about anything listed here during technical due diligence.
  */
 

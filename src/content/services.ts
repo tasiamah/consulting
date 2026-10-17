@@ -56,7 +56,7 @@ export const services: Service[] = [
     engagement: {
       model: "Fixed-scope phases or dedicated team",
       duration: "8 weeks to 12 months",
-      team: "Architect, 2–4 engineers, QA, delivery lead",
+      team: "Architect, 2 to 4 engineers, QA, delivery lead",
     },
     icon: "code",
   },
@@ -68,7 +68,7 @@ export const services: Service[] = [
     summary:
       "Independent assessment of your technology estate, with a costed roadmap your board can act on and your auditors can follow.",
     overview: [
-      "Technology decisions are capital decisions. We give leadership teams an evidence-based view of what they own, what it costs, where the risk sits, and what to do next — without a vendor incentive attached to the answer.",
+      "Technology decisions are capital decisions. We give leadership teams an evidence-based view of what they own, what it costs, where the risk sits, and what to do next, without a vendor incentive attached to the answer.",
       "Engagements typically begin with a four-week assessment covering architecture, vendor contracts, team capability, and spend. The output is a prioritised roadmap with effort, cost, and risk attached to every recommendation.",
     ],
     capabilities: [
@@ -115,7 +115,7 @@ export const services: Service[] = [
     summary:
       "Connecting ERP, CRM, finance, and bespoke systems so data moves once, reliably, and with a verifiable audit trail.",
     overview: [
-      "Most operational pain in a mid-sized business is not caused by any single system — it is caused by the gaps between them. Reconciliation by spreadsheet, data re-keyed between departments, and month-end closes that take weeks.",
+      "Most operational pain in a mid-sized business is not caused by any single system. It is caused by the gaps between them. Reconciliation by spreadsheet, data re-keyed between departments, and month-end closes that take weeks.",
       "We design and build the integration layer that closes those gaps, with idempotent processing, dead-letter handling, and reconciliation reporting so finance and audit teams can prove the numbers tie out.",
     ],
     capabilities: [
@@ -150,7 +150,7 @@ export const services: Service[] = [
     engagement: {
       model: "Fixed-scope integration programme",
       duration: "6 weeks to 9 months",
-      team: "Integration architect, 2–3 engineers, data analyst",
+      team: "Integration architect, 2 to 3 engineers, data analyst",
     },
     icon: "integrate",
   },
@@ -160,7 +160,7 @@ export const services: Service[] = [
     title: "Cloud Solutions",
     shortTitle: "Cloud Solutions",
     summary:
-      "Migration, architecture, and cost governance across AWS, Azure, and Google Cloud — built for data residency and audit requirements.",
+      "Migration, architecture, and cost governance across AWS, Azure, and Google Cloud, built for data residency and audit requirements.",
     overview: [
       "Cloud programmes fail for predictable reasons: workloads lifted without redesign, no cost accountability, and no answer when a regulator asks where the data physically sits.",
       "We plan migrations around those constraints from the outset. Every environment we build is defined in code, tagged for cost attribution, and documented against the residency and retention rules that apply to your sector.",
@@ -244,7 +244,7 @@ export const services: Service[] = [
     engagement: {
       model: "Assessment, remediation programme, or retainer",
       duration: "3 weeks to 6 months",
-      team: "Security lead, 1–2 security engineers, GRC analyst",
+      team: "Security lead, 1 to 2 security engineers, GRC analyst",
     },
     icon: "shield",
   },

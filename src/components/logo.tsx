@@ -41,7 +41,7 @@ export function Logo({
   return (
     <Link
       href="/"
-      aria-label="A & H Consulting Group — home"
+      aria-label="A & H Consulting Group home"
       className={`group inline-flex items-center gap-3 ${className}`}
     >
       <LogoMark

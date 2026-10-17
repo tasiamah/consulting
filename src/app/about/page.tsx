@@ -22,7 +22,6 @@ export default function AboutPage() {
   const corporateFacts = [
     { label: "Registered legal name", value: company.legalName },
     { label: "Entity type", value: "Limited liability company" },
-    { label: "Year established", value: String(company.foundedYear) },
     registration.uaeLicenseNumber && {
       label: "UAE trade licence number",
       value: registration.uaeLicenseNumber,
@@ -49,7 +48,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="A consultancy built to be verifiable."
-        intro="We work with organisations that have to justify their supplier choices — to a board, a regulator, an insurer, or a bank. That shapes everything about how this firm operates."
+        intro="We work with organisations that have to justify their supplier choices to a board, a regulator, an insurer, or a bank. That shapes everything about how this firm operates."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
@@ -63,20 +62,20 @@ export default function AboutPage() {
             <SectionHeading eyebrow="Our story" title="Why the firm exists." />
             <div className="mt-8 space-y-6 text-[1.0625rem] leading-[1.85] text-slate-ink">
               <p>
-                {company.shortName} was founded in {company.foundedYear} on a
-                straightforward observation: mid-sized organisations in the Gulf
-                and Europe were being poorly served at both ends of the market.
-                The large consultancies sold them partner-level credibility and
-                staffed the work with juniors. The small development shops wrote
-                decent code but could not produce an architecture document, a
-                risk register, or a security questionnaire response when
-                procurement asked for one.
+                {company.shortName} was founded on a straightforward
+                observation: mid-sized organisations in the Gulf and Europe were
+                being poorly served at both ends of the market. The large
+                consultancies sold them partner-level credibility and staffed
+                the work with juniors. The small development shops wrote decent
+                code but could not produce an architecture document, a risk
+                register, or a security questionnaire response when procurement
+                asked for one.
               </p>
               <p>
                 We set out to occupy the space between those two. A firm small
                 enough that the people who scope the work remain accountable for
                 delivering it, and disciplined enough that every engagement
-                produces the written evidence a serious organisation needs —
+                produces the written evidence a serious organisation needs:
                 architecture decisions, acceptance criteria, risk assessments,
                 and handover documentation.
               </p>

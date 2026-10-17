@@ -1,4 +1,4 @@
-/** PLACEHOLDER — keep only roles you are genuinely hiring for. */
+/** PLACEHOLDER. Keep only roles you are genuinely hiring for. */
 
 export type Role = {
   title: string;

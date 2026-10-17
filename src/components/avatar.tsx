@@ -5,7 +5,7 @@ import Image from "next/image";
  *
  * Features are derived deterministically from the person's name, so each
  * person keeps the same face across every render and page. These are plainly
- * illustrations rather than photographs — if a real headshot exists, set
+ * illustrations rather than photographs. If a real headshot exists, set
  * `photo` on the team member and it is used instead.
  */
 

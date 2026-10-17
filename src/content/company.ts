@@ -2,7 +2,7 @@
  * Single source of truth for company facts used across the site.
  *
  * Fields typed as `string | undefined` are only rendered when set. Leave
- * registration identifiers unset rather than approximate — they are read by
+ * registration identifiers unset rather than approximate. They are read by
  * banks and counterparties during onboarding. See CONTENT-CHECKLIST.md.
  */
 
@@ -11,7 +11,6 @@ export const company = {
   shortName: "A&H Consulting Group",
   initials: "A&H",
   tagline: "Enterprise software consulting",
-  foundedYear: 2019,
   domain: "aandhconsultinggroup.com",
   url: "https://aandhconsultinggroup.com",
 
@@ -63,7 +62,7 @@ export const offices: Office[] = [
       "Dubai, United Arab Emirates",
     ],
     timezone: "GST (UTC+4)",
-    hours: "Monday – Friday, 09:00 – 18:00",
+    hours: "Monday to Friday, 09:00 to 18:00",
     role: "Registered head office and regional delivery centre",
   },
   {
@@ -73,13 +72,13 @@ export const offices: Office[] = [
     country: "United Kingdom",
     shortLabel: "London, UK",
     lines: [
-      "71–75 Shelton Street",
+      "71-75 Shelton Street",
       "Covent Garden",
       "WC2H 9JQ",
       "London, United Kingdom",
     ],
     timezone: "GMT/BST (UTC+0/+1)",
-    hours: "Monday – Friday, 09:00 – 18:00",
+    hours: "Monday to Friday, 09:00 to 18:00",
     role: "European client engagement and advisory office",
   },
 ];
@@ -88,7 +87,7 @@ export const stats = [
   {
     value: "40+",
     label: "Engagements delivered",
-    detail: "Across six industries since 2019",
+    detail: "Across six industries to date",
   },
   { value: "2", label: "Delivery regions", detail: "Dubai and London" },
   {
@@ -104,7 +103,7 @@ export const stats = [
 ];
 
 /**
- * Operating commitments. These describe how we work — deliberately phrased as
+ * Operating commitments. These describe how we work, deliberately phrased as
  * practices rather than third-party certifications.
  */
 export const assurances = [

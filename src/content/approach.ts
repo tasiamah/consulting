@@ -2,9 +2,9 @@ export const phases = [
   {
     number: "01",
     name: "Discovery",
-    duration: "2–4 weeks",
+    duration: "2 to 4 weeks",
     summary:
-      "We establish the facts before proposing anything. That means interviewing the people who use the systems, reading the code, and reviewing the contracts — not accepting a brief at face value.",
+      "We establish the facts before proposing anything. That means interviewing the people who use the systems, reading the code, and reviewing the contracts, not accepting a brief at face value.",
     activities: [
       "Stakeholder interviews across business and technical functions",
       "Architecture, codebase, and vendor contract review",
@@ -15,9 +15,9 @@ export const phases = [
   {
     number: "02",
     name: "Design",
-    duration: "2–5 weeks",
+    duration: "2 to 5 weeks",
     summary:
-      "A solution design reviewed and signed off internally before any build begins. Every design passes through our architecture review so the firm — not just the assigned architect — stands behind it.",
+      "A solution design reviewed and signed off internally before any build begins. Every design passes through our architecture review so the firm, not just the assigned architect, stands behind it.",
     activities: [
       "Solution and data architecture with documented decisions",
       "Security and data protection design review",
@@ -41,9 +41,9 @@ export const phases = [
   {
     number: "04",
     name: "Transition",
-    duration: "2–4 weeks",
+    duration: "2 to 4 weeks",
     summary:
-      "Handover is a deliverable, not a courtesy. Clients leave an engagement able to operate, extend, and audit the system without us — whether or not they retain us for support.",
+      "Handover is a deliverable, not a courtesy. Clients leave an engagement able to operate, extend, and audit the system without us, whether or not they retain us for support.",
     activities: [
       "Rehearsed cutover with a documented rollback procedure",
       "Documentation, runbooks, and infrastructure-as-code handover",
@@ -75,7 +75,7 @@ export const principles = [
   {
     title: "Written over verbal",
     description:
-      "Scope, acceptance criteria, decisions, and risks are documented. If it was agreed in a meeting, it is confirmed in writing afterwards — which is what makes an engagement auditable.",
+      "Scope, acceptance criteria, decisions, and risks are documented. If it was agreed in a meeting, it is confirmed in writing afterwards, which is what makes an engagement auditable.",
   },
   {
     title: "Senior people on the work",

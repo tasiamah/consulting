@@ -29,7 +29,7 @@ export default function FaqPage() {
       <PageHero
         eyebrow="Client FAQ"
         title="The questions procurement always asks."
-        intro="Commercial terms, intellectual property, data handling, and delivery governance — answered in advance so you can assess us before the first call rather than after it."
+        intro="Commercial terms, intellectual property, data handling, and delivery governance, answered in advance so you can assess us before the first call rather than after it."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "FAQ", href: "/faq" },

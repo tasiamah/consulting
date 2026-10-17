@@ -58,7 +58,7 @@ export default function ApproachPage() {
       <PageHero
         eyebrow="Our approach"
         title="Method over promises."
-        intro="Any consultancy can tell you it delivers quality. What matters is whether the engagement produces evidence — written decisions, testable acceptance criteria, and documentation that outlives the people who wrote it."
+        intro="Any consultancy can tell you it delivers quality. What matters is whether the engagement produces evidence: written decisions, testable acceptance criteria, and documentation that outlives the people who wrote it."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Approach", href: "/approach" },
@@ -89,7 +89,7 @@ export default function ApproachPage() {
           <SectionHeading
             eyebrow="The engagement"
             title="Five phases, start to finish."
-            intro="Not every engagement runs all five — an advisory assessment may stop after discovery, by design. But where we build, this is the sequence, and no phase begins before the previous one has been signed off."
+            intro="Not every engagement runs all five. An advisory assessment may stop after discovery, by design. But where we build, this is the sequence, and no phase begins before the previous one has been signed off."
           />
 
           <ol className="mt-16 space-y-px bg-line">
@@ -216,7 +216,7 @@ export default function ApproachPage() {
       <CtaSection
         eyebrow="Start with discovery"
         title="Begin with four weeks of facts, not a twelve-month commitment."
-        intro="Most engagements start with a short, fixed-fee discovery phase. You end it with a written report you own outright — including the option of doing nothing, if that is genuinely the right answer."
+        intro="Most engagements start with a short, fixed-fee discovery phase. You end it with a written report you own outright, including the option of doing nothing if that is genuinely the right answer."
       />
     </>
   );

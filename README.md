@@ -1,4 +1,4 @@
-# A & H Consulting Group — website
+# A & H Consulting Group website
 
 Corporate website for A & H Consulting Group LLC, replacing the previous Shopify
 site. Built with Next.js and deployed on Vercel.
@@ -9,14 +9,14 @@ site. Built with Next.js and deployed on Vercel.
 
 ## Stack
 
-| Concern    | Choice                                    |
-| ---------- | ----------------------------------------- |
-| Framework  | Next.js 16 (App Router, React 19)         |
-| Styling    | Tailwind CSS v4                           |
-| Language   | TypeScript (strict)                       |
-| Fonts      | Inter + Source Serif 4, self-hosted       |
-| Email      | Resend HTTP API (no SDK dependency)       |
-| Hosting    | Vercel                                    |
+| Concern   | Choice                              |
+| --------- | ----------------------------------- |
+| Framework | Next.js 16 (App Router, React 19)   |
+| Styling   | Tailwind CSS v4                     |
+| Language  | TypeScript (strict)                 |
+| Fonts     | Inter + Source Serif 4, self-hosted |
+| Email     | Resend HTTP API (no SDK dependency) |
+| Hosting   | Vercel                              |
 
 There are no runtime dependencies beyond Next, React, and React DOM. Every page
 except the contact API is statically prerendered.
@@ -25,7 +25,7 @@ except the contact API is statically prerendered.
 
 ```bash
 npm install
-cp .env.example .env.local   # optional — only needed for the contact form
+cp .env.example .env.local   # optional, only needed for the contact form
 npm run dev                  # http://localhost:3000
 ```
 
@@ -65,17 +65,17 @@ src/
 Everything a non-developer would want to change lives in `src/content/`. No JSX
 edits are needed to update copy.
 
-| File              | Contains                                                |
-| ----------------- | ------------------------------------------------------- |
-| `company.ts`      | Legal name, offices, email, registration, stats          |
-| `team.ts`         | Leadership and staff                                    |
-| `services.ts`     | Six practice areas, capabilities, deliverables           |
-| `industries.ts`   | Sectors and the problems addressed in each               |
-| `case-studies.ts` | Client engagements                                       |
-| `approach.ts`     | Delivery phases and firm principles                      |
-| `faqs.ts`         | FAQ, grouped by theme                                    |
-| `careers.ts`      | Open roles and benefits                                  |
-| `navigation.ts`   | Header and footer menus (derived from the files above)   |
+| File              | Contains                                               |
+| ----------------- | ------------------------------------------------------ |
+| `company.ts`      | Legal name, offices, email, registration, stats        |
+| `team.ts`         | Leadership and staff                                   |
+| `services.ts`     | Six practice areas, capabilities, deliverables         |
+| `industries.ts`   | Sectors and the problems addressed in each             |
+| `case-studies.ts` | Client engagements                                     |
+| `approach.ts`     | Delivery phases and firm principles                    |
+| `faqs.ts`         | FAQ, grouped by theme                                  |
+| `careers.ts`      | Open roles and benefits                                |
+| `navigation.ts`   | Header and footer menus (derived from the files above) |
 
 Registration identifiers in `company.ts` are typed as optional and are hidden
 sitewide when unset, so partial data never renders as a blank field.
@@ -86,15 +86,15 @@ sitewide when unset, so partial data never renders as a blank field.
 four enquiries per IP per ten minutes, and sends the message through Resend.
 
 Without `RESEND_API_KEY` the endpoint returns `503` with a message directing the
-visitor to email directly — enquiries are never silently dropped.
+visitor to email directly, so enquiries are never silently dropped.
 
 Set these in Vercel → Settings → Environment Variables:
 
-| Variable          | Example                                               |
-| ----------------- | ----------------------------------------------------- |
-| `RESEND_API_KEY`  | `re_...`                                              |
-| `CONTACT_INBOX`   | `info@aandhconsultinggroup.com`                       |
-| `CONTACT_FROM`    | `Website Enquiry <website@aandhconsultinggroup.com>`   |
+| Variable         | Example                                              |
+| ---------------- | ---------------------------------------------------- |
+| `RESEND_API_KEY` | `re_...`                                             |
+| `CONTACT_INBOX`  | `info@aandhconsultinggroup.com`                      |
+| `CONTACT_FROM`   | `Website Enquiry <website@aandhconsultinggroup.com>` |
 
 `CONTACT_FROM` must use a domain verified in Resend.
 

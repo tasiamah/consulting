@@ -1,4 +1,4 @@
-# Content checklist — complete before going live
+# Content checklist: complete before going live
 
 The site is built and deployable, but some content is **illustrative placeholder
 data**. It reads as credible, which is exactly why it is dangerous to leave in
@@ -10,11 +10,11 @@ deployment.
 
 ---
 
-## 1. Must fix — verifiable claims
+## 1. Must fix: verifiable claims
 
 These are the items a bank or counterparty is most likely to check.
 
-### Team members — `src/content/team.ts`
+### Team members: `src/content/team.ts`
 
 **Every person listed is invented.** Replace with real staff.
 
@@ -22,36 +22,35 @@ These are the items a bank or counterparty is most likely to check.
 - [ ] Delete any entry you cannot back with a real person
 - [ ] Add real photos to `/public/team/` and set the `photo` field, or leave the
       monogram avatars (both look fine; monograms are honest)
-- [ ] Add `linkedin` URLs where profiles exist — this is the single strongest
+- [ ] Add `linkedin` URLs where profiles exist. This is the single strongest
       verification signal you can give a reviewer
 
 > An accurate team of three beats an invented team of eleven. If you are
 > genuinely three people, say three, and update `stats` and `teamStats` to match.
 
-### Company facts — `src/content/company.ts`
+### Company facts: `src/content/company.ts`
 
-- [ ] `foundedYear` — currently `2019`. Set to the real incorporation year.
-- [ ] `stats` — "40+ engagements", "11 consultants", "96% client retention" are
+- [ ] `stats`: "40+ engagements", "11 consultants", "96% client retention" are
       invented. Replace with numbers you can evidence, or remove the band.
-- [ ] `registration.uaeLicenseNumber` — add your IFZA licence number
-- [ ] `registration.ukCompanyNumber` — add if a UK entity exists, otherwise
-      **leave unset** and reword the London office as a branch/representative
-      office (unset values are hidden automatically sitewide)
-- [ ] `registration.vatNumber` — add if VAT/TRN registered
-- [ ] `registration.uaeAuthority` — currently "International Free Zone Authority
-      (IFZA), Dubai". Confirm this matches the licence exactly.
-- [ ] **Legal suffix** — IFZA issues licences to `FZCO` and `FZ-LLC` entities.
+- [ ] `registration.uaeLicenseNumber`: add your IFZA licence number
+- [ ] `registration.nlRegistrationNumber`: add the KvK number if a Netherlands
+      entity exists, otherwise **leave unset** and reword the European office as
+      a branch or representative office (unset values are hidden sitewide)
+- [ ] `registration.vatNumber`: add if VAT/TRN registered
+- [ ] **Founding year**: no founding date is stated anywhere on the site. If you
+      want one, add it only once it matches the incorporation certificate.
+- [ ] **Legal suffix**: IFZA issues licences to `FZCO` and `FZ-LLC` entities.
       `company.legalName` currently reads "A & H Consulting Group LLC". If the
       licence says FZCO or FZ-LLC, correct it: the name on the site must match
       the licence character for character, because the bank will compare them.
-- [ ] `phone` — currently unset, so no phone number is shown anywhere. A listed
+- [ ] `phone`: currently unset, so no phone number is shown anywhere. A listed
       landline materially improves bank onboarding; add one if you have it.
-- [ ] `linkedin` — add the company page URL
+- [ ] `linkedin`: add the company page URL
 
 > Leave registration fields unset rather than approximate. A wrong licence
 > number is worse than no licence number.
 
-### Case studies — `src/content/case-studies.ts`
+### Case studies: `src/content/case-studies.ts`
 
 **All four engagements are invented**, including the metrics.
 
@@ -78,9 +77,9 @@ own site is a bad look during due diligence.
 
 ---
 
-## 2. Should fix — claims to verify
+## 2. Should fix: claims to verify
 
-### Operating commitments — `src/content/company.ts` (`assurances`)
+### Operating commitments: `src/content/company.ts` (`assurances`)
 
 These describe practices, not certifications, and are deliberately worded that
 way. Confirm each is actually true of how you operate, and amend what is not:
@@ -98,20 +97,20 @@ Several pages state that certificates are available on request.
 - [ ] Confirm professional indemnity insurance is in force
 - [ ] Have the certificate of incorporation, trade licence, and insurance
       certificate ready to send
-- [ ] If you do not hold PI insurance, remove the claim — search for
+- [ ] If you do not hold PI insurance, remove the claim. Search for
       "professional indemnity" in `src/content/faqs.ts` and `src/app/about`
 
 ### Certifications
 
 No certifications (ISO 27001, AWS/Azure partner status, Cyber Essentials) are
-claimed anywhere, by design. Only add them once certificates are held — these
+claimed anywhere, by design. Only add them once certificates are held, because these
 are the easiest claims in the world for a reviewer to check.
 
-### Open roles — `src/content/careers.ts`
+### Open roles: `src/content/careers.ts`
 
 - [ ] Keep only roles you are genuinely hiring for, or remove `/careers`
 
-### Legal pages — `src/app/legal/`
+### Legal pages: `src/app/legal/`
 
 The privacy policy, terms of service, and cookie policy are drafted to a
 professional standard and reference UK/EU GDPR and UAE Federal Decree-Law No. 45
@@ -127,8 +126,8 @@ of 2021 correctly. **They are not legal advice.**
 ## 3. Nice to have
 
 - [ ] Office photographs for the about page (real offices, not stock imagery)
-- [ ] Client logos — only with written permission
-- [ ] Named client testimonials — the `quote` field on each case study renders
+- [ ] Client logos: only with written permission
+- [ ] Named client testimonials: the `quote` field on each case study renders
       automatically when set
 - [ ] Google Business Profile for both offices, with matching addresses
 - [ ] LinkedIn company page with employees who list A&H as their employer

@@ -24,7 +24,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Start with a conversation, not a pitch."
-        intro="Tell us what you are trying to achieve. We will tell you plainly whether we can help, what it would take, and roughly what it would cost — including when the honest answer is that you do not need us."
+        intro="Tell us what you are trying to achieve. We will tell you plainly whether we can help, what it would take, and roughly what it would cost, including when the honest answer is that you do not need us."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Contact", href: "/contact" },
@@ -154,7 +154,7 @@ export default function ContactPage() {
 
             <p className="text-[0.8125rem] leading-relaxed text-slate-ink/80">
               Both locations are staffed offices. Visits are welcome by
-              appointment — please arrange in advance so the right people are
+              appointment. Please arrange in advance so the right people are
               available.
             </p>
           </aside>

@@ -2,7 +2,7 @@
  * Client engagements are published anonymously under the confidentiality terms
  * of each agreement.
  *
- * PLACEHOLDER DATA — rewrite each entry to describe real engagements before
+ * PLACEHOLDER DATA. Rewrite each entry to describe real engagements before
  * publishing, or remove the case studies section entirely. Named clients may
  * only be added with written permission. See CONTENT-CHECKLIST.md.
  */

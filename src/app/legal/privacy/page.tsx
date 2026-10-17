@@ -120,30 +120,30 @@ export default function PrivacyPage() {
               <h2>3. Why we process it, and our lawful basis</h2>
               <ul>
                 <li>
-                  <strong>Responding to your enquiry</strong> — on the basis of
+                  <strong>Responding to your enquiry.</strong> On the basis of
                   your consent and our legitimate interest in conducting
                   business correspondence.
                 </li>
                 <li>
                   <strong>
-                    Delivering and administering client engagements
+                    Delivering and administering client engagements.
                   </strong>{" "}
-                  — on the basis of performance of a contract, or steps taken at
+                  On the basis of performance of a contract, or steps taken at
                   your request prior to entering one.
                 </li>
                 <li>
-                  <strong>Recruitment</strong> — on the basis of steps taken
+                  <strong>Recruitment.</strong> On the basis of steps taken
                   prior to entering an employment contract and our legitimate
                   interest in assessing candidates.
                 </li>
                 <li>
-                  <strong>Securing our website and systems</strong> — on the
+                  <strong>Securing our website and systems.</strong> On the
                   basis of our legitimate interest in preventing fraud, abuse,
                   and unauthorised access.
                 </li>
                 <li>
-                  <strong>Meeting legal and regulatory obligations</strong> —
-                  including accounting, tax, and anti-money-laundering
+                  <strong>Meeting legal and regulatory obligations.</strong>{" "}
+                  Including accounting, tax, and anti-money-laundering
                   requirements.
                 </li>
               </ul>
@@ -265,9 +265,9 @@ export default function PrivacyPage() {
               </p>
               <p>
                 If you are not satisfied with our response, you have the right
-                to lodge a complaint with a supervisory authority — in the
-                United Kingdom, the Information Commissioner&rsquo;s Office; in
-                the United Arab Emirates, the UAE Data Office.
+                to lodge a complaint with a supervisory authority. In the United
+                Kingdom, that is the Information Commissioner&rsquo;s Office. In
+                the United Arab Emirates, it is the UAE Data Office.
               </p>
 
               <h2>9. Cookies</h2>
