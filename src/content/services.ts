@@ -290,7 +290,7 @@ export const services: Service[] = [
     ],
     engagement: {
       model: "Annual support agreement, tiered by cover level",
-      duration: "12-month term, renewable",
+      duration: "12 month term, renewable",
       team: "Named support lead plus assigned engineers",
     },
     icon: "support",

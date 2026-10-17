@@ -104,7 +104,7 @@ export const caseStudies: CaseStudy[] = [
       "Ageing on premise infrastructure across four clinics was reaching end of support. Recovery had never been tested, costs were unattributable to any department, and the group could not answer where patient data physically resided.",
     approach: [
       "Assessed every workload for migration suitability and mapped system dependencies",
-      "Built a Terraform defined landing zone with in-region data residency and enforced encryption",
+      "Built a Terraform defined landing zone with in region data residency and enforced encryption",
       "Migrated in phases outside clinical hours, each with a tested rollback point",
       "Established backup and restore testing with documented recovery objectives",
       "Introduced cost tagging and monthly reporting to the group finance team",
@@ -135,7 +135,7 @@ export const caseStudies: CaseStudy[] = [
       "Modelled the data flow between plant systems, the ERP, and the quality function",
       "Built an event driven integration layer with idempotent processing and dead letter handling",
       "Delivered reconciliation reporting so finance could verify production figures tie out",
-      "Digitised quality traceability records with batch-level lineage",
+      "Digitised quality traceability records with lineage at batch level",
       "Handed over with runbooks, monitoring dashboards, and training for the internal IT team",
     ],
     results: [

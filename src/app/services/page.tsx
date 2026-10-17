@@ -214,7 +214,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Cross-link */}
+      {/* Cross link */}
       <section className="border-t border-line bg-paper py-16">
         <div className="container-page flex flex-wrap items-center justify-between gap-6">
           <p className="max-w-xl text-[1.0625rem] leading-relaxed text-ink">

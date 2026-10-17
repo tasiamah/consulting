@@ -70,7 +70,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Are your solutions built to data protection requirements?",
         answer:
-          "Yes. We design to UK and EU GDPR and to UAE Federal Decree Law No. 45 of 2021: documented lawful bases, data minimisation, encryption in transit and at rest, defined retention periods, and the technical means to service data subject requests. Where you operate under sector-specific rules, those are captured as constraints during discovery.",
+          "Yes. We design to UK and EU GDPR and to UAE Federal Decree Law No. 45 of 2021: documented lawful bases, data minimisation, encryption in transit and at rest, defined retention periods, and the technical means to service data subject requests. Where you operate under sector specific rules, those are captured as constraints during discovery.",
       },
       {
         question:
@@ -101,7 +101,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Do you provide support outside business hours?",
         answer:
-          "Extended-hours and on call cover are available as part of a support agreement. The specific cover window and response targets are agreed in the service schedule rather than offered as a blanket promise.",
+          "Extended hours and on call cover are available as part of a support agreement. The specific cover window and response targets are agreed in the service schedule rather than offered as a blanket promise.",
       },
       {
         question: "What if we are not satisfied with the work?",

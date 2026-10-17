@@ -120,7 +120,7 @@ export function SectionHeading({
 }
 
 /* -------------------------------------------------------------------------- */
-/* Link with underline-on-hover arrow treatment                               */
+/* Link with underline on hover arrow treatment                               */
 /* -------------------------------------------------------------------------- */
 
 export function TextLink({

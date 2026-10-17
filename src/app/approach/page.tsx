@@ -9,7 +9,7 @@ import { assurances } from "@/content/company";
 export const metadata: Metadata = {
   title: "Our approach",
   description:
-    "How A & H Consulting Group delivers: a five-phase methodology covering discovery, design, build, transition, and support, with written acceptance criteria at every milestone.",
+    "How A & H Consulting Group delivers: a five phase methodology covering discovery, design, build, transition, and support, with written acceptance criteria at every milestone.",
   alternates: { canonical: "/approach" },
 };
 

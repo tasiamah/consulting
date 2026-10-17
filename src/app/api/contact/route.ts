@@ -34,7 +34,7 @@ const interestOptions = [
   "Other",
 ];
 
-/** In-memory throttle. Resets on cold start, which is acceptable for a contact form. */
+/** In memory throttle. Resets on cold start, which is acceptable for a contact form. */
 const recentSubmissions = new Map<string, number[]>();
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_PER_WINDOW = 4;

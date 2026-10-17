@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
-/** Fades content up as it scrolls into view. No-op under reduced motion. */
+/** Fades content up as it scrolls into view. No op under reduced motion. */
 export function Reveal({
   children,
   delay = 0,
