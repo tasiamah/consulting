@@ -130,11 +130,6 @@ export function SiteFooter() {
                 </div>
               ))}
             </dl>
-            <p className="mt-5 max-w-md text-[0.8125rem] leading-relaxed text-white/55">
-              Certificate of incorporation, trade licence, and proof of
-              insurance are available to clients and counterparties on request
-              as part of supplier onboarding.
-            </p>
           </div>
         </div>
 
