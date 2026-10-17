@@ -27,7 +27,8 @@ export const caseStudies: CaseStudy[] = [
     client: "Regional freight and customs operator",
     sector: "Logistics",
     region: "United Arab Emirates",
-    title: "Replacing spreadsheet-based shipment tracking with a live operations platform",
+    title:
+      "Replacing spreadsheet-based shipment tracking with a live operations platform",
     challenge:
       "Operations staff tracked shipments across three carrier portals and a shared spreadsheet. Status enquiries took up to a day to answer, customs documentation was re-keyed by hand, and management had no reliable view of exceptions until after they became client complaints.",
     approach: [
@@ -38,11 +39,25 @@ export const caseStudies: CaseStudy[] = [
       "Transitioned the platform to a support agreement with monitoring and an on-call rota",
     ],
     results: [
-      { metric: "< 2 min", label: "Average shipment status enquiry response, down from up to one day" },
-      { metric: "71%", label: "Reduction in manual documentation handling time" },
-      { metric: "3", label: "Carrier systems consolidated into one operational view" },
+      {
+        metric: "< 2 min",
+        label:
+          "Average shipment status enquiry response, down from up to one day",
+      },
+      {
+        metric: "71%",
+        label: "Reduction in manual documentation handling time",
+      },
+      {
+        metric: "3",
+        label: "Carrier systems consolidated into one operational view",
+      },
     ],
-    services: ["system-integration", "custom-software-development", "managed-support"],
+    services: [
+      "system-integration",
+      "custom-software-development",
+      "managed-support",
+    ],
     duration: "7 months, followed by ongoing support",
   },
   {
@@ -61,9 +76,19 @@ export const caseStudies: CaseStudy[] = [
       "Produced an incident response playbook and ran a tabletop exercise with the leadership team",
     ],
     results: [
-      { metric: "90 days", label: "From assessment to all high-severity findings remediated" },
-      { metric: "100%", label: "Privileged accounts brought under multi-factor authentication" },
-      { metric: "4 days", label: "Average security questionnaire turnaround, down from several weeks" },
+      {
+        metric: "90 days",
+        label: "From assessment to all high-severity findings remediated",
+      },
+      {
+        metric: "100%",
+        label: "Privileged accounts brought under multi-factor authentication",
+      },
+      {
+        metric: "4 days",
+        label:
+          "Average security questionnaire turnaround, down from several weeks",
+      },
     ],
     services: ["cybersecurity", "it-consulting"],
     duration: "5 months",
@@ -73,7 +98,8 @@ export const caseStudies: CaseStudy[] = [
     client: "Private healthcare group",
     sector: "Healthcare",
     region: "United Arab Emirates",
-    title: "Migrating clinical and administrative systems with no planned downtime",
+    title:
+      "Migrating clinical and administrative systems with no planned downtime",
     challenge:
       "Ageing on-premise infrastructure across four clinics was reaching end of support. Recovery had never been tested, costs were unattributable to any department, and the group could not answer where patient data physically resided.",
     approach: [
@@ -84,9 +110,15 @@ export const caseStudies: CaseStudy[] = [
       "Introduced cost tagging and monthly reporting to the group finance team",
     ],
     results: [
-      { metric: "0", label: "Minutes of planned clinical downtime across the migration" },
+      {
+        metric: "0",
+        label: "Minutes of planned clinical downtime across the migration",
+      },
       { metric: "34%", label: "Reduction in annual infrastructure cost" },
-      { metric: "4 hrs", label: "Tested recovery time objective, previously undefined" },
+      {
+        metric: "4 hrs",
+        label: "Tested recovery time objective, previously undefined",
+      },
     ],
     services: ["cloud-solutions", "cybersecurity", "it-consulting"],
     duration: "9 months",
@@ -107,8 +139,14 @@ export const caseStudies: CaseStudy[] = [
       "Handed over with runbooks, monitoring dashboards, and training for the internal IT team",
     ],
     results: [
-      { metric: "Real time", label: "Production reporting into planning, previously end of shift" },
-      { metric: "98.6%", label: "Stock record accuracy, up from an estimated 89%" },
+      {
+        metric: "Real time",
+        label: "Production reporting into planning, previously end of shift",
+      },
+      {
+        metric: "98.6%",
+        label: "Stock record accuracy, up from an estimated 89%",
+      },
       { metric: "2 sites", label: "Brought onto a single traceability record" },
     ],
     services: ["system-integration", "custom-software-development"],
@@ -116,4 +154,5 @@ export const caseStudies: CaseStudy[] = [
   },
 ];
 
-export const getCaseStudy = (slug: string) => caseStudies.find((c) => c.slug === slug);
+export const getCaseStudy = (slug: string) =>
+  caseStudies.find((c) => c.slug === slug);

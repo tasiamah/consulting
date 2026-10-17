@@ -29,7 +29,10 @@ export function PageHero({
               {breadcrumb.map((crumb, i) => (
                 <li key={crumb.href} className="flex items-center gap-2">
                   {i > 0 && <span className="text-white/20">/</span>}
-                  <Link href={crumb.href} className="transition-colors hover:text-white">
+                  <Link
+                    href={crumb.href}
+                    className="transition-colors hover:text-white"
+                  >
                     {crumb.label}
                   </Link>
                 </li>
@@ -40,7 +43,9 @@ export function PageHero({
 
         <div
           className={
-            aside ? "grid items-end gap-12 lg:grid-cols-[1.5fr_1fr] lg:gap-20" : undefined
+            aside
+              ? "grid items-end gap-12 lg:grid-cols-[1.5fr_1fr] lg:gap-20"
+              : undefined
           }
         >
           <div className={aside ? undefined : "max-w-4xl"}>

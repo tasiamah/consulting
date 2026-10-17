@@ -18,7 +18,10 @@ export function SiteFooter() {
       label: "UAE trade licence no.",
       value: registration.uaeLicenseNumber,
     },
-    registration.vatNumber && { label: "VAT no.", value: registration.vatNumber },
+    registration.vatNumber && {
+      label: "VAT no.",
+      value: registration.vatNumber,
+    },
   ].filter(Boolean) as { label: string; value: string }[];
 
   return (
@@ -28,7 +31,9 @@ export function SiteFooter() {
         <div className="grid gap-14 border-b border-white/10 py-16 lg:grid-cols-[1.15fr_2fr] lg:gap-20 lg:py-20">
           <div>
             <Logo variant="light" />
-            <p className="mt-7 max-w-sm text-[0.9375rem] leading-[1.75]">{company.summary}</p>
+            <p className="mt-7 max-w-sm text-[0.9375rem] leading-[1.75]">
+              {company.summary}
+            </p>
 
             <div className="mt-8 space-y-3 text-[0.875rem]">
               <a
@@ -130,8 +135,9 @@ export function SiteFooter() {
               </div>
             </dl>
             <p className="mt-5 max-w-md text-[0.8125rem] leading-relaxed text-white/40">
-              Certificate of incorporation, trade licence, and proof of insurance are available to
-              clients and counterparties on request as part of supplier onboarding.
+              Certificate of incorporation, trade licence, and proof of
+              insurance are available to clients and counterparties on request
+              as part of supplier onboarding.
             </p>
           </div>
         </div>
@@ -143,17 +149,26 @@ export function SiteFooter() {
           </p>
           <ul className="flex flex-wrap gap-x-7 gap-y-2">
             <li>
-              <Link href="/legal/privacy" className="transition-colors hover:text-white">
+              <Link
+                href="/legal/privacy"
+                className="transition-colors hover:text-white"
+              >
                 Privacy policy
               </Link>
             </li>
             <li>
-              <Link href="/legal/terms" className="transition-colors hover:text-white">
+              <Link
+                href="/legal/terms"
+                className="transition-colors hover:text-white"
+              >
                 Terms of service
               </Link>
             </li>
             <li>
-              <Link href="/legal/cookies" className="transition-colors hover:text-white">
+              <Link
+                href="/legal/cookies"
+                className="transition-colors hover:text-white"
+              >
                 Cookie policy
               </Link>
             </li>

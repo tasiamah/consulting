@@ -30,7 +30,9 @@ export function CtaSection({
             <h2 className="mt-6 max-w-2xl text-[2rem] leading-[1.14] text-white sm:text-[2.5rem] lg:text-[2.75rem]">
               {title}
             </h2>
-            <p className="mt-7 max-w-xl text-[1.0625rem] leading-[1.75] text-white/60">{intro}</p>
+            <p className="mt-7 max-w-xl text-[1.0625rem] leading-[1.75] text-white/60">
+              {intro}
+            </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
@@ -56,15 +58,18 @@ export function CtaSection({
             </h3>
             <ul className="mt-6 space-y-4">
               {assurancePoints.map((point) => (
-                <li key={point} className="flex items-start gap-3.5 text-[0.9375rem] text-white/80">
+                <li
+                  key={point}
+                  className="flex items-start gap-3.5 text-[0.9375rem] text-white/80"
+                >
                   <Check className="mt-1 h-4 w-4 shrink-0 text-accent-300" />
                   {point}
                 </li>
               ))}
             </ul>
             <p className="mt-8 border-t border-white/10 pt-6 text-[0.8125rem] leading-relaxed text-white/45">
-              Enquiries are answered by a consultant, not a call centre. We typically respond within
-              one business day.
+              Enquiries are answered by a consultant, not a call centre. We
+              typically respond within one business day.
             </p>
           </div>
         </div>

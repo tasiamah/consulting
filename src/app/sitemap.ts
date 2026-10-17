@@ -6,7 +6,11 @@ import { caseStudies } from "@/content/case-studies";
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
-  const staticRoutes: { path: string; priority: number; changeFrequency: "monthly" | "yearly" }[] = [
+  const staticRoutes: {
+    path: string;
+    priority: number;
+    changeFrequency: "monthly" | "yearly";
+  }[] = [
     { path: "/", priority: 1, changeFrequency: "monthly" },
     { path: "/services", priority: 0.9, changeFrequency: "monthly" },
     { path: "/industries", priority: 0.8, changeFrequency: "monthly" },

@@ -35,7 +35,10 @@ export const mainNav: NavItem[] = [
 export const footerNav = [
   {
     heading: "Services",
-    links: services.map((s) => ({ label: s.shortTitle, href: `/services/${s.slug}` })),
+    links: services.map((s) => ({
+      label: s.shortTitle,
+      href: `/services/${s.slug}`,
+    })),
   },
   {
     heading: "Company",

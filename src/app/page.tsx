@@ -1,8 +1,23 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { Button, Eyebrow, Monogram, SectionHeading, Stat, TextLink } from "@/components/ui";
-import { ArrowRight, ArrowUpRight, Check, ServiceIcons } from "@/components/icons";
+import {
+  Button,
+  Eyebrow,
+  SectionHeading,
+  Stat,
+  TextLink,
+} from "@/components/ui";
+import { Avatar } from "@/components/avatar";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Check,
+  ServiceIcons,
+} from "@/components/icons";
 import { CtaSection } from "@/components/cta-section";
+import { AssuranceTerminal } from "@/components/assurance-terminal";
+import { TechStack } from "@/components/tech-stack";
+import { Reveal } from "@/components/reveal";
 import { assurances, company, offices, stats } from "@/content/company";
 import { services } from "@/content/services";
 import { industries } from "@/content/industries";
@@ -24,6 +39,7 @@ export default function HomePage() {
       <StatsBand />
       <ServicesSection />
       <ApproachSection />
+      <TechStack />
       <AssuranceSection />
       <IndustriesSection />
       <CaseStudiesSection />
@@ -52,10 +68,11 @@ function Hero() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-[1.0625rem] leading-[1.8] text-white/65 lg:text-[1.1875rem]">
-              {company.legalName} is an enterprise software consultancy operating from the United
-              Arab Emirates and the United Kingdom. We design, build, and run the platforms that
-              regulated and high-growth businesses depend on — and we document them well enough to
-              satisfy an auditor.
+              {company.legalName} is an enterprise software consultancy
+              operating from the United Arab Emirates and the United Kingdom. We
+              design, build, and run the platforms that regulated and
+              high-growth businesses depend on — and we document them well
+              enough to satisfy an auditor.
             </p>
 
             <div className="mt-11 flex flex-wrap items-center gap-4">
@@ -78,7 +95,10 @@ function Hero() {
                 "Fixed-scope phases with written acceptance",
                 "GDPR and UAE data protection by design",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-[0.875rem] text-white/70">
+                <li
+                  key={item}
+                  className="flex items-start gap-3 text-[0.875rem] text-white/70"
+                >
                   <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-300" />
                   {item}
                 </li>
@@ -87,50 +107,52 @@ function Hero() {
           </div>
 
           {/* Corporate fact card — the first thing a reviewer looks for. */}
-          <aside className="animate-rise border border-white/12 bg-white/[0.04] backdrop-blur-sm lg:mt-3">
-            <div className="border-b border-white/10 px-7 py-6">
-              <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-accent-200 uppercase">
-                Corporate profile
-              </h2>
-            </div>
+          <aside className="animate-rise space-y-4 lg:mt-3">
+            <div className="border border-white/12 bg-white/[0.04] backdrop-blur-sm">
+              <div className="border-b border-white/10 px-7 py-6">
+                <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-accent-200 uppercase">
+                  Corporate profile
+                </h2>
+              </div>
 
-            <dl className="divide-y divide-white/8">
-              <div className="px-7 py-5">
-                <dt className="text-[0.75rem] text-white/40">Registered entity</dt>
-                <dd className="mt-1.5 text-[0.9375rem] font-medium text-white">
-                  {company.legalName}
-                </dd>
-              </div>
-              <div className="px-7 py-5">
-                <dt className="text-[0.75rem] text-white/40">Established</dt>
-                <dd className="mt-1.5 text-[0.9375rem] font-medium text-white">
-                  {company.foundedYear}
-                </dd>
-              </div>
-              {offices.map((office) => (
-                <div key={office.id} className="px-7 py-5">
-                  <dt className="text-[0.75rem] text-white/40">{office.region} office</dt>
-                  <dd className="mt-1.5 text-[0.9375rem] leading-relaxed font-medium text-white">
-                    {office.city}, {office.country}
-                    <span className="mt-1 block text-[0.8125rem] font-normal text-white/45">
-                      {office.role}
-                    </span>
+              <dl className="divide-y divide-white/8">
+                <div className="px-7 py-5">
+                  <dt className="text-[0.75rem] text-white/40">
+                    Registered entity
+                  </dt>
+                  <dd className="mt-1.5 text-[0.9375rem] font-medium text-white">
+                    {company.legalName}
                   </dd>
                 </div>
-              ))}
-              <div className="px-7 py-5">
-                <dt className="text-[0.75rem] text-white/40">Practice areas</dt>
-                <dd className="mt-1.5 text-[0.9375rem] leading-relaxed font-medium text-white">
-                  Six, spanning advisory through managed support
-                </dd>
-              </div>
-            </dl>
+                <div className="px-7 py-5">
+                  <dt className="text-[0.75rem] text-white/40">Established</dt>
+                  <dd className="mt-1.5 text-[0.9375rem] font-medium text-white">
+                    {company.foundedYear}
+                  </dd>
+                </div>
+                <div className="px-7 py-5">
+                  <dt className="text-[0.75rem] text-white/40">Offices</dt>
+                  <dd className="mt-1.5 space-y-1 text-[0.9375rem] font-medium text-white">
+                    {offices.map((office) => (
+                      <span key={office.id} className="block">
+                        {office.city}, {office.country}
+                        <span className="ml-2 font-mono text-[0.6875rem] font-normal tracking-[0.08em] text-white/40 uppercase">
+                          {office.id === "uae" ? "Head office" : "Advisory"}
+                        </span>
+                      </span>
+                    ))}
+                  </dd>
+                </div>
+              </dl>
 
-            <div className="border-t border-white/10 px-7 py-5">
-              <TextLink href="/about" tone="light">
-                About the firm
-              </TextLink>
+              <div className="border-t border-white/10 px-7 py-5">
+                <TextLink href="/about" tone="light">
+                  About the firm
+                </TextLink>
+              </div>
             </div>
+
+            <AssuranceTerminal />
           </aside>
         </div>
       </div>
@@ -168,35 +190,36 @@ function ServicesSection() {
         </div>
 
         <div className="mt-16 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => {
+          {services.map((service, i) => {
             const Icon = ServiceIcons[service.icon];
             return (
-              <Link
-                key={service.slug}
-                href={`/services/${service.slug}`}
-                className="group relative flex flex-col bg-white p-8 transition-colors duration-300 hover:bg-paper lg:p-10"
-              >
-                <div className="flex items-center justify-between">
-                  <Icon className="h-7 w-7 text-accent-500 transition-colors group-hover:text-accent-600" />
-                  <span className="font-serif text-[0.875rem] text-line transition-colors group-hover:text-accent-200">
-                    {service.number}
-                  </span>
-                </div>
+              <Reveal key={service.slug} delay={i * 55} className="h-full">
+                <Link
+                  href={`/services/${service.slug}`}
+                  className="group relative flex h-full flex-col bg-white p-8 transition-colors duration-300 hover:bg-paper lg:p-10"
+                >
+                  <div className="flex items-center justify-between">
+                    <Icon className="h-7 w-7 text-accent-500 transition-colors group-hover:text-accent-600" />
+                    <span className="font-mono text-[0.75rem] text-line transition-colors group-hover:text-accent-300">
+                      {service.number}
+                    </span>
+                  </div>
 
-                <h3 className="mt-7 text-[1.25rem] leading-snug text-ink transition-colors group-hover:text-accent-600">
-                  {service.title}
-                </h3>
-                <p className="mt-4 flex-1 text-[0.9375rem] leading-[1.75] text-slate-ink">
-                  {service.summary}
-                </p>
+                  <h3 className="mt-7 text-[1.25rem] leading-snug text-ink transition-colors group-hover:text-accent-600">
+                    {service.title}
+                  </h3>
+                  <p className="mt-4 flex-1 text-[0.9375rem] leading-[1.75] text-slate-ink">
+                    {service.summary}
+                  </p>
 
-                <span className="mt-7 inline-flex items-center gap-2 text-[0.75rem] font-semibold tracking-[0.08em] text-navy-900 uppercase">
-                  <span className="border-b border-transparent pb-0.5 transition-colors group-hover:border-accent-500 group-hover:text-accent-600">
-                    Service detail
+                  <span className="mt-7 inline-flex items-center gap-2 font-mono text-[0.6875rem] font-medium tracking-[0.1em] text-navy-900 uppercase">
+                    <span className="border-b border-transparent pb-0.5 transition-colors group-hover:border-accent-500 group-hover:text-accent-600">
+                      Service detail
+                    </span>
+                    <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </span>
-                  <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </span>
-              </Link>
+                </Link>
+              </Reveal>
             );
           })}
         </div>
@@ -268,21 +291,26 @@ function AssuranceSection() {
 
         <div className="mt-16 grid gap-px border border-line bg-line lg:grid-cols-2">
           {assurances.map((item, i) => (
-            <div key={item.title} className="bg-white p-8 lg:p-11">
-              <span className="font-serif text-[0.875rem] text-accent-300 tabular-nums">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <h3 className="mt-5 text-[1.1875rem] leading-snug text-ink">{item.title}</h3>
-              <p className="mt-4 text-[0.9375rem] leading-[1.8] text-slate-ink">
-                {item.description}
-              </p>
-            </div>
+            <Reveal key={item.title} delay={i * 60} className="h-full">
+              <div className="h-full bg-white p-8 lg:p-11">
+                <span className="font-mono text-[0.75rem] text-accent-400 tabular-nums">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="mt-5 text-[1.1875rem] leading-snug text-ink">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-[0.9375rem] leading-[1.8] text-slate-ink">
+                  {item.description}
+                </p>
+              </div>
+            </Reveal>
           ))}
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-[0.875rem] leading-relaxed text-slate-ink/80">
-          Certificate of incorporation, trade licence, insurance certificates, and completed
-          security questionnaires are provided on request during supplier onboarding.{" "}
+          Certificate of incorporation, trade licence, insurance certificates,
+          and completed security questionnaires are provided on request during
+          supplier onboarding.{" "}
           <Link
             href="/contact"
             className="font-medium text-accent-600 underline underline-offset-4 hover:text-accent-700"
@@ -316,20 +344,21 @@ function IndustriesSection() {
         </div>
 
         <div className="mt-16 grid gap-px bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
-          {industries.map((industry) => (
-            <Link
-              key={industry.slug}
-              href={`/industries#${industry.slug}`}
-              className="group bg-navy-900 p-8 transition-colors duration-300 hover:bg-navy-800 lg:p-10"
-            >
-              <h3 className="flex items-start justify-between gap-4 text-[1.125rem] leading-snug text-white">
-                {industry.name}
-                <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-accent-300 opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
-              </h3>
-              <p className="mt-4 text-[0.9375rem] leading-[1.75] text-white/55">
-                {industry.summary}
-              </p>
-            </Link>
+          {industries.map((industry, i) => (
+            <Reveal key={industry.slug} delay={i * 55} className="h-full">
+              <Link
+                href={`/industries#${industry.slug}`}
+                className="group block h-full bg-navy-900 p-8 transition-colors duration-300 hover:bg-navy-800 lg:p-10"
+              >
+                <h3 className="flex items-start justify-between gap-4 text-[1.125rem] leading-snug text-white">
+                  {industry.name}
+                  <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-accent-300 opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
+                </h3>
+                <p className="mt-4 text-[0.9375rem] leading-[1.75] text-white/55">
+                  {industry.summary}
+                </p>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </div>
@@ -355,42 +384,43 @@ function CaseStudiesSection() {
         </div>
 
         <div className="mt-16 grid gap-px border border-line bg-line lg:grid-cols-3">
-          {featured.map((study) => (
-            <Link
-              key={study.slug}
-              href={`/case-studies/${study.slug}`}
-              className="group flex flex-col bg-white p-8 transition-colors duration-300 hover:bg-paper lg:p-10"
-            >
-              <div className="flex items-center gap-3 text-[0.6875rem] font-semibold tracking-[0.14em] uppercase">
-                <span className="text-accent-600">{study.sector}</span>
-                <span className="text-line">|</span>
-                <span className="text-slate-ink/60">{study.region}</span>
-              </div>
+          {featured.map((study, i) => (
+            <Reveal key={study.slug} delay={i * 70} className="h-full">
+              <Link
+                href={`/case-studies/${study.slug}`}
+                className="group flex h-full flex-col bg-white p-8 transition-colors duration-300 hover:bg-paper lg:p-10"
+              >
+                <div className="flex items-center gap-3 text-[0.6875rem] font-semibold tracking-[0.14em] uppercase">
+                  <span className="text-accent-600">{study.sector}</span>
+                  <span className="text-line">|</span>
+                  <span className="text-slate-ink/60">{study.region}</span>
+                </div>
 
-              <h3 className="mt-6 flex-1 text-[1.1875rem] leading-snug text-ink transition-colors group-hover:text-accent-600">
-                {study.title}
-              </h3>
+                <h3 className="mt-6 flex-1 text-[1.1875rem] leading-snug text-ink transition-colors group-hover:text-accent-600">
+                  {study.title}
+                </h3>
 
-              <dl className="mt-8 space-y-4 border-t border-line pt-7">
-                {study.results.slice(0, 2).map((result) => (
-                  <div key={result.label}>
-                    <dt className="font-serif text-[1.625rem] leading-none text-navy-900">
-                      {result.metric}
-                    </dt>
-                    <dd className="mt-2 text-[0.8125rem] leading-relaxed text-slate-ink">
-                      {result.label}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
+                <dl className="mt-8 space-y-4 border-t border-line pt-7">
+                  {study.results.slice(0, 2).map((result) => (
+                    <div key={result.label}>
+                      <dt className="font-serif text-[1.625rem] leading-none text-navy-900">
+                        {result.metric}
+                      </dt>
+                      <dd className="mt-2 text-[0.8125rem] leading-relaxed text-slate-ink">
+                        {result.label}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
 
-              <span className="mt-8 inline-flex items-center gap-2 text-[0.75rem] font-semibold tracking-[0.08em] text-navy-900 uppercase">
-                <span className="border-b border-transparent pb-0.5 transition-colors group-hover:border-accent-500 group-hover:text-accent-600">
-                  Read the engagement
+                <span className="mt-8 inline-flex items-center gap-2 font-mono text-[0.6875rem] font-medium tracking-[0.1em] text-navy-900 uppercase">
+                  <span className="border-b border-transparent pb-0.5 transition-colors group-hover:border-accent-500 group-hover:text-accent-600">
+                    Read the engagement
+                  </span>
+                  <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
                 </span>
-                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
-              </span>
-            </Link>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </div>
@@ -423,16 +453,22 @@ function TeamSection() {
             <ul className="mt-7 grid gap-x-12 gap-y-9 sm:grid-cols-2">
               {leadership.map((member) => (
                 <li key={member.name} className="flex items-center gap-5">
-                  <Monogram
-                    initials={member.initials}
-                    className="h-14 w-14 shrink-0 text-[1.0625rem]"
+                  <Avatar
+                    name={member.name}
+                    photo={member.photo}
+                    overrides={member.avatar}
+                    className="h-16 w-16 shrink-0 rounded-sm"
                   />
                   <div>
                     <div className="text-[0.9375rem] font-semibold tracking-tight text-ink">
                       {member.name}
                     </div>
-                    <div className="mt-1 text-[0.8125rem] text-slate-ink">{member.role}</div>
-                    <div className="mt-0.5 text-[0.75rem] text-slate-ink/60">{member.office}</div>
+                    <div className="mt-1 text-[0.8125rem] text-slate-ink">
+                      {member.role}
+                    </div>
+                    <div className="mt-0.5 text-[0.75rem] text-slate-ink/60">
+                      {member.office}
+                    </div>
                   </div>
                 </li>
               ))}

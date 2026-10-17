@@ -16,8 +16,9 @@ export default function NotFound() {
             This page could not be found.
           </h1>
           <p className="mt-7 text-[1.0625rem] leading-[1.8] text-white/60">
-            The address may have changed, or the link that brought you here may be out of date. The
-            pages below cover most of what people are looking for.
+            The address may have changed, or the link that brought you here may
+            be out of date. The pages below cover most of what people are
+            looking for.
           </p>
 
           <div className="mt-11 flex flex-wrap gap-4">

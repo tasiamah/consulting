@@ -28,8 +28,12 @@ export default function CareersPage() {
           <dl className="grid grid-cols-2 gap-px bg-white/15">
             {teamStats.map((stat) => (
               <div key={stat.label} className="bg-navy-950 p-6">
-                <dt className="font-serif text-[2rem] leading-none text-white">{stat.value}</dt>
-                <dd className="mt-2.5 text-[0.8125rem] text-white/55">{stat.label}</dd>
+                <dt className="font-serif text-[2rem] leading-none text-white">
+                  {stat.value}
+                </dt>
+                <dd className="mt-2.5 text-[0.8125rem] text-white/55">
+                  {stat.label}
+                </dd>
               </div>
             ))}
           </dl>
@@ -66,15 +70,21 @@ export default function CareersPage() {
                   <dl className="flex flex-wrap gap-x-8 gap-y-2 text-[0.8125rem]">
                     <div>
                       <dt className="text-slate-ink/60">Location</dt>
-                      <dd className="mt-0.5 font-medium text-ink">{role.office}</dd>
+                      <dd className="mt-0.5 font-medium text-ink">
+                        {role.office}
+                      </dd>
                     </div>
                     <div>
                       <dt className="text-slate-ink/60">Type</dt>
-                      <dd className="mt-0.5 font-medium text-ink">{role.type}</dd>
+                      <dd className="mt-0.5 font-medium text-ink">
+                        {role.type}
+                      </dd>
                     </div>
                     <div>
                       <dt className="text-slate-ink/60">Practice</dt>
-                      <dd className="mt-0.5 font-medium text-ink">{role.practice}</dd>
+                      <dd className="mt-0.5 font-medium text-ink">
+                        {role.practice}
+                      </dd>
                     </div>
                   </dl>
 
@@ -96,8 +106,9 @@ export default function CareersPage() {
                   Nothing here that fits you?
                 </h3>
                 <p className="mt-3 max-w-xl text-[0.9375rem] leading-relaxed text-slate-ink">
-                  We keep a standing interest in strong architects, security engineers, and delivery
-                  leads. Send a CV and a short note on the work you want to be doing.
+                  We keep a standing interest in strong architects, security
+                  engineers, and delivery leads. Send a CV and a short note on
+                  the work you want to be doing.
                 </p>
               </div>
               <a
@@ -125,7 +136,9 @@ export default function CareersPage() {
           <div className="mt-16 grid gap-px border border-line bg-line lg:grid-cols-2">
             {benefits.map((benefit) => (
               <div key={benefit.title} className="bg-white p-8 lg:p-11">
-                <h3 className="text-[1.1875rem] leading-snug text-ink">{benefit.title}</h3>
+                <h3 className="text-[1.1875rem] leading-snug text-ink">
+                  {benefit.title}
+                </h3>
                 <p className="mt-4 text-[0.9375rem] leading-[1.8] text-slate-ink">
                   {benefit.description}
                 </p>
@@ -148,7 +161,8 @@ export default function CareersPage() {
               {
                 step: "01",
                 name: "Application review",
-                detail: "Read by the practice lead for the role. You get a decision within a week.",
+                detail:
+                  "Read by the practice lead for the role. You get a decision within a week.",
               },
               {
                 step: "02",
@@ -176,7 +190,9 @@ export default function CareersPage() {
                 <h3 className="mt-5 font-sans text-[1rem] font-semibold tracking-tight text-ink">
                   {item.name}
                 </h3>
-                <p className="mt-3 text-[0.875rem] leading-[1.75] text-slate-ink">{item.detail}</p>
+                <p className="mt-3 text-[0.875rem] leading-[1.75] text-slate-ink">
+                  {item.detail}
+                </p>
               </li>
             ))}
           </ol>

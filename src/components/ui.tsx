@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ComponentProps, ReactNode } from "react";
 import { ArrowRight } from "./icons";
+import { CountUp } from "./count-up";
 
 /* -------------------------------------------------------------------------- */
 /* Button                                                                     */
@@ -138,7 +139,9 @@ export function TextLink({
     <Link
       href={href}
       className={`group inline-flex items-center gap-2 text-[0.8125rem] font-semibold tracking-[0.06em] uppercase transition-colors ${
-        tone === "light" ? "text-white hover:text-accent-200" : "text-navy-900 hover:text-accent-600"
+        tone === "light"
+          ? "text-white hover:text-accent-200"
+          : "text-navy-900 hover:text-accent-600"
       } ${className}`}
     >
       <span className="border-b border-current/30 pb-0.5 transition-colors group-hover:border-current">
@@ -146,21 +149,6 @@ export function TextLink({
       </span>
       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
     </Link>
-  );
-}
-
-/* -------------------------------------------------------------------------- */
-/* Monogram avatar used on the team listing                                   */
-/* -------------------------------------------------------------------------- */
-
-export function Monogram({ initials, className = "" }: { initials: string; className?: string }) {
-  return (
-    <div
-      aria-hidden="true"
-      className={`flex items-center justify-center bg-linear-to-br from-navy-800 to-navy-600 font-serif text-white select-none ${className}`}
-    >
-      <span className="tracking-[0.02em]">{initials}</span>
-    </div>
   );
 }
 
@@ -181,13 +169,12 @@ export function Stat({
 }) {
   return (
     <div>
-      <div
-        className={`font-serif text-[2.5rem] leading-none tracking-[-0.03em] ${
+      <CountUp
+        value={value}
+        className={`block font-serif text-[2.5rem] leading-none tracking-[-0.03em] ${
           tone === "light" ? "text-white" : "text-navy-900"
         }`}
-      >
-        {value}
-      </div>
+      />
       <div
         className={`mt-3 text-[0.8125rem] font-semibold tracking-[0.04em] ${
           tone === "light" ? "text-white/90" : "text-ink"

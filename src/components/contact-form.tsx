@@ -68,7 +68,9 @@ export function ContactForm({
       );
       setStatus("error");
     } catch {
-      setFormError(`We could not reach the server. Please email ${fallbackEmail} directly.`);
+      setFormError(
+        `We could not reach the server. Please email ${fallbackEmail} directly.`,
+      );
       setStatus("error");
     }
   }
@@ -79,10 +81,12 @@ export function ContactForm({
         <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent-500/10">
           <Check className="h-6 w-6 text-accent-600" />
         </div>
-        <h3 className="mt-7 text-[1.5rem] leading-tight text-ink">Thank you — message received.</h3>
+        <h3 className="mt-7 text-[1.5rem] leading-tight text-ink">
+          Thank you — message received.
+        </h3>
         <p className="mx-auto mt-5 max-w-md text-[0.9375rem] leading-[1.8] text-slate-ink">
-          A consultant will respond directly, usually within one business day. If your enquiry is
-          urgent, email{" "}
+          A consultant will respond directly, usually within one business day.
+          If your enquiry is urgent, email{" "}
           <a
             href={`mailto:${fallbackEmail}`}
             className="font-medium text-accent-600 underline underline-offset-4"
@@ -103,7 +107,11 @@ export function ContactForm({
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="border border-line bg-paper p-8 lg:p-10">
+    <form
+      onSubmit={handleSubmit}
+      noValidate
+      className="border border-line bg-paper p-8 lg:p-10"
+    >
       <div className="grid gap-6 sm:grid-cols-2">
         <Field
           id={`${uid}-name`}
@@ -181,7 +189,12 @@ export function ContactForm({
       {/* Honeypot */}
       <div aria-hidden="true" className="absolute -left-[9999px]">
         <label htmlFor={`${uid}-website`}>Website</label>
-        <input id={`${uid}-website`} name="website" tabIndex={-1} autoComplete="off" />
+        <input
+          id={`${uid}-website`}
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+        />
       </div>
 
       <div className="mt-7 border-t border-line pt-7">
@@ -193,8 +206,8 @@ export function ContactForm({
             className="mt-1 h-4 w-4 shrink-0 accent-[#1a5496]"
           />
           <span className="text-[0.8125rem] leading-[1.7] text-slate-ink">
-            I consent to A &amp; H Consulting Group storing the details above in order to respond to
-            this enquiry, as described in the{" "}
+            I consent to A &amp; H Consulting Group storing the details above in
+            order to respond to this enquiry, as described in the{" "}
             <a
               href="/legal/privacy"
               className="font-medium text-accent-600 underline underline-offset-4"
@@ -228,8 +241,8 @@ export function ContactForm({
       </button>
 
       <p className="mt-5 text-[0.75rem] leading-relaxed text-slate-ink/70">
-        We respond to every enquiry. Your details are never shared with third parties or used for
-        marketing.
+        We respond to every enquiry. Your details are never shared with third
+        parties or used for marketing.
       </p>
     </form>
   );

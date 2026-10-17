@@ -73,7 +73,12 @@ export const offices: Office[] = [
     city: "London",
     country: "United Kingdom",
     shortLabel: "London, UK",
-    lines: ["71–75 Shelton Street", "Covent Garden", "WC2H 9JQ", "London, United Kingdom"],
+    lines: [
+      "71–75 Shelton Street",
+      "Covent Garden",
+      "WC2H 9JQ",
+      "London, United Kingdom",
+    ],
     timezone: "GMT/BST (UTC+0/+1)",
     hours: "Monday – Friday, 09:00 – 18:00",
     role: "European client engagement and advisory office",
@@ -81,10 +86,22 @@ export const offices: Office[] = [
 ];
 
 export const stats = [
-  { value: "40+", label: "Engagements delivered", detail: "Across six industries since 2019" },
+  {
+    value: "40+",
+    label: "Engagements delivered",
+    detail: "Across six industries since 2019",
+  },
   { value: "2", label: "Delivery regions", detail: "Dubai and London" },
-  { value: "11", label: "Consultants and engineers", detail: "Permanent multidisciplinary team" },
-  { value: "96%", label: "Client retention", detail: "Clients who extend beyond the first engagement" },
+  {
+    value: "11",
+    label: "Consultants and engineers",
+    detail: "Permanent multidisciplinary team",
+  },
+  {
+    value: "96%",
+    label: "Client retention",
+    detail: "Clients who extend beyond the first engagement",
+  },
 ];
 
 /**

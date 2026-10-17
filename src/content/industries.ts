@@ -31,7 +31,11 @@ export const industries: Industry[] = [
       "Availability requirements that tolerate no planned downtime",
       "Evidence of control for accreditation and insurer review",
     ],
-    relevantServices: ["system-integration", "cybersecurity", "managed-support"],
+    relevantServices: [
+      "system-integration",
+      "cybersecurity",
+      "managed-support",
+    ],
   },
   {
     slug: "logistics",
@@ -44,7 +48,11 @@ export const industries: Industry[] = [
       "Peak-season capacity without permanent over-provisioning",
       "Reliable exception handling when upstream systems fail",
     ],
-    relevantServices: ["system-integration", "custom-software-development", "cloud-solutions"],
+    relevantServices: [
+      "system-integration",
+      "custom-software-development",
+      "cloud-solutions",
+    ],
   },
   {
     slug: "retail-ecommerce",
@@ -57,7 +65,11 @@ export const industries: Industry[] = [
       "Handling demand spikes without degrading checkout",
       "Payment and customer data handled to PCI expectations",
     ],
-    relevantServices: ["custom-software-development", "cloud-solutions", "system-integration"],
+    relevantServices: [
+      "custom-software-development",
+      "cloud-solutions",
+      "system-integration",
+    ],
   },
   {
     slug: "manufacturing",
@@ -83,6 +95,10 @@ export const industries: Industry[] = [
       "Document management with defensible retention",
       "Client portals that meet enterprise security review",
     ],
-    relevantServices: ["custom-software-development", "cybersecurity", "managed-support"],
+    relevantServices: [
+      "custom-software-development",
+      "cybersecurity",
+      "managed-support",
+    ],
   },
 ];

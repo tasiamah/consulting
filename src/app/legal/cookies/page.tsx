@@ -35,7 +35,8 @@ const cookieTable = [
   },
   {
     name: "Advertising and tracking",
-    purpose: "Not used. We run no advertising pixels and no cross-site tracking.",
+    purpose:
+      "Not used. We run no advertising pixels and no cross-site tracking.",
     duration: "—",
     consent: "—",
   },
@@ -64,18 +65,20 @@ export default function CookiesPage() {
             <div className="prose-legal mt-10">
               <h2>1. What cookies are</h2>
               <p>
-                Cookies are small text files placed on your device by a website. They are widely used
-                to make sites work, to remember preferences, and to provide information to site
-                operators. Similar technologies, such as local storage, serve comparable purposes and
-                are covered by this policy.
+                Cookies are small text files placed on your device by a website.
+                They are widely used to make sites work, to remember
+                preferences, and to provide information to site operators.
+                Similar technologies, such as local storage, serve comparable
+                purposes and are covered by this policy.
               </p>
 
               <h2>2. Our approach</h2>
               <p>
-                {company.legalName} keeps cookie use to the minimum necessary. We do not use
-                advertising cookies, we do not operate tracking pixels for third-party advertising
-                networks, and we do not sell or share browsing data. Any analytics we operate is
-                configured to collect aggregated, non-identifying measurements only.
+                {company.legalName} keeps cookie use to the minimum necessary.
+                We do not use advertising cookies, we do not operate tracking
+                pixels for third-party advertising networks, and we do not sell
+                or share browsing data. Any analytics we operate is configured
+                to collect aggregated, non-identifying measurements only.
               </p>
             </div>
 
@@ -83,20 +86,22 @@ export default function CookiesPage() {
             <div className="mt-12 overflow-hidden border border-line">
               <table className="w-full border-collapse text-left">
                 <caption className="sr-only">
-                  Categories of cookies used on this website, their purpose, duration, and whether
-                  consent is required
+                  Categories of cookies used on this website, their purpose,
+                  duration, and whether consent is required
                 </caption>
                 <thead>
                   <tr className="bg-paper">
-                    {["Category", "Purpose", "Duration", "Consent"].map((heading) => (
-                      <th
-                        key={heading}
-                        scope="col"
-                        className="border-b border-line px-5 py-4 text-[0.6875rem] font-semibold tracking-[0.14em] text-ink uppercase"
-                      >
-                        {heading}
-                      </th>
-                    ))}
+                    {["Category", "Purpose", "Duration", "Consent"].map(
+                      (heading) => (
+                        <th
+                          key={heading}
+                          scope="col"
+                          className="border-b border-line px-5 py-4 text-[0.6875rem] font-semibold tracking-[0.14em] text-ink uppercase"
+                        >
+                          {heading}
+                        </th>
+                      ),
+                    )}
                   </tr>
                 </thead>
                 <tbody>
@@ -126,42 +131,48 @@ export default function CookiesPage() {
             <div className="prose-legal mt-12">
               <h2>3. Third-party services</h2>
               <p>
-                This site is hosted on infrastructure operated by our hosting provider, which may set
-                cookies strictly necessary for security, load balancing, and abuse prevention. Web
-                fonts are self-hosted and served from our own domain, so no request is made to a
+                This site is hosted on infrastructure operated by our hosting
+                provider, which may set cookies strictly necessary for security,
+                load balancing, and abuse prevention. Web fonts are self-hosted
+                and served from our own domain, so no request is made to a
                 third-party font provider when you load a page.
               </p>
 
               <h2>4. Managing cookies</h2>
               <p>
-                You can control and delete cookies through your browser settings. Most browsers allow
-                you to refuse all cookies, accept only first-party cookies, or delete cookies when
-                you close the browser. Instructions are available in the help documentation for
-                Chrome, Safari, Firefox, and Edge.
+                You can control and delete cookies through your browser
+                settings. Most browsers allow you to refuse all cookies, accept
+                only first-party cookies, or delete cookies when you close the
+                browser. Instructions are available in the help documentation
+                for Chrome, Safari, Firefox, and Edge.
               </p>
               <p>
-                Blocking strictly necessary cookies may prevent parts of this site — including the
-                contact form — from functioning correctly.
+                Blocking strictly necessary cookies may prevent parts of this
+                site — including the contact form — from functioning correctly.
               </p>
 
               <h2>5. Do Not Track</h2>
               <p>
-                Because we do not operate cross-site tracking, there is nothing for a Do Not Track
-                signal to disable. We honour it by default simply by not collecting that data.
+                Because we do not operate cross-site tracking, there is nothing
+                for a Do Not Track signal to disable. We honour it by default
+                simply by not collecting that data.
               </p>
 
               <h2>6. Changes to this policy</h2>
               <p>
-                If we introduce additional cookies, this page will be updated before they are set,
-                and a consent mechanism will be presented where the law requires one.
+                If we introduce additional cookies, this page will be updated
+                before they are set, and a consent mechanism will be presented
+                where the law requires one.
               </p>
 
               <h2>7. Contact</h2>
               <p>
                 Questions about this policy should be sent to{" "}
-                <a href={`mailto:${company.privacyEmail}`}>{company.privacyEmail}</a>. Our{" "}
-                <a href="/legal/privacy">privacy policy</a> explains how we handle personal data more
-                broadly.
+                <a href={`mailto:${company.privacyEmail}`}>
+                  {company.privacyEmail}
+                </a>
+                . Our <a href="/legal/privacy">privacy policy</a> explains how
+                we handle personal data more broadly.
               </p>
             </div>
           </div>

@@ -31,7 +31,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function CaseStudyPage({ params }: PageProps<"/case-studies/[slug]">) {
+export default async function CaseStudyPage({
+  params,
+}: PageProps<"/case-studies/[slug]">) {
   const { slug } = await params;
   const study = getCaseStudy(slug);
   if (!study) notFound();
@@ -56,7 +58,9 @@ export default async function CaseStudyPage({ params }: PageProps<"/case-studies
           <dl className="grid gap-px bg-white/15">
             {study.results.map((result) => (
               <div key={result.label} className="bg-navy-950 p-6">
-                <dt className="font-serif text-[2rem] leading-none text-white">{result.metric}</dt>
+                <dt className="font-serif text-[2rem] leading-none text-white">
+                  {result.metric}
+                </dt>
                 <dd className="mt-3 text-[0.8125rem] leading-relaxed text-white/55">
                   {result.label}
                 </dd>
@@ -72,7 +76,9 @@ export default async function CaseStudyPage({ params }: PageProps<"/case-studies
             <h2 className="text-[1.625rem] leading-tight text-ink lg:text-[2rem]">
               The situation
             </h2>
-            <p className="mt-7 text-[1.0625rem] leading-[1.85] text-slate-ink">{study.challenge}</p>
+            <p className="mt-7 text-[1.0625rem] leading-[1.85] text-slate-ink">
+              {study.challenge}
+            </p>
 
             <h2 className="mt-16 text-[1.625rem] leading-tight text-ink lg:text-[2rem]">
               What we did
@@ -83,7 +89,9 @@ export default async function CaseStudyPage({ params }: PageProps<"/case-studies
                   <span className="font-serif text-[1.125rem] leading-none text-accent-300 tabular-nums">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <p className="text-[0.9375rem] leading-[1.8] text-slate-ink">{step}</p>
+                  <p className="text-[0.9375rem] leading-[1.8] text-slate-ink">
+                    {step}
+                  </p>
                 </li>
               ))}
             </ol>
@@ -129,8 +137,12 @@ export default async function CaseStudyPage({ params }: PageProps<"/case-studies
                   { term: "Duration", detail: study.duration },
                 ].map((item) => (
                   <div key={item.term}>
-                    <dt className="text-[0.75rem] text-slate-ink/70">{item.term}</dt>
-                    <dd className="mt-1 text-[0.9375rem] text-ink">{item.detail}</dd>
+                    <dt className="text-[0.75rem] text-slate-ink/70">
+                      {item.term}
+                    </dt>
+                    <dd className="mt-1 text-[0.9375rem] text-ink">
+                      {item.detail}
+                    </dd>
                   </div>
                 ))}
               </dl>
@@ -164,8 +176,9 @@ export default async function CaseStudyPage({ params }: PageProps<"/case-studies
             </div>
 
             <p className="text-[0.8125rem] leading-relaxed text-slate-ink/80">
-              This engagement is published anonymously under the confidentiality terms of the client
-              agreement. A named reference can be arranged for prospective clients at proposal stage.
+              This engagement is published anonymously under the confidentiality
+              terms of the client agreement. A named reference can be arranged
+              for prospective clients at proposal stage.
             </p>
           </aside>
         </div>

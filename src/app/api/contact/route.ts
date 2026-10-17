@@ -28,7 +28,11 @@ const str = (value: unknown) => (typeof value === "string" ? value.trim() : "");
 // Deliberately permissive: enough to catch typos without rejecting valid addresses.
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-const interestOptions = [...services.map((s) => s.shortTitle), "Not sure yet", "Other"];
+const interestOptions = [
+  ...services.map((s) => s.shortTitle),
+  "Not sure yet",
+  "Other",
+];
 
 /** In-memory throttle. Resets on cold start, which is acceptable for a contact form. */
 const recentSubmissions = new Map<string, number[]>();
@@ -37,7 +41,9 @@ const MAX_PER_WINDOW = 4;
 
 function isRateLimited(key: string) {
   const now = Date.now();
-  const hits = (recentSubmissions.get(key) ?? []).filter((t) => now - t < WINDOW_MS);
+  const hits = (recentSubmissions.get(key) ?? []).filter(
+    (t) => now - t < WINDOW_MS,
+  );
   if (hits.length >= MAX_PER_WINDOW) return true;
   hits.push(now);
   recentSubmissions.set(key, hits);
@@ -66,12 +72,16 @@ export async function POST(request: Request) {
 
   const errors: Record<string, string> = {};
   if (name.length < 2) errors.name = "Please tell us your name.";
-  if (!EMAIL_PATTERN.test(email)) errors.email = "Please enter a valid email address.";
+  if (!EMAIL_PATTERN.test(email))
+    errors.email = "Please enter a valid email address.";
   if (message.length < 20)
-    errors.message = "Please give us at least a couple of sentences of context.";
+    errors.message =
+      "Please give us at least a couple of sentences of context.";
   if (body.consent !== true)
-    errors.consent = "Please confirm you are happy for us to respond to your enquiry.";
-  if (interest && !interestOptions.includes(interest)) errors.interest = "Unrecognised selection.";
+    errors.consent =
+      "Please confirm you are happy for us to respond to your enquiry.";
+  if (interest && !interestOptions.includes(interest))
+    errors.interest = "Unrecognised selection.";
 
   for (const [field, limit] of Object.entries(MAX_LENGTHS)) {
     const value = str(body[field as keyof Payload]);
@@ -89,23 +99,30 @@ export async function POST(request: Request) {
 
   if (isRateLimited(ip)) {
     return NextResponse.json(
-      { error: "Too many enquiries from this address. Please email us directly." },
+      {
+        error:
+          "Too many enquiries from this address. Please email us directly.",
+      },
       { status: 429 },
     );
   }
 
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.CONTACT_INBOX ?? company.email;
-  const from = process.env.CONTACT_FROM ?? `Website Enquiry <onboarding@resend.dev>`;
+  const from =
+    process.env.CONTACT_FROM ?? `Website Enquiry <onboarding@resend.dev>`;
 
   // Without a configured mail provider the form cannot deliver. Tell the
   // visitor plainly rather than pretending the message was sent.
   if (!apiKey) {
-    console.warn("[contact] RESEND_API_KEY is not set — enquiry was not delivered.", {
-      name,
-      email,
-      organisation,
-    });
+    console.warn(
+      "[contact] RESEND_API_KEY is not set — enquiry was not delivered.",
+      {
+        name,
+        email,
+        organisation,
+      },
+    );
     return NextResponse.json(
       {
         error: `Our enquiry form is temporarily unavailable. Please email us directly at ${company.email}.`,
@@ -145,16 +162,23 @@ export async function POST(request: Request) {
     });
 
     if (!response.ok) {
-      console.error("[contact] Mail provider rejected the request", await response.text());
+      console.error(
+        "[contact] Mail provider rejected the request",
+        await response.text(),
+      );
       return NextResponse.json(
-        { error: `We could not send your message. Please email ${company.email} directly.` },
+        {
+          error: `We could not send your message. Please email ${company.email} directly.`,
+        },
         { status: 502 },
       );
     }
   } catch (error) {
     console.error("[contact] Unexpected failure sending enquiry", error);
     return NextResponse.json(
-      { error: `We could not send your message. Please email ${company.email} directly.` },
+      {
+        error: `We could not send your message. Please email ${company.email} directly.`,
+      },
       { status: 502 },
     );
   }

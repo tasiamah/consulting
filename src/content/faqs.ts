@@ -73,7 +73,8 @@ export const faqGroups: FaqGroup[] = [
           "Yes. We design to UK and EU GDPR and to UAE Federal Decree-Law No. 45 of 2021: documented lawful bases, data minimisation, encryption in transit and at rest, defined retention periods, and the technical means to service data subject requests. Where you operate under sector-specific rules, those are captured as constraints during discovery.",
       },
       {
-        question: "Can you complete our security questionnaire or vendor onboarding?",
+        question:
+          "Can you complete our security questionnaire or vendor onboarding?",
         answer:
           "Yes. Our Head of Information Security is the named contact for due diligence, security questionnaires, and supplier onboarding. Contact us and we will respond with the documentation your procurement process requires.",
       },

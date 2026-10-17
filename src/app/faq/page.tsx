@@ -38,7 +38,10 @@ export default function FaqPage() {
 
       <section className="py-20 lg:py-28">
         <div className="container-page grid gap-14 lg:grid-cols-[1fr_2.2fr] lg:gap-20">
-          <nav aria-label="FAQ sections" className="lg:sticky lg:top-32 lg:self-start">
+          <nav
+            aria-label="FAQ sections"
+            className="lg:sticky lg:top-32 lg:self-start"
+          >
             <h2 className="font-sans text-[0.6875rem] font-semibold tracking-[0.18em] text-slate-ink/70 uppercase">
               Sections
             </h2>
@@ -78,12 +81,19 @@ export default function FaqPage() {
 
           <div className="space-y-16">
             {faqGroups.map((group) => (
-              <section key={group.group} id={slugify(group.group)} className="scroll-mt-28">
+              <section
+                key={group.group}
+                id={slugify(group.group)}
+                className="scroll-mt-28"
+              >
                 <h2 className="text-[1.5rem] leading-tight text-ink lg:text-[1.75rem]">
                   {group.group}
                 </h2>
                 <div className="mt-7">
-                  <Accordion items={group.items} idPrefix={slugify(group.group)} />
+                  <Accordion
+                    items={group.items}
+                    idPrefix={slugify(group.group)}
+                  />
                 </div>
               </section>
             ))}
@@ -102,5 +112,8 @@ export default function FaqPage() {
 }
 
 function slugify(value: string) {
-  return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 }

@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { CtaSection } from "@/components/cta-section";
-import { Monogram, SectionHeading, Stat } from "@/components/ui";
+import { SectionHeading, Stat } from "@/components/ui";
+import { Avatar } from "@/components/avatar";
 import { ClockIcon, PinIcon } from "@/components/icons";
 import { assurances, company, offices, stats } from "@/content/company";
 import { leadership, practitioners, team } from "@/content/team";
@@ -31,10 +32,16 @@ export default function AboutPage() {
       label: "UK company number",
       value: registration.ukCompanyNumber,
     },
-    registration.vatNumber && { label: "VAT registration number", value: registration.vatNumber },
+    registration.vatNumber && {
+      label: "VAT registration number",
+      value: registration.vatNumber,
+    },
     { label: "Head office", value: "Dubai, United Arab Emirates" },
     { label: "European office", value: "London, United Kingdom" },
-    { label: "Permanent staff", value: `${team.length} consultants and engineers` },
+    {
+      label: "Permanent staff",
+      value: `${team.length} consultants and engineers`,
+    },
     { label: "Primary contact", value: company.email },
   ].filter(Boolean) as { label: string; value: string }[];
 
@@ -57,32 +64,39 @@ export default function AboutPage() {
             <SectionHeading eyebrow="Our story" title="Why the firm exists." />
             <div className="mt-8 space-y-6 text-[1.0625rem] leading-[1.85] text-slate-ink">
               <p>
-                {company.shortName} was founded in {company.foundedYear} on a straightforward
-                observation: mid-sized organisations in the Gulf and Europe were being poorly served
-                at both ends of the market. The large consultancies sold them partner-level
-                credibility and staffed the work with juniors. The small development shops wrote
-                decent code but could not produce an architecture document, a risk register, or a
-                security questionnaire response when procurement asked for one.
+                {company.shortName} was founded in {company.foundedYear} on a
+                straightforward observation: mid-sized organisations in the Gulf
+                and Europe were being poorly served at both ends of the market.
+                The large consultancies sold them partner-level credibility and
+                staffed the work with juniors. The small development shops wrote
+                decent code but could not produce an architecture document, a
+                risk register, or a security questionnaire response when
+                procurement asked for one.
               </p>
               <p>
-                We set out to occupy the space between those two. A firm small enough that the
-                people who scope the work remain accountable for delivering it, and disciplined
-                enough that every engagement produces the written evidence a serious organisation
-                needs — architecture decisions, acceptance criteria, risk assessments, and
-                handover documentation.
+                We set out to occupy the space between those two. A firm small
+                enough that the people who scope the work remain accountable for
+                delivering it, and disciplined enough that every engagement
+                produces the written evidence a serious organisation needs —
+                architecture decisions, acceptance criteria, risk assessments,
+                and handover documentation.
               </p>
               <p>
-                Today we operate from two offices. Dubai is our registered head office and primary
-                delivery centre, licensed through the International Free Zone Authority and serving
-                clients across the UAE and the wider Gulf. London handles European client engagement
-                and advisory work. Both teams work to the same engineering
-                and review standards, and every solution design passes the same internal architecture
-                review before a line of code is written.
+                Today we operate from two offices. Dubai is our registered head
+                office and primary delivery centre, licensed through the
+                International Free Zone Authority and serving clients across the
+                UAE and the wider Gulf. London handles European client
+                engagement and advisory work. Both teams work to the same
+                engineering and review standards, and every solution design
+                passes the same internal architecture review before a line of
+                code is written.
               </p>
               <p>
-                We are deliberately not trying to become large. Growth is constrained to what we can
-                staff with senior people, because the moment we cannot put an experienced consultant
-                on every engagement, the thing clients are actually buying from us stops existing.
+                We are deliberately not trying to become large. Growth is
+                constrained to what we can staff with senior people, because the
+                moment we cannot put an experienced consultant on every
+                engagement, the thing clients are actually buying from us stops
+                existing.
               </p>
             </div>
           </div>
@@ -97,7 +111,9 @@ export default function AboutPage() {
               <dl className="divide-y divide-line">
                 {corporateFacts.map((fact) => (
                   <div key={fact.label} className="px-7 py-4">
-                    <dt className="text-[0.75rem] text-slate-ink/70">{fact.label}</dt>
+                    <dt className="text-[0.75rem] text-slate-ink/70">
+                      {fact.label}
+                    </dt>
                     <dd className="mt-1 text-[0.875rem] font-medium break-words text-ink">
                       {fact.value}
                     </dd>
@@ -105,8 +121,9 @@ export default function AboutPage() {
                 ))}
               </dl>
               <p className="border-t border-line px-7 py-5 text-[0.8125rem] leading-relaxed text-slate-ink/80">
-                Certificate of incorporation, trade licence, bank references, and proof of
-                professional indemnity insurance are available to counterparties on request.{" "}
+                Certificate of incorporation, trade licence, bank references,
+                and proof of professional indemnity insurance are available to
+                counterparties on request.{" "}
                 <Link
                   href="/contact"
                   className="font-medium text-accent-600 underline underline-offset-4 hover:text-accent-700"
@@ -146,7 +163,9 @@ export default function AboutPage() {
                 <span className="font-serif text-[0.875rem] text-accent-300 tabular-nums">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <h3 className="mt-5 text-[1.1875rem] leading-snug text-ink">{principle.title}</h3>
+                <h3 className="mt-5 text-[1.1875rem] leading-snug text-ink">
+                  {principle.title}
+                </h3>
                 <p className="mt-4 text-[0.9375rem] leading-[1.8] text-slate-ink">
                   {principle.description}
                 </p>
@@ -157,7 +176,10 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section id="team" className="scroll-mt-24 border-y border-line bg-paper py-24 lg:py-32">
+      <section
+        id="team"
+        className="scroll-mt-24 border-y border-line bg-paper py-24 lg:py-32"
+      >
         <div className="container-page">
           <SectionHeading
             eyebrow="Our people"
@@ -173,18 +195,27 @@ export default function AboutPage() {
             {leadership.map((member) => (
               <article key={member.name} className="bg-white p-8 lg:p-10">
                 <div className="flex items-start gap-5">
-                  <Monogram initials={member.initials} className="h-16 w-16 shrink-0 text-[1.25rem]" />
+                  <Avatar
+                    name={member.name}
+                    photo={member.photo}
+                    overrides={member.avatar}
+                    className="h-20 w-20 shrink-0 rounded-sm"
+                  />
                   <div>
                     <h4 className="font-sans text-[1.0625rem] font-semibold tracking-tight text-ink">
                       {member.name}
                     </h4>
-                    <p className="mt-1 text-[0.875rem] text-accent-600">{member.role}</p>
+                    <p className="mt-1 text-[0.875rem] text-accent-600">
+                      {member.role}
+                    </p>
                     <p className="mt-0.5 text-[0.8125rem] text-slate-ink/60">
                       {member.office} office
                     </p>
                   </div>
                 </div>
-                <p className="mt-6 text-[0.9375rem] leading-[1.8] text-slate-ink">{member.bio}</p>
+                <p className="mt-6 text-[0.9375rem] leading-[1.8] text-slate-ink">
+                  {member.bio}
+                </p>
                 <ul className="mt-6 flex flex-wrap gap-2">
                   {member.focus.map((f) => (
                     <li
@@ -207,19 +238,27 @@ export default function AboutPage() {
             {practitioners.map((member) => (
               <article key={member.name} className="bg-white p-7">
                 <div className="flex items-start gap-4">
-                  <Monogram
-                    initials={member.initials}
-                    className="h-12 w-12 shrink-0 text-[0.9375rem]"
+                  <Avatar
+                    name={member.name}
+                    photo={member.photo}
+                    overrides={member.avatar}
+                    className="h-14 w-14 shrink-0 rounded-sm"
                   />
                   <div>
                     <h4 className="font-sans text-[0.9375rem] font-semibold tracking-tight text-ink">
                       {member.name}
                     </h4>
-                    <p className="mt-1 text-[0.8125rem] text-accent-600">{member.role}</p>
-                    <p className="mt-0.5 text-[0.75rem] text-slate-ink/60">{member.office}</p>
+                    <p className="mt-1 text-[0.8125rem] text-accent-600">
+                      {member.role}
+                    </p>
+                    <p className="mt-0.5 text-[0.75rem] text-slate-ink/60">
+                      {member.office}
+                    </p>
                   </div>
                 </div>
-                <p className="mt-5 text-[0.875rem] leading-[1.75] text-slate-ink">{member.bio}</p>
+                <p className="mt-5 text-[0.875rem] leading-[1.75] text-slate-ink">
+                  {member.bio}
+                </p>
                 <ul className="mt-5 flex flex-wrap gap-1.5">
                   {member.focus.map((f) => (
                     <li
@@ -268,7 +307,9 @@ export default function AboutPage() {
                 <h3 className="mt-5 text-[1.5rem] leading-tight text-ink">
                   {office.city}, {office.country}
                 </h3>
-                <p className="mt-3 text-[0.9375rem] text-accent-600">{office.role}</p>
+                <p className="mt-3 text-[0.9375rem] text-accent-600">
+                  {office.role}
+                </p>
 
                 <address className="mt-7 border-t border-line pt-7 text-[0.9375rem] leading-[1.8] not-italic text-slate-ink">
                   {office.lines.map((line) => (
@@ -282,7 +323,9 @@ export default function AboutPage() {
                   <ClockIcon className="mt-0.5 h-4 w-4 shrink-0 text-accent-500" />
                   <span>
                     {office.hours}
-                    <span className="block text-slate-ink/60">{office.timezone}</span>
+                    <span className="block text-slate-ink/60">
+                      {office.timezone}
+                    </span>
                   </span>
                 </div>
               </div>
@@ -302,7 +345,9 @@ export default function AboutPage() {
           <div className="mt-14 grid gap-px border border-line bg-line lg:grid-cols-2">
             {assurances.map((item) => (
               <div key={item.title} className="bg-white p-8 lg:p-10">
-                <h3 className="text-[1.125rem] leading-snug text-ink">{item.title}</h3>
+                <h3 className="text-[1.125rem] leading-snug text-ink">
+                  {item.title}
+                </h3>
                 <p className="mt-4 text-[0.9375rem] leading-[1.8] text-slate-ink">
                   {item.description}
                 </p>

@@ -29,15 +29,23 @@ export default function ServicesPage() {
           <dl className="space-y-5 border-l border-white/15 pl-8">
             {[
               { term: "Practice areas", detail: "Six, delivered by one team" },
-              { term: "Engagement models", detail: "Fixed scope, dedicated team, or retainer" },
+              {
+                term: "Engagement models",
+                detail: "Fixed scope, dedicated team, or retainer",
+              },
               { term: "Typical duration", detail: "4 weeks to 12 months" },
-              { term: "Intellectual property", detail: "Transfers to the client in full" },
+              {
+                term: "Intellectual property",
+                detail: "Transfers to the client in full",
+              },
             ].map((item) => (
               <div key={item.term}>
                 <dt className="text-[0.75rem] tracking-[0.04em] text-white/40 uppercase">
                   {item.term}
                 </dt>
-                <dd className="mt-1 text-[0.9375rem] text-white/85">{item.detail}</dd>
+                <dd className="mt-1 text-[0.9375rem] text-white/85">
+                  {item.detail}
+                </dd>
               </div>
             ))}
           </dl>
@@ -70,7 +78,9 @@ export default function ServicesPage() {
                       {service.summary}
                     </p>
                     <div className="mt-8">
-                      <TextLink href={`/services/${service.slug}`}>Full detail</TextLink>
+                      <TextLink href={`/services/${service.slug}`}>
+                        Full detail
+                      </TextLink>
                     </div>
                   </div>
 
@@ -141,7 +151,9 @@ export default function ServicesPage() {
               },
             ].map((model) => (
               <div key={model.name} className="bg-white p-8 lg:p-10">
-                <h3 className="text-[1.25rem] leading-snug text-ink">{model.name}</h3>
+                <h3 className="text-[1.25rem] leading-snug text-ink">
+                  {model.name}
+                </h3>
                 <p className="mt-4 text-[0.875rem] leading-[1.7] text-slate-ink">
                   <span className="font-semibold text-ink">Best when: </span>
                   {model.best}
@@ -206,8 +218,8 @@ export default function ServicesPage() {
       <section className="border-t border-line bg-paper py-16">
         <div className="container-page flex flex-wrap items-center justify-between gap-6">
           <p className="max-w-xl text-[1.0625rem] leading-relaxed text-ink">
-            Not sure which practice area your problem sits in? That is a normal starting point — most
-            are not cleanly one thing.
+            Not sure which practice area your problem sits in? That is a normal
+            starting point — most are not cleanly one thing.
           </p>
           <Link
             href="/contact"

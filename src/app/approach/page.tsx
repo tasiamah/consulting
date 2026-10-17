@@ -71,7 +71,10 @@ export default function ApproachPage() {
               "Fortnightly demonstration of working software",
               "Formal change control on every variation",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-[0.9375rem] text-white/75">
+              <li
+                key={item}
+                className="flex items-start gap-3 text-[0.9375rem] text-white/75"
+              >
                 <Check className="mt-1 h-4 w-4 shrink-0 text-accent-300" />
                 {item}
               </li>
@@ -100,7 +103,9 @@ export default function ApproachPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-[1.5rem] leading-tight text-ink">{phase.name}</h3>
+                    <h3 className="text-[1.5rem] leading-tight text-ink">
+                      {phase.name}
+                    </h3>
                     <p className="mt-2 text-[0.75rem] font-semibold tracking-[0.08em] text-accent-600 uppercase">
                       {phase.duration}
                     </p>
@@ -171,7 +176,9 @@ export default function ApproachPage() {
           <div className="mt-16 grid gap-px border border-line bg-line lg:grid-cols-2">
             {principles.map((principle) => (
               <div key={principle.title} className="bg-white p-8 lg:p-11">
-                <h3 className="text-[1.1875rem] leading-snug text-ink">{principle.title}</h3>
+                <h3 className="text-[1.1875rem] leading-snug text-ink">
+                  {principle.title}
+                </h3>
                 <p className="mt-4 text-[0.9375rem] leading-[1.8] text-slate-ink">
                   {principle.description}
                 </p>
@@ -194,7 +201,9 @@ export default function ApproachPage() {
           <div className="mt-16 grid gap-px bg-white/10 lg:grid-cols-2">
             {assurances.map((item) => (
               <div key={item.title} className="bg-navy-900 p-8 lg:p-11">
-                <h3 className="text-[1.125rem] leading-snug text-white">{item.title}</h3>
+                <h3 className="text-[1.125rem] leading-snug text-white">
+                  {item.title}
+                </h3>
                 <p className="mt-4 text-[0.9375rem] leading-[1.8] text-white/60">
                   {item.description}
                 </p>

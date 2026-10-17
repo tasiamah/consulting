@@ -26,6 +26,8 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", sans-serif;
   --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, "SF Mono", Menlo,
+    monospace;
 
   --text-display: 4.25rem;
   --text-display--line-height: 1.04;
@@ -71,7 +73,7 @@
 @layer components {
   /* Small uppercase label that sits above section headings. */
   .eyebrow {
-    @apply inline-flex items-center gap-2.5 text-[0.6875rem] font-semibold uppercase tracking-[0.18em];
+    @apply inline-flex items-center gap-2.5 font-mono text-[0.6875rem] font-medium tracking-[0.18em] uppercase;
   }
 
   .eyebrow::before {
@@ -161,6 +163,95 @@
 
 @utility animate-menu {
   animation: menu-in 0.16s var(--ease-out-soft) both;
+}
+
+/* --- Illustrated avatars ------------------------------------------------ */
+
+@keyframes blink {
+  0%,
+  94%,
+  100% {
+    transform: scaleY(1);
+  }
+  97% {
+    transform: scaleY(0.06);
+  }
+}
+
+/* Applied to the eye group inside an avatar; delay is set per-avatar. */
+@utility avatar-blink {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: blink 6.2s steps(1, end) infinite;
+}
+
+/* --- Scroll reveal ------------------------------------------------------ */
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.65s var(--ease-out-soft),
+    transform 0.65s var(--ease-out-soft);
+}
+
+@utility reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* --- Technical flourishes ----------------------------------------------- */
+
+@keyframes caret {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@utility animate-caret {
+  animation: caret 1.05s steps(1, end) infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    opacity: 0.55;
+    transform: scale(0.85);
+  }
+  70%,
+  100% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+
+@utility animate-pulse-ring {
+  animation: pulse-ring 2.4s var(--ease-out-soft) infinite;
+}
+
+@keyframes trace {
+  from {
+    stroke-dashoffset: var(--trace-length, 240);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@utility animate-trace {
+  stroke-dasharray: var(--trace-length, 240);
+  animation: trace 2.8s var(--ease-out-soft) infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

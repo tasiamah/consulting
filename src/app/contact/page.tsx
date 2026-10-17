@@ -12,7 +12,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
 };
 
-const interestOptions = [...services.map((s) => s.shortTitle), "Not sure yet", "Other"];
+const interestOptions = [
+  ...services.map((s) => s.shortTitle),
+  "Not sure yet",
+  "Other",
+];
 
 export default function ContactPage() {
   return (
@@ -34,11 +38,15 @@ export default function ContactPage() {
               Send us an enquiry
             </h2>
             <p className="mt-5 max-w-xl text-[0.9375rem] leading-[1.8] text-slate-ink">
-              Enquiries are read and answered by a consultant. Expect a reply within one business
-              day, and a substantive one rather than a calendar link.
+              Enquiries are read and answered by a consultant. Expect a reply
+              within one business day, and a substantive one rather than a
+              calendar link.
             </p>
             <div className="mt-10">
-              <ContactForm interestOptions={interestOptions} fallbackEmail={company.email} />
+              <ContactForm
+                interestOptions={interestOptions}
+                fallbackEmail={company.email}
+              />
             </div>
           </div>
 
@@ -52,7 +60,9 @@ export default function ContactPage() {
               </div>
               <dl className="divide-y divide-line">
                 <div className="px-7 py-5">
-                  <dt className="text-[0.75rem] text-slate-ink/70">General enquiries</dt>
+                  <dt className="text-[0.75rem] text-slate-ink/70">
+                    General enquiries
+                  </dt>
                   <dd className="mt-1.5">
                     <a
                       href={`mailto:${company.email}`}
@@ -64,7 +74,9 @@ export default function ContactPage() {
                   </dd>
                 </div>
                 <div className="px-7 py-5">
-                  <dt className="text-[0.75rem] text-slate-ink/70">Recruitment</dt>
+                  <dt className="text-[0.75rem] text-slate-ink/70">
+                    Recruitment
+                  </dt>
                   <dd className="mt-1.5">
                     <a
                       href={`mailto:${company.careersEmail}`}
@@ -76,7 +88,9 @@ export default function ContactPage() {
                   </dd>
                 </div>
                 <div className="px-7 py-5">
-                  <dt className="text-[0.75rem] text-slate-ink/70">Data protection</dt>
+                  <dt className="text-[0.75rem] text-slate-ink/70">
+                    Data protection
+                  </dt>
                   <dd className="mt-1.5">
                     <a
                       href={`mailto:${company.privacyEmail}`}
@@ -89,7 +103,9 @@ export default function ContactPage() {
                 </div>
                 {company.phone && (
                   <div className="px-7 py-5">
-                    <dt className="text-[0.75rem] text-slate-ink/70">Telephone</dt>
+                    <dt className="text-[0.75rem] text-slate-ink/70">
+                      Telephone
+                    </dt>
                     <dd className="mt-1.5 text-[0.9375rem] font-medium text-ink">
                       <a
                         href={`tel:${company.phone.replace(/\s/g, "")}`}
@@ -127,7 +143,9 @@ export default function ContactPage() {
                     <ClockIcon className="mt-0.5 h-4 w-4 shrink-0 text-accent-500" />
                     <span>
                       {office.hours}
-                      <span className="block text-slate-ink/60">{office.timezone}</span>
+                      <span className="block text-slate-ink/60">
+                        {office.timezone}
+                      </span>
                     </span>
                   </div>
                 </div>
@@ -135,8 +153,9 @@ export default function ContactPage() {
             ))}
 
             <p className="text-[0.8125rem] leading-relaxed text-slate-ink/80">
-              Both locations are staffed offices. Visits are welcome by appointment — please arrange
-              in advance so the right people are available.
+              Both locations are staffed offices. Visits are welcome by
+              appointment — please arrange in advance so the right people are
+              available.
             </p>
           </aside>
         </div>
@@ -182,7 +201,9 @@ export default function ContactPage() {
                 <h3 className="mt-5 font-sans text-[1rem] font-semibold tracking-tight text-ink">
                   {item.name}
                 </h3>
-                <p className="mt-3 text-[0.875rem] leading-[1.75] text-slate-ink">{item.detail}</p>
+                <p className="mt-3 text-[0.875rem] leading-[1.75] text-slate-ink">
+                  {item.detail}
+                </p>
               </li>
             ))}
           </ol>

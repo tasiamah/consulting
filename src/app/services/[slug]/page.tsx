@@ -33,14 +33,20 @@ export async function generateMetadata({
   };
 }
 
-export default async function ServiceDetailPage({ params }: PageProps<"/services/[slug]">) {
+export default async function ServiceDetailPage({
+  params,
+}: PageProps<"/services/[slug]">) {
   const { slug } = await params;
   const service = getService(slug);
   if (!service) notFound();
 
   const Icon = ServiceIcons[service.icon];
-  const relatedIndustries = industries.filter((i) => i.relevantServices.includes(service.slug));
-  const relatedCases = caseStudies.filter((c) => c.services.includes(service.slug)).slice(0, 2);
+  const relatedIndustries = industries.filter((i) =>
+    i.relevantServices.includes(service.slug),
+  );
+  const relatedCases = caseStudies
+    .filter((c) => c.services.includes(service.slug))
+    .slice(0, 2);
   const otherServices = services.filter((s) => s.slug !== service.slug);
 
   const schema = {
@@ -49,14 +55,22 @@ export default async function ServiceDetailPage({ params }: PageProps<"/services
     name: service.title,
     description: service.summary,
     serviceType: service.title,
-    provider: { "@type": "Organization", name: company.legalName, url: company.url },
+    provider: {
+      "@type": "Organization",
+      name: company.legalName,
+      url: company.url,
+    },
     areaServed: ["AE", "GB"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: `${service.title} capabilities`,
       itemListElement: service.capabilities.map((cap) => ({
         "@type": "Offer",
-        itemOffered: { "@type": "Service", name: cap.title, description: cap.description },
+        itemOffered: {
+          "@type": "Service",
+          name: cap.title,
+          description: cap.description,
+        },
       })),
     },
   };
@@ -80,7 +94,9 @@ export default async function ServiceDetailPage({ params }: PageProps<"/services
                 <dt className="text-[0.75rem] tracking-[0.04em] text-white/40 uppercase">
                   Engagement model
                 </dt>
-                <dd className="mt-1 text-[0.9375rem] text-white/85">{service.engagement.model}</dd>
+                <dd className="mt-1 text-[0.9375rem] text-white/85">
+                  {service.engagement.model}
+                </dd>
               </div>
               <div>
                 <dt className="text-[0.75rem] tracking-[0.04em] text-white/40 uppercase">
@@ -94,7 +110,9 @@ export default async function ServiceDetailPage({ params }: PageProps<"/services
                 <dt className="text-[0.75rem] tracking-[0.04em] text-white/40 uppercase">
                   Team composition
                 </dt>
-                <dd className="mt-1 text-[0.9375rem] text-white/85">{service.engagement.team}</dd>
+                <dd className="mt-1 text-[0.9375rem] text-white/85">
+                  {service.engagement.team}
+                </dd>
               </div>
             </dl>
           </div>
@@ -110,7 +128,10 @@ export default async function ServiceDetailPage({ params }: PageProps<"/services
             </h2>
             <div className="mt-7 space-y-5">
               {service.overview.map((paragraph) => (
-                <p key={paragraph} className="text-[1.0625rem] leading-[1.85] text-slate-ink">
+                <p
+                  key={paragraph}
+                  className="text-[1.0625rem] leading-[1.85] text-slate-ink"
+                >
                   {paragraph}
                 </p>
               ))}

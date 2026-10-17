@@ -4,7 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Logo } from "./logo";
-import { ArrowRight, ChevronDown, CloseIcon, MailIcon, MenuIcon, PinIcon } from "./icons";
+import {
+  ArrowRight,
+  ChevronDown,
+  CloseIcon,
+  MailIcon,
+  MenuIcon,
+  PinIcon,
+} from "./icons";
 import { mainNav } from "@/content/navigation";
 import { company, offices } from "@/content/company";
 
@@ -69,7 +76,10 @@ export function SiteHeader() {
             <span className="inline-flex items-center gap-2">
               <PinIcon className="h-3.5 w-3.5 text-accent-300" />
               {offices.map((office, i) => (
-                <span key={office.id} className="inline-flex items-center gap-2">
+                <span
+                  key={office.id}
+                  className="inline-flex items-center gap-2"
+                >
                   {i > 0 && <span className="text-white/25">·</span>}
                   {office.shortLabel}
                 </span>
@@ -78,10 +88,7 @@ export function SiteHeader() {
             <span className="text-white/40">{company.tagline}</span>
           </div>
           <div className="flex items-center gap-7">
-            <Link
-              href="/faq"
-              className="transition-colors hover:text-white"
-            >
+            <Link href="/faq" className="transition-colors hover:text-white">
               Client FAQ
             </Link>
             <a
@@ -98,13 +105,18 @@ export function SiteHeader() {
       {/* Main bar */}
       <div
         className={`border-b bg-white/95 backdrop-blur-md transition-shadow duration-300 ${
-          scrolled ? "border-line shadow-[0_1px_20px_rgba(7,22,39,0.06)]" : "border-line/70"
+          scrolled
+            ? "border-line shadow-[0_1px_20px_rgba(7,22,39,0.06)]"
+            : "border-line/70"
         }`}
       >
         <div className="container-page flex h-[4.5rem] items-center justify-between gap-6">
           <Logo />
 
-          <nav aria-label="Primary" className="hidden items-center gap-1 xl:flex">
+          <nav
+            aria-label="Primary"
+            className="hidden items-center gap-1 xl:flex"
+          >
             {mainNav.map((item) => {
               const active = isActive(item.href);
               const hasChildren = Boolean(item.children?.length);
@@ -121,9 +133,13 @@ export function SiteHeader() {
                 >
                   <Link
                     href={item.href}
-                    aria-expanded={hasChildren ? openMenu === item.label : undefined}
+                    aria-expanded={
+                      hasChildren ? openMenu === item.label : undefined
+                    }
                     className={`inline-flex items-center gap-1.5 px-3.5 py-2 text-[0.875rem] font-medium transition-colors ${
-                      active ? "text-accent-600" : "text-ink/80 hover:text-accent-600"
+                      active
+                        ? "text-accent-600"
+                        : "text-ink/80 hover:text-accent-600"
                     }`}
                   >
                     {item.label}
@@ -261,5 +277,9 @@ export function SiteHeader() {
 }
 
 function MenuIconSwap({ open = false }: { open?: boolean }) {
-  return open ? <CloseIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />;
+  return open ? (
+    <CloseIcon className="h-6 w-6" />
+  ) : (
+    <MenuIcon className="h-6 w-6" />
+  );
 }

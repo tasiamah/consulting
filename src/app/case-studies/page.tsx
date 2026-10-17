@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/case-studies" },
 };
 
-const serviceName = (slug: string) => services.find((s) => s.slug === slug)?.shortTitle ?? slug;
+const serviceName = (slug: string) =>
+  services.find((s) => s.slug === slug)?.shortTitle ?? slug;
 
 export default function CaseStudiesPage() {
   return (
@@ -51,7 +52,9 @@ export default function CaseStudiesPage() {
                     </Link>
                   </h2>
 
-                  <p className="mt-3 text-[0.9375rem] text-slate-ink/70">{study.client}</p>
+                  <p className="mt-3 text-[0.9375rem] text-slate-ink/70">
+                    {study.client}
+                  </p>
 
                   <p className="mt-6 max-w-2xl text-[1rem] leading-[1.8] text-slate-ink">
                     {study.challenge}
@@ -101,10 +104,13 @@ export default function CaseStudiesPage() {
       <section className="border-t border-line bg-paper py-16">
         <div className="container-page">
           <p className="mx-auto max-w-3xl text-center text-[0.9375rem] leading-[1.8] text-slate-ink">
-            <span className="font-semibold text-ink">A note on confidentiality.</span> Client names
-            are withheld unless we hold written permission to use them. Figures are drawn from
-            measurements taken during the engagement and agreed with the client before publication.
-            Where we cannot evidence a number, we do not publish one.
+            <span className="font-semibold text-ink">
+              A note on confidentiality.
+            </span>{" "}
+            Client names are withheld unless we hold written permission to use
+            them. Figures are drawn from measurements taken during the
+            engagement and agreed with the client before publication. Where we
+            cannot evidence a number, we do not publish one.
           </p>
         </div>
       </section>

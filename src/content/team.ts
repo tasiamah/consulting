@@ -11,6 +11,8 @@
  * Only add those once you hold the certificate. See CONTENT-CHECKLIST.md.
  */
 
+import type { AvatarOverrides } from "@/components/avatar";
+
 export type TeamMember = {
   name: string;
   initials: string;
@@ -19,6 +21,11 @@ export type TeamMember = {
   group: "leadership" | "delivery";
   bio: string;
   focus: string[];
+  /**
+   * Illustrated avatar features. Omit any field to derive it from the name.
+   * Ignored entirely once `photo` is set.
+   */
+  avatar?: AvatarOverrides;
   /** Optional path in /public, e.g. "/team/first-last.jpg" */
   photo?: string;
   linkedin?: string;
@@ -33,6 +40,7 @@ export const team: TeamMember[] = [
     group: "leadership",
     bio: "Ahmad leads the firm's client relationships and commercial strategy. He spent twelve years in enterprise systems delivery across banking and logistics in the GCC before co-founding A&H, and remains the executive sponsor on the firm's regulated-sector engagements.",
     focus: ["Client strategy", "Regulated sectors", "Commercial governance"],
+    avatar: { hairStyle: "short", facial: "beard" },
   },
   {
     name: "Hana Darwish",
@@ -41,7 +49,12 @@ export const team: TeamMember[] = [
     office: "London",
     group: "leadership",
     bio: "Hana is responsible for technical standards across every engagement. Her background is in large-scale platform modernisation for financial services, and she chairs the internal architecture review that signs off each solution design before build begins.",
-    focus: ["Solution architecture", "Platform modernisation", "Technical assurance"],
+    focus: [
+      "Solution architecture",
+      "Platform modernisation",
+      "Technical assurance",
+    ],
+    avatar: { hairStyle: "long" },
   },
   {
     name: "Imran Qureshi",
@@ -51,6 +64,7 @@ export const team: TeamMember[] = [
     group: "leadership",
     bio: "Imran owns delivery across the portfolio — scope, schedule, and quality. He introduced the firm's two-week release cadence and the acceptance-criteria framework that governs how work is signed off with clients.",
     focus: ["Programme delivery", "Delivery governance", "Client reporting"],
+    avatar: { hairStyle: "buzz", facial: "stubble", glasses: true },
   },
   {
     name: "Sofia Lindqvist",
@@ -59,7 +73,12 @@ export const team: TeamMember[] = [
     office: "London",
     group: "leadership",
     bio: "Sofia leads the firm's security practice and its internal control environment. She runs client security assessments, oversees how A&H handles client data, and is the point of contact for enterprise security questionnaires and due diligence.",
-    focus: ["Security assessment", "Governance & compliance", "Incident readiness"],
+    focus: [
+      "Security assessment",
+      "Governance & compliance",
+      "Incident readiness",
+    ],
+    avatar: { hairStyle: "bun", glasses: true },
   },
   {
     name: "Rohan Mehta",
@@ -69,6 +88,7 @@ export const team: TeamMember[] = [
     group: "delivery",
     bio: "Rohan designs the cloud platforms underpinning client systems, with a focus on data residency, resilience, and cost accountability. He has led migrations onto both AWS and Azure for organisations with strict audit requirements.",
     focus: ["AWS & Azure", "Terraform", "Cost governance"],
+    avatar: { hairStyle: "short", facial: "moustache" },
   },
   {
     name: "Layla Mansour",
@@ -78,6 +98,7 @@ export const team: TeamMember[] = [
     group: "delivery",
     bio: "Layla runs the firm's advisory assessments — technology due diligence, architecture review, and operating-model design. She translates technical findings into the costed roadmaps that boards use to approve investment.",
     focus: ["Technology due diligence", "Operating model", "Roadmap planning"],
+    avatar: { hairStyle: "cover" },
   },
   {
     name: "Daniel Okafor",
@@ -87,6 +108,7 @@ export const team: TeamMember[] = [
     group: "delivery",
     bio: "Daniel leads build teams on custom platform engagements and sets the firm's engineering standards for code review, testing, and release. He works primarily across TypeScript and .NET service architectures.",
     focus: ["TypeScript", ".NET", "API design"],
+    avatar: { hairStyle: "buzz", facial: "stubble" },
   },
   {
     name: "Priya Raman",
@@ -96,6 +118,7 @@ export const team: TeamMember[] = [
     group: "delivery",
     bio: "Priya specialises in connecting ERP, finance, and bespoke systems, including the reconciliation reporting that finance teams rely on at period close. She has delivered integrations across Dynamics, NetSuite, and Salesforce estates.",
     focus: ["Enterprise integration", "Event-driven systems", "Data migration"],
+    avatar: { hairStyle: "long", glasses: true },
   },
   {
     name: "Yusuf Kareem",
@@ -104,7 +127,12 @@ export const team: TeamMember[] = [
     office: "Dubai",
     group: "delivery",
     bio: "Yusuf carries out application security reviews, threat modelling, and remediation work embedded within client engineering teams. He also maintains the scanning and detection tooling used across A&H delivery pipelines.",
-    focus: ["Application security", "Threat modelling", "Detection engineering"],
+    focus: [
+      "Application security",
+      "Threat modelling",
+      "Detection engineering",
+    ],
+    avatar: { hairStyle: "short", facial: "beard", glasses: true },
   },
   {
     name: "Elena Novak",
@@ -114,6 +142,7 @@ export const team: TeamMember[] = [
     group: "delivery",
     bio: "Elena owns test strategy across engagements, from automated regression suites to the user-acceptance process clients run before release. She is responsible for the evidence pack that accompanies every production deployment.",
     focus: ["Test automation", "UAT management", "Release assurance"],
+    avatar: { hairStyle: "wave" },
   },
   {
     name: "Omar Siddiqui",
@@ -123,6 +152,7 @@ export const team: TeamMember[] = [
     group: "delivery",
     bio: "Omar manages the firm's support agreements and the on-call rota behind them. He runs the monthly service reviews where clients see incident history, patch status, and the agreed improvement backlog.",
     focus: ["Service management", "Monitoring & on-call", "Patch governance"],
+    avatar: { hairStyle: "buzz", facial: "beard" },
   },
 ];
 
