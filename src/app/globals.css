@@ -1,26 +1,177 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-ink: #071627;
+  --color-navy-950: #061322;
+  --color-navy-900: #0a1e34;
+  --color-navy-800: #0f2b48;
+  --color-navy-700: #163a5f;
+  --color-navy-600: #1d4b7a;
+
+  --color-accent-50: #eef5fc;
+  --color-accent-100: #d6e6f7;
+  --color-accent-200: #aecdef;
+  --color-accent-300: #7eade3;
+  --color-accent-400: #4a8ad3;
+  --color-accent-500: #2a6cb8;
+  --color-accent-600: #1a5496;
+  --color-accent-700: #154377;
+
+  --color-paper: #f7f6f3;
+  --color-paper-dark: #efede7;
+  --color-line: #e2dfd8;
+
+  --color-slate-ink: #3d4a59;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+
+  --text-display: 4.25rem;
+  --text-display--line-height: 1.04;
+  --text-display--letter-spacing: -0.03em;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background-color: var(--color-navy-800);
+    color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-500);
+    outline-offset: 3px;
+    border-radius: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Small uppercase label that sits above section headings. */
+  .eyebrow {
+    @apply inline-flex items-center gap-2.5 text-[0.6875rem] font-semibold uppercase tracking-[0.18em];
+  }
+
+  .eyebrow::before {
+    content: "";
+    @apply block h-px w-6 bg-current opacity-50;
+  }
+
+  .prose-legal {
+    @apply text-[0.9375rem] leading-[1.8] text-slate-ink;
+  }
+
+  .prose-legal h2 {
+    @apply mt-12 mb-4 font-serif text-2xl text-ink;
+  }
+
+  .prose-legal h3 {
+    @apply mt-8 mb-3 font-sans text-base font-semibold tracking-tight text-ink;
+  }
+
+  .prose-legal p {
+    @apply mb-4;
+  }
+
+  .prose-legal ul {
+    @apply mb-5 space-y-2 pl-5;
+  }
+
+  .prose-legal li {
+    @apply list-disc marker:text-accent-300;
+  }
+
+  .prose-legal a {
+    @apply font-medium text-accent-600 underline underline-offset-4 hover:text-accent-700;
+  }
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-[82rem] px-6 lg:px-10;
+}
+
+/* Fine grid used behind dark hero/CTA panels. */
+@utility bg-grid {
+  background-image: linear-gradient(
+      to right,
+      rgb(255 255 255 / 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.045) 1px, transparent 1px);
+  background-size: 68px 68px;
+}
+
+@utility bg-grid-light {
+  background-image: linear-gradient(
+      to right,
+      rgb(7 22 39 / 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(7 22 39 / 0.045) 1px, transparent 1px);
+  background-size: 68px 68px;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-rise {
+  animation: rise 0.7s var(--ease-out-soft) both;
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-menu {
+  animation: menu-in 0.16s var(--ease-out-soft) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
