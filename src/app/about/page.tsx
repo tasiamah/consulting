@@ -11,7 +11,7 @@ import { principles } from "@/content/approach";
 export const metadata: Metadata = {
   title: "About the firm",
   description:
-    "A & H Consulting Group LLC is an enterprise software consultancy registered in Sharjah with a European office in London. Meet the leadership team and review our corporate information.",
+    "A & H Consulting Group LLC is an enterprise software consultancy registered in Dubai with a European office in London. Meet the leadership team and review our corporate information.",
   alternates: { canonical: "/about" },
 };
 
@@ -32,7 +32,7 @@ export default function AboutPage() {
       value: registration.ukCompanyNumber,
     },
     registration.vatNumber && { label: "VAT registration number", value: registration.vatNumber },
-    { label: "Head office", value: "Sharjah, United Arab Emirates" },
+    { label: "Head office", value: "Dubai, United Arab Emirates" },
     { label: "European office", value: "London, United Kingdom" },
     { label: "Permanent staff", value: `${team.length} consultants and engineers` },
     { label: "Primary contact", value: company.email },
@@ -72,9 +72,10 @@ export default function AboutPage() {
                 handover documentation.
               </p>
               <p>
-                Today we operate from two offices. Sharjah is our registered head office and primary
-                delivery centre, serving clients across the UAE and the wider Gulf. London handles
-                European client engagement and advisory work. Both teams work to the same engineering
+                Today we operate from two offices. Dubai is our registered head office and primary
+                delivery centre, licensed through the International Free Zone Authority and serving
+                clients across the UAE and the wider Gulf. London handles European client engagement
+                and advisory work. Both teams work to the same engineering
                 and review standards, and every solution design passes the same internal architecture
                 review before a line of code is written.
               </p>
@@ -161,7 +162,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Our people"
             title="The team accountable for your engagement."
-            intro={`${team.length} permanent consultants and engineers across Sharjah and London. Every engagement has a named partner sponsor and a named delivery lead, and both stay with it from discovery through to handover.`}
+            intro={`${team.length} permanent consultants and engineers across Dubai and London. Every engagement has a named partner sponsor and a named delivery lead, and both stay with it from discovery through to handover.`}
           />
 
           {/* Leadership */}

@@ -15,7 +15,7 @@ export type TeamMember = {
   name: string;
   initials: string;
   role: string;
-  office: "Sharjah" | "London";
+  office: "Dubai" | "London";
   group: "leadership" | "delivery";
   bio: string;
   focus: string[];
@@ -29,7 +29,7 @@ export const team: TeamMember[] = [
     name: "Ahmad Al-Hassan",
     initials: "AH",
     role: "Managing Partner",
-    office: "Sharjah",
+    office: "Dubai",
     group: "leadership",
     bio: "Ahmad leads the firm's client relationships and commercial strategy. He spent twelve years in enterprise systems delivery across banking and logistics in the GCC before co-founding A&H, and remains the executive sponsor on the firm's regulated-sector engagements.",
     focus: ["Client strategy", "Regulated sectors", "Commercial governance"],
@@ -47,7 +47,7 @@ export const team: TeamMember[] = [
     name: "Imran Qureshi",
     initials: "IQ",
     role: "Director of Delivery",
-    office: "Sharjah",
+    office: "Dubai",
     group: "leadership",
     bio: "Imran owns delivery across the portfolio — scope, schedule, and quality. He introduced the firm's two-week release cadence and the acceptance-criteria framework that governs how work is signed off with clients.",
     focus: ["Programme delivery", "Delivery governance", "Client reporting"],
@@ -65,7 +65,7 @@ export const team: TeamMember[] = [
     name: "Rohan Mehta",
     initials: "RM",
     role: "Principal Cloud Architect",
-    office: "Sharjah",
+    office: "Dubai",
     group: "delivery",
     bio: "Rohan designs the cloud platforms underpinning client systems, with a focus on data residency, resilience, and cost accountability. He has led migrations onto both AWS and Azure for organisations with strict audit requirements.",
     focus: ["AWS & Azure", "Terraform", "Cost governance"],
@@ -74,7 +74,7 @@ export const team: TeamMember[] = [
     name: "Layla Mansour",
     initials: "LM",
     role: "Principal Consultant",
-    office: "Sharjah",
+    office: "Dubai",
     group: "delivery",
     bio: "Layla runs the firm's advisory assessments — technology due diligence, architecture review, and operating-model design. She translates technical findings into the costed roadmaps that boards use to approve investment.",
     focus: ["Technology due diligence", "Operating model", "Roadmap planning"],
@@ -92,7 +92,7 @@ export const team: TeamMember[] = [
     name: "Priya Raman",
     initials: "PR",
     role: "Lead Integration Engineer",
-    office: "Sharjah",
+    office: "Dubai",
     group: "delivery",
     bio: "Priya specialises in connecting ERP, finance, and bespoke systems, including the reconciliation reporting that finance teams rely on at period close. She has delivered integrations across Dynamics, NetSuite, and Salesforce estates.",
     focus: ["Enterprise integration", "Event-driven systems", "Data migration"],
@@ -101,7 +101,7 @@ export const team: TeamMember[] = [
     name: "Yusuf Kareem",
     initials: "YK",
     role: "Senior Security Engineer",
-    office: "Sharjah",
+    office: "Dubai",
     group: "delivery",
     bio: "Yusuf carries out application security reviews, threat modelling, and remediation work embedded within client engineering teams. He also maintains the scanning and detection tooling used across A&H delivery pipelines.",
     focus: ["Application security", "Threat modelling", "Detection engineering"],
@@ -119,7 +119,7 @@ export const team: TeamMember[] = [
     name: "Omar Siddiqui",
     initials: "OS",
     role: "Support & Operations Manager",
-    office: "Sharjah",
+    office: "Dubai",
     group: "delivery",
     bio: "Omar manages the firm's support agreements and the on-call rota behind them. He runs the monthly service reviews where clients see incident history, patch status, and the agreed improvement backlog.",
     focus: ["Service management", "Monitoring & on-call", "Patch governance"],

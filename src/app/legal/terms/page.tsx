@@ -176,8 +176,8 @@ export default function TermsPage() {
               <h2>10. Governing law</h2>
               <p>
                 These terms and any dispute arising out of them are governed by the laws of the
-                Emirate of Sharjah and the federal laws of the United Arab Emirates, and the courts
-                of Sharjah have exclusive jurisdiction. Governing law for professional services is
+                Emirate of Dubai and the federal laws of the United Arab Emirates, and the courts of
+                Dubai have exclusive jurisdiction. Governing law for professional services is
                 specified in the relevant engagement agreement and may differ.
               </p>
 

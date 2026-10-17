@@ -26,7 +26,7 @@ export const company = {
   /** Verified registration identifiers. Unset values are hidden sitewide. */
   registration: {
     uaeLicenseNumber: undefined as string | undefined,
-    uaeAuthority: "Sharjah Economic Development Department",
+    uaeAuthority: "International Free Zone Authority (IFZA), Dubai",
     ukCompanyNumber: undefined as string | undefined,
     vatNumber: undefined as string | undefined,
   },
@@ -34,7 +34,7 @@ export const company = {
   linkedin: undefined as string | undefined,
 
   summary:
-    "A & H Consulting Group LLC is an enterprise software consultancy operating from Sharjah and London. We design, build, and run the systems that regulated and high-growth businesses depend on.",
+    "A & H Consulting Group LLC is an enterprise software consultancy operating from Dubai and London. We design, build, and run the systems that regulated and high-growth businesses depend on.",
 } as const;
 
 export type Office = {
@@ -42,6 +42,8 @@ export type Office = {
   region: string;
   city: string;
   country: string;
+  /** Compact form for the header strip, e.g. "Dubai, UAE". */
+  shortLabel: string;
   lines: string[];
   timezone: string;
   hours: string;
@@ -52,11 +54,17 @@ export const offices: Office[] = [
   {
     id: "uae",
     region: "Middle East",
-    city: "Sharjah",
+    city: "Dubai",
     country: "United Arab Emirates",
-    lines: ["Shamas Business Center", "Al Messaned", "P.O. Box 515000", "Sharjah, United Arab Emirates"],
+    shortLabel: "Dubai, UAE",
+    lines: [
+      "Level 2, Unit 2",
+      "IFZA Freezone",
+      "P.O. Box 515000",
+      "Dubai, United Arab Emirates",
+    ],
     timezone: "GST (UTC+4)",
-    hours: "Sunday – Thursday, 09:00 – 18:00",
+    hours: "Monday – Friday, 09:00 – 18:00",
     role: "Registered head office and regional delivery centre",
   },
   {
@@ -64,6 +72,7 @@ export const offices: Office[] = [
     region: "Europe",
     city: "London",
     country: "United Kingdom",
+    shortLabel: "London, UK",
     lines: ["71–75 Shelton Street", "Covent Garden", "WC2H 9JQ", "London, United Kingdom"],
     timezone: "GMT/BST (UTC+0/+1)",
     hours: "Monday – Friday, 09:00 – 18:00",
@@ -73,7 +82,7 @@ export const offices: Office[] = [
 
 export const stats = [
   { value: "40+", label: "Engagements delivered", detail: "Across six industries since 2019" },
-  { value: "2", label: "Delivery regions", detail: "Sharjah and London" },
+  { value: "2", label: "Delivery regions", detail: "Dubai and London" },
   { value: "11", label: "Consultants and engineers", detail: "Permanent multidisciplinary team" },
   { value: "96%", label: "Client retention", detail: "Clients who extend beyond the first engagement" },
 ];

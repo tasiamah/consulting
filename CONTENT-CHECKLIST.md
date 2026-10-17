@@ -33,12 +33,17 @@ These are the items a bank or counterparty is most likely to check.
 - [ ] `foundedYear` — currently `2019`. Set to the real incorporation year.
 - [ ] `stats` — "40+ engagements", "11 consultants", "96% client retention" are
       invented. Replace with numbers you can evidence, or remove the band.
-- [ ] `registration.uaeLicenseNumber` — add your Sharjah trade licence number
+- [ ] `registration.uaeLicenseNumber` — add your IFZA licence number
 - [ ] `registration.ukCompanyNumber` — add if a UK entity exists, otherwise
       **leave unset** and reword the London office as a branch/representative
       office (unset values are hidden automatically sitewide)
 - [ ] `registration.vatNumber` — add if VAT/TRN registered
-- [ ] `registration.uaeAuthority` — confirm the correct licensing authority
+- [ ] `registration.uaeAuthority` — currently "International Free Zone Authority
+      (IFZA), Dubai". Confirm this matches the licence exactly.
+- [ ] **Legal suffix** — IFZA issues licences to `FZCO` and `FZ-LLC` entities.
+      `company.legalName` currently reads "A & H Consulting Group LLC". If the
+      licence says FZCO or FZ-LLC, correct it: the name on the site must match
+      the licence character for character, because the bank will compare them.
 - [ ] `phone` — currently unset, so no phone number is shown anywhere. A listed
       landline materially improves bank onboarding; add one if you have it.
 - [ ] `linkedin` — add the company page URL

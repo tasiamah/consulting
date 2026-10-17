@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     template: `%s | ${company.shortName}`,
   },
   description:
-    "A & H Consulting Group LLC is an enterprise software consultancy in Sharjah and London, delivering custom software, system integration, cloud, and cybersecurity for regulated and high-growth businesses.",
+    "A & H Consulting Group LLC is an enterprise software consultancy in Dubai and London, delivering custom software, system integration, cloud, and cybersecurity for regulated and high-growth businesses.",
   keywords: [
     "software consulting UAE",
-    "IT consulting Sharjah",
+    "IT consulting Dubai",
     "custom software development Dubai",
     "system integration consultancy",
     "cloud migration consultants",
@@ -46,14 +46,14 @@ export const metadata: Metadata = {
     url: company.url,
     title: `${company.shortName} — Enterprise Software Consulting`,
     description:
-      "Enterprise software consulting from Sharjah and London. Custom development, integration, cloud, and security for regulated businesses.",
+      "Enterprise software consulting from Dubai and London. Custom development, integration, cloud, and security for regulated businesses.",
     locale: "en_GB",
   },
   twitter: {
     card: "summary_large_image",
     title: `${company.shortName} — Enterprise Software Consulting`,
     description:
-      "Enterprise software consulting from Sharjah and London. Custom development, integration, cloud, and security for regulated businesses.",
+      "Enterprise software consulting from Dubai and London. Custom development, integration, cloud, and security for regulated businesses.",
   },
   robots: {
     index: true,

@@ -11,7 +11,7 @@ export type Role = {
 export const openRoles: Role[] = [
   {
     title: "Senior Software Engineer",
-    office: "Sharjah, UAE",
+    office: "Dubai, UAE",
     type: "Full time",
     practice: "Software Development",
     summary:
@@ -19,7 +19,7 @@ export const openRoles: Role[] = [
   },
   {
     title: "Cloud Platform Engineer",
-    office: "Sharjah, UAE",
+    office: "Dubai, UAE",
     type: "Full time",
     practice: "Cloud Solutions",
     summary:
@@ -35,7 +35,7 @@ export const openRoles: Role[] = [
   },
   {
     title: "Integration Engineer",
-    office: "Sharjah, UAE",
+    office: "Dubai, UAE",
     type: "Full time",
     practice: "System Integration",
     summary:
@@ -52,7 +52,7 @@ export const benefits = [
   {
     title: "Two offices, one standard",
     description:
-      "Sharjah and London teams work to the same engineering and review standards, with genuine mobility between engagements and regions.",
+      "Dubai and London teams work to the same engineering and review standards, with genuine mobility between engagements and regions.",
   },
   {
     title: "Funded certification",

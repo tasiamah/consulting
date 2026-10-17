@@ -59,7 +59,7 @@ export default function OpengraphImage() {
 
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span style={{ color: "#7eade3", fontSize: 17, letterSpacing: 4, fontWeight: 600 }}>
-            SHARJAH · LONDON
+            DUBAI · LONDON
           </span>
           <span
             style={{

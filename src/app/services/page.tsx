@@ -10,7 +10,7 @@ import { phases } from "@/content/approach";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Custom software development, IT consulting, system integration, cloud solutions, cybersecurity, and managed support delivered from Sharjah and London.",
+    "Custom software development, IT consulting, system integration, cloud solutions, cybersecurity, and managed support delivered from Dubai and London.",
   alternates: { canonical: "/services" },
 };
 

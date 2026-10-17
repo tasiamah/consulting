@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { Logo } from "./logo";
 import { ArrowRight, ChevronDown, CloseIcon, MailIcon, MenuIcon, PinIcon } from "./icons";
 import { mainNav } from "@/content/navigation";
-import { company } from "@/content/company";
+import { company, offices } from "@/content/company";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -68,9 +68,12 @@ export function SiteHeader() {
           <div className="flex items-center gap-7">
             <span className="inline-flex items-center gap-2">
               <PinIcon className="h-3.5 w-3.5 text-accent-300" />
-              Sharjah, UAE
-              <span className="text-white/25">·</span>
-              London, UK
+              {offices.map((office, i) => (
+                <span key={office.id} className="inline-flex items-center gap-2">
+                  {i > 0 && <span className="text-white/25">·</span>}
+                  {office.shortLabel}
+                </span>
+              ))}
             </span>
             <span className="text-white/40">{company.tagline}</span>
           </div>
@@ -237,22 +240,18 @@ export function SiteHeader() {
             </div>
 
             <div className="mt-8 grid gap-6 border-t border-line pt-8 text-[0.8125rem] leading-relaxed text-slate-ink sm:grid-cols-2">
-              <div>
-                <div className="mb-2 text-[0.6875rem] font-semibold tracking-[0.16em] text-ink uppercase">
-                  Sharjah
-                </div>
-                Shamas Business Center
-                <br />
-                Al Messaned, Sharjah, UAE
-              </div>
-              <div>
-                <div className="mb-2 text-[0.6875rem] font-semibold tracking-[0.16em] text-ink uppercase">
-                  London
-                </div>
-                71–75 Shelton Street
-                <br />
-                WC2H 9JQ, United Kingdom
-              </div>
+              {offices.map((office) => (
+                <address key={office.id} className="not-italic">
+                  <div className="mb-2 text-[0.6875rem] font-semibold tracking-[0.16em] text-ink uppercase">
+                    {office.city}
+                  </div>
+                  {office.lines.map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </address>
+              ))}
             </div>
           </nav>
         </div>

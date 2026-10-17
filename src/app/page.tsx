@@ -13,7 +13,7 @@ import { leadership, team } from "@/content/team";
 export const metadata: Metadata = {
   title: `${company.shortName} — Enterprise Software Consulting in the UAE & UK`,
   description:
-    "Enterprise software consultancy operating from Sharjah and London. Custom software development, system integration, cloud solutions, cybersecurity, and managed support for regulated and high-growth businesses.",
+    "Enterprise software consultancy operating from Dubai and London. Custom software development, system integration, cloud solutions, cybersecurity, and managed support for regulated and high-growth businesses.",
   alternates: { canonical: "/" },
 };
 
@@ -45,7 +45,7 @@ function Hero() {
       <div className="container-page relative py-20 lg:py-28">
         <div className="grid items-start gap-16 lg:grid-cols-[1.35fr_1fr] lg:gap-20">
           <div className="animate-rise">
-            <Eyebrow tone="light">Sharjah &nbsp;·&nbsp; London</Eyebrow>
+            <Eyebrow tone="light">Dubai &nbsp;·&nbsp; London</Eyebrow>
 
             <h1 className="mt-7 text-[2.5rem] leading-[1.05] text-white sm:text-[3.25rem] lg:text-[4rem]">
               Software systems that stand up to scrutiny.
@@ -409,7 +409,7 @@ function TeamSection() {
             <SectionHeading
               eyebrow="The firm"
               title="You will know exactly who is doing the work."
-              intro={`${team.length} permanent consultants and engineers across Sharjah and London. The partner who scopes your engagement stays accountable for it through delivery — we keep the firm deliberately small enough for that to remain true.`}
+              intro={`${team.length} permanent consultants and engineers across Dubai and London. The partner who scopes your engagement stays accountable for it through delivery — we keep the firm deliberately small enough for that to remain true.`}
             />
             <div className="mt-10">
               <TextLink href="/about#team">Meet the team</TextLink>
