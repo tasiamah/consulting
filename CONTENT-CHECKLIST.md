@@ -32,7 +32,8 @@ These are the items a bank or counterparty is most likely to check.
 
 - [ ] `stats`: "40+ engagements", "11 consultants", "96% client retention" are
       invented. Replace with numbers you can evidence, or remove the band.
-- [ ] `registration.uaeLicenseNumber`: add your IFZA licence number
+- [x] `registration.uaeLicenseNumber`: set to `2323906`. Confirm this matches
+      the licence certificate exactly, including any leading zeros.
 - [ ] `registration.nlRegistrationNumber`: add the KvK number if a Netherlands
       entity exists, otherwise **leave unset** and reword the European office as
       a branch or representative office (unset values are hidden sitewide)

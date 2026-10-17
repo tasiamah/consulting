@@ -79,6 +79,11 @@ const organizationSchema = {
   url: company.url,
   email: company.email,
   description: company.summary,
+  identifier: company.registration.uaeLicenseNumber && {
+    "@type": "PropertyValue",
+    name: "UAE trade licence number",
+    value: company.registration.uaeLicenseNumber,
+  },
   areaServed: ["AE", "NL", "EU", "GCC"],
   knowsAbout: services.map((s) => s.title),
   address: offices.map((office) => ({
